@@ -1,12 +1,10 @@
 /**
- * @name !HOOTSLAND!
- * @version 0.1
- * @description based on Discord.tv theme by userMacieG#7591
- * @author Hootsman!
- * @invite hh
- * @donate no need
+ * @name !NeverHOOT
+ * @version 0.2
+ * @description inspired by various discord themes (see README.MD)
+ * @author HOOTSMAN!
  * @website https://hootsdev.github.com
- * @source https://hootsdev.github.com
+ * @source https://github.com/Hootsdev/hoot/blob/master/hoot.theme.css
 */
 
 /* FONT */
@@ -15,39 +13,38 @@
 /* USRBG */
 @import url("https://discord-custom-covers.github.io/usrbg/dist/usrbg.css");
 
-/* @import "css/main.css"; */
 
 /* Discord.tv */
 :root {
-  /*Background*/
-  --blurple: rgb(113, 136, 217);
-  --greyple: rgb(151, 168, 180);
-  --blurple-sheer: rgba(114, 137, 218, 0.267);
-  --greyple-sheer: rgba(151, 168, 180, 0.267);
-  --sheer: rgba(0,0,0,0.6);
-  --veil: rgba(100, 100, 100, 0.2);
-
-  --black-hole: url(https://images.all-free-download.com/images/graphicthumb/starry_night_192398.jpg);
-  --stars: url(https://www.freeiconspng.com/uploads/twinkle-star-png-stars-9.png);
-  --color-brand: hsl(180, 40%, 42%);
-  --color-brand-darker: hsl(187, 54%, 43%);
-  --color-brand-lighter: hsl(180, 100%, 50%);
-  /* --color-brand-lighter: #a970ff; */
-  --color-red: #e91916;
-  --color-red-darker: #bb1411;
-  --color-orange: #ffca61;
-  --color-orange-darker: #fcc439;
-  --background-orange: rgba(255, 165, 0, 0.1);
-  --color-green: #08e600;
-  --color-green-darker: #00ad96;
-  --color-gray: #72767d;
-  --color-gray-darker: #4f545c;
-  --shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 0 4px rgba(0, 0, 0, 0.4);
-  --shadow-bottom: 0 1px 2px rgba(0, 0, 0, 0.9), 0 0 2px rgba(0, 0, 0, 0.9);
-  --user-background: #2f2441;
-
-}
-
+    /*Background*/
+    --blurple: rgb(113, 136, 217);
+    --greyple: rgb(151, 168, 180);
+    --blurple-sheer: rgba(114, 137, 218, 0.267);
+    --greyple-sheer: rgba(151, 168, 180, 0.267);
+    --sheer: rgba(0,0,0,0.6);
+    --veil: rgba(100, 100, 100, 0.2);
+  
+    --black-hole: url(https://images.all-free-download.com/images/graphicthumb/starry_night_192398.jpg);
+    --stars: url(https://www.freeiconspng.com/uploads/twinkle-star-png-stars-9.png);
+    --color-brand: hsl(180, 40%, 42%);
+    --color-brand-darker: hsl(187, 54%, 43%);
+    --color-brand-lighter: hsl(180, 100%, 50%);
+    /* --color-brand-lighter: #a970ff; */
+    --color-red: #e91916;
+    --color-red-darker: #bb1411;
+    --color-orange: #ffca61;
+    --color-orange-darker: #fcc439;
+    --background-orange: rgba(255, 165, 0, 0.1);
+    --color-green: #08e600;
+    --color-green-darker: #00ad96;
+    --color-gray: #72767d;
+    --color-gray-darker: #4f545c;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 0 4px rgba(0, 0, 0, 0.4);
+    --shadow-bottom: 0 1px 2px rgba(0, 0, 0, 0.9), 0 0 2px rgba(0, 0, 0, 0.9);
+    --user-background: #2f2441;
+  
+  }
+  
 /* Discord */
 .theme-dark,
 :root {
