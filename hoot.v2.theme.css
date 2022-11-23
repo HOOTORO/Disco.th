@@ -15,6 +15,8 @@
 /* USRBG */
 @import url("https://discord-custom-covers.github.io/usrbg/dist/usrbg.css");
 
+/* @import "css/main.css"; */
+
 /* Discord.tv */
 :root {
   /*Background*/
@@ -43,14 +45,7 @@
   --shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 0 4px rgba(0, 0, 0, 0.4);
   --shadow-bottom: 0 1px 2px rgba(0, 0, 0, 0.9), 0 0 2px rgba(0, 0, 0, 0.9);
   --user-background: #2f2441;
-}
 
-/* BDFDB */
-:root {
-  --bdfdb-blurple: var(--color-brand);
-  --bdfdb-green: var(--color-green);
-  --bdfdb-yellow: var(--color-orange);
-  --bdfdb-red: var(--color-red);
 }
 
 /* Discord */
@@ -535,31 +530,7 @@ body,
   background-color: transparent;
 }
 
-#app-mount
-  .divider-2rZFJK.isUnread-3Lojb-.hasContent-31hcsn
-  .content-3spvdd::before {
-  content: " | ";
-  margin-right: 10px;
-}
 
-#app-mount .divider-2rZFJK:after {
-  content: "";
-  position: relative;
-  flex: 1 0 auto;
-  margin-left: 5px;
-  height: 1px;
-  border: 1px;
-  background: linear-gradient(to right, var(--blurple-sheer) 50%, transparent);
-}
-
-#app-mount .divider-2rZFJK.isUnread-3Lojb-:after {
-  margin-left: 30px;
-  background: linear-gradient(to right, var(--dnd-sheer) 50%, transparent);
-}
-
-#app-mount .messagesWrapper-3lZDfY {
-  background-color: transparent;
-}
 
 #app-mount .content-1jQy2l,
 #app-mount .activityFeed-28jde9m,

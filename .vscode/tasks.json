@@ -1,0 +1,28 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "cp theme",
+            "type": "shell",
+            "windows": {
+                "command": "cp"
+            },
+            "osx":{
+                "command": "cp"
+            },
+            "args": [
+                "-r",
+                "${cwd}\\*css",
+                "${userHome}\\AppData\\Roaming\\BetterDiscord\\themes",
+                "-Force"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
