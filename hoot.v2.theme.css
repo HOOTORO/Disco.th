@@ -1,0 +1,2766 @@
+/**
+ * @name !HOOTSLAND!
+ * @version 0.1
+ * @description based on Discord.tv theme by userMacieG#7591
+ * @author Hootsman!
+ * @invite hh
+ * @donate no need
+ * @website https://hootsdev.github.com
+ * @source https://hootsdev.github.com
+*/
+
+/* FONT */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700;800&display=swap");
+
+/* USRBG */
+@import url("https://discord-custom-covers.github.io/usrbg/dist/usrbg.css");
+
+/* Discord.tv */
+:root {
+  /*Background*/
+  --blurple: rgb(113, 136, 217);
+  --greyple: rgb(151, 168, 180);
+  --blurple-sheer: rgba(114, 137, 218, 0.267);
+  --greyple-sheer: rgba(151, 168, 180, 0.267);
+  --sheer: rgba(0,0,0,0.6);
+  --veil: rgba(100, 100, 100, 0.2);
+
+  --black-hole: url(https://images.all-free-download.com/images/graphicthumb/starry_night_192398.jpg);
+  --stars: url(https://www.freeiconspng.com/uploads/twinkle-star-png-stars-9.png);
+  --color-brand: hsl(180, 40%, 42%);
+  --color-brand-darker: hsl(187, 54%, 43%);
+  --color-brand-lighter: hsl(180, 100%, 50%);
+  /* --color-brand-lighter: #a970ff; */
+  --color-red: #e91916;
+  --color-red-darker: #bb1411;
+  --color-orange: #ffca61;
+  --color-orange-darker: #fcc439;
+  --background-orange: rgba(255, 165, 0, 0.1);
+  --color-green: #08e600;
+  --color-green-darker: #00ad96;
+  --color-gray: #72767d;
+  --color-gray-darker: #4f545c;
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 0 4px rgba(0, 0, 0, 0.4);
+  --shadow-bottom: 0 1px 2px rgba(0, 0, 0, 0.9), 0 0 2px rgba(0, 0, 0, 0.9);
+  --user-background: #2f2441;
+}
+
+/* BDFDB */
+:root {
+  --bdfdb-blurple: var(--color-brand);
+  --bdfdb-green: var(--color-green);
+  --bdfdb-yellow: var(--color-orange);
+  --bdfdb-red: var(--color-red);
+}
+
+/* Discord */
+.theme-dark,
+:root {
+  --info-positive-background: var(--color-green);
+  --info-positive-foreground: var(--color-green);
+  --info-warning-background: var(--color-orange);
+  --info-warning-foreground: var(--color-orange);
+  --info-danger-background: var(--color-red);
+  --info-danger-foreground: var(--color-red);
+  --status-positive-background: var(--color-green);
+  --status-positive-text: #fff;
+  --status-warning-background: var(--color-orange);
+  --status-danger-background: var(--color-red);
+  --status-danger-text: #fff;
+  --focus-primary: var(--color-brand);
+  --header-primary: #fff;
+  --header-secondary: #b9bbbe;
+  --text-normal: #dcddde;
+  --text-muted: var(--color-gray);
+  --text-link: var(--color-brand-lighter);
+  --text-link-low-saturation: var(--color-brand-lighter);
+  --text-positive: var(--color-green);
+  --text-warning: var(--color-orange);
+  --text-danger: var(--color-red);
+  --text-brand: var(--color-brand);
+  --interactive-normal: #b9bbbe;
+  --interactive-hover: #dcddde;
+  --interactive-active: #fff;
+  --interactive-muted: var(--color-gray-darker);
+  --background-primary: #0e0e10;
+  --background-secondary: #1f1f23;
+  --background-secondary-alt: #1f1f23;
+  --background-tertiary: #18181b;
+  --background-accent: var(--color-gray-darker);
+  --background-floating: #18191c;
+  --background-mobile-primary: #36393f;
+  --background-mobile-secondary: #2f3136;
+  --background-modifier-hover: rgba(79, 84, 92, 0.16);
+  --background-modifier-active: rgba(79, 84, 92, 0.24);
+  --background-modifier-selected: rgba(79, 84, 92, 0.32);
+  --background-modifier-accent: hsla(0, 0%, 100%, 0.06);
+  --info-positive-text: #fff;
+  --info-warning-text: #fff;
+  --info-danger-text: #fff;
+  --info-help-background: rgba(0, 176, 244, 0.1);
+  --info-help-foreground: #00b0f4;
+  --info-help-text: #fff;
+  --status-warning-text: #000;
+  --scrollbar-thin-thumb: #202225;
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-thumb: #202225;
+  --scrollbar-auto-track: hsl(
+    210,
+    calc(var(--saturation-factor, 1) * 9.8%),
+    20%
+  );
+  --scrollbar-auto-scrollbar-color-thumb: #202225;
+  --scrollbar-auto-scrollbar-color-track: #2f3136;
+  --elevation-stroke: 0 0 0 1px rgba(4, 4, 5, 0.15);
+  --elevation-low: 0 1px 0 rgba(4, 4, 5, 0.2), 0 1.5px 0 rgba(6, 6, 7, 0.05),
+    0 2px 0 rgba(4, 4, 5, 0.05);
+  --elevation-medium: 0 4px 4px rgba(0, 0, 0, 0.16);
+  --elevation-high: 0 8px 16px rgba(0, 0, 0, 0.24);
+  --logo-primary: #fff;
+  --control-brand-foreground: var(--color-brand);
+  --control-brand-foreground-new: var(--color-brand);
+  --background-mentioned: hsla(
+    40,
+    calc(var(--saturation-factor, 1) * 98%),
+    39%,
+    0.1
+  );
+  --background-mentioned-hover: hsla(
+    180,
+    calc(var(--saturation-factor, 1) * 5.7%),
+    54.1%,
+    0.08
+  );
+  --background-message-hover: rgba(4, 4, 5, 0.07);
+  --channels-default: #8e9297;
+  --guild-header-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  --channeltextarea-background: #3e3e40;
+  --activity-card-background: #202225;
+  --textbox-markdown-syntax: #8e9297;
+  --deprecated-card-bg: rgba(32, 34, 37, 0.6);
+  --deprecated-card-editable-bg: rgba(32, 34, 37, 0.3);
+  --deprecated-store-bg: #36393f;
+  --deprecated-quickswitcher-input-background: var(--color-gray);
+  --deprecated-quickswitcher-input-placeholder: hsla(0, 0%, 100%, 0.3);
+  --deprecated-text-input-bg: rgba(0, 0, 0, 0.1);
+  --deprecated-text-input-border: rgba(0, 0, 0, 0.3);
+  --deprecated-text-input-border-hover: #040405;
+  --deprecated-text-input-border-disabled: #202225;
+  --deprecated-text-input-prefix: #dcddde;
+  --font-primary: Roboto;
+  --font-display: Roboto Mono;
+  --brand-experiment-100: var(--color-brand);
+  --brand-experiment-130: var(--color-brand);
+  --brand-experiment-160: var(--color-brand);
+  /* --brand-experiment-200: var(--color-brand); */
+  /* --brand-experiment-15a: var(--color-brand); */
+  --brand-experiment-230: var(--color-brand);
+  --brand-experiment-260: var(--color-brand);
+  --brand-experiment-300: var(--color-brand);
+  --brand-experiment-330: var(--color-brand);
+  --brand-experiment-360: var(--color-brand);
+  --brand-experiment-400: var(--color-brand);
+  --brand-experiment-430: var(--color-brand);
+  --brand-experiment-460: var(--color-brand);
+  --brand-experiment: var(--color-brand);
+  --brand-experiment-500: var(--color-brand);
+  --brand-experiment-530: var(--color-brand);
+  --brand-experiment-560: var(--color-brand);
+  --brand-experiment-600: var(--color-brand);
+  --brand-experiment-630: var(--color-brand);
+  --brand-experiment-660: var(--color-brand);
+  --brand-experiment-700: var(--color-brand);
+  --brand-experiment-730: var(--color-brand);
+  --brand-experiment-760: var(--color-brand);
+  --brand-experiment-800: var(--color-brand);
+  --brand-experiment-830: var(--color-brand);
+  --brand-experiment-860: var(--color-brand);
+  --brand-experiment-900: var(--color-brand);
+  --brand-experiment-05a: var(--color-brand);
+  --brand-experiment-10a: var(--color-brand);
+  --brand-experiment-20a: var(--color-brand);
+  --brand-experiment-25a: var(--color-brand);
+  --brand-experiment-30a: var(--color-brand);
+  --brand-experiment-35a: var(--color-brand);
+  --brand-experiment-40a: var(--color-brand);
+  --brand-experiment-45a: var(--color-brand);
+  --brand-experiment-50a: var(--color-brand);
+  --brand-experiment-55a: var(--color-brand);
+  --brand-experiment-60a: var(--color-brand);
+  --brand-experiment-65a: var(--color-brand);
+  --brand-experiment-70a: var(--color-brand);
+  --brand-experiment-75a: var(--color-brand);
+  --brand-experiment-80a: var(--color-brand);
+  --brand-experiment-85a: var(--color-brand);
+  --brand-experiment-90a: var(--color-brand);
+  --brand-experiment-95a: var(--color-brand);
+  --sheer: rgba(0, 0, 0, 0.6);
+  --blurple: rgb(113, 136, 217);
+}
+
+::selection {
+  background-color: var(--color-brand-lighter);
+  color: #0a0a0a;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body,
+.appMount-2yBXZl {
+  /* background-color: var(--background-tertiary); */
+  background-color: transparent;
+  background: linear-gradient(var(--sheer), var(--sheer)),
+    var(--black-hole) center/30% fixed;
+}
+
+#app-mount .app-2CXKsg,
+#app-mount .layers-OrUESM, 
+.privateChannels-oVe7HL,
+.container-1eFtFS,
+
+#app-mount .layer-86YKbF,
+.bg-1QIAus {
+  background-color: transparent;
+}
+
+#app-mount,
+.container-2RRFHK,
+.perksModalContentWrapper-2HU6uL {
+  background: linear-gradient(var(--sheer), var(--sheer)),
+    var(--black-hole) center/30% fixed;
+}
+
+/* II. Title Bar */
+.wordmark-2u86JB svg {
+  display: none;
+}
+
+.titleBar-1it3bQ:not(.typeMacOS-3V4xXE)::after {
+  content: "𐌁𐌋𐌀𐌂𐌊 𐋏𐍈𐌋𐌄";
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  color: rgb(170, 170, 170);
+  display: block;
+  height: 16px;
+  width: fit-content;
+  pointer-events: none;
+  font-size: 14px;
+}
+
+.winButtonMinMax-3RsPUg:hover {
+  background-color: var(--blurple);
+}
+
+.titleBar-1it3bQ {
+  background-color: transparent;
+}
+
+/* III. Channel Area */
+/* B. Channel Groups and Individual Channels */
+
+.contentSelectedText-3wUhMi,
+.contentSelectedVoice-1WDIBM,
+.contentConnectedVoice-qL-YrL,
+.wrapper-2NJDcI,
+.containerDefault-YUSmu3.selected-2TbFuo .content-1gYQeQ,
+.containerDefault-YUSmu3.selected-2TbFuo:hover .content-1gYQeQ {
+  background: var(--veil) var(--stars) top left;
+  background-attachment: fixed;
+  color: var(--blurple);
+}
+
+.contentConnectedVoice-qL-YrL:active,
+.contentHoveredText-2D9B-x,
+.contentHoveredVoice-3p_NEO:active,
+.contentSelectedVoice-1WDIBM:active,
+#app-mount .listeningAlong-2UPsxf,
+#app-mount .wrapper-1ucjTd:hover .content-1gYQeQ {
+  background-color: transparent;
+}
+
+.contentSelectedText-3wUhMi .icon-sxakjD,
+.contentSelectedVoice-1WDIBM .icon-sxakjD {
+  opacity: 0.6;
+  filter: brightness(100%);
+}
+
+.colorHoveredText-OZnAgu,
+.colorHoveredVoice-1kucsK,
+#app-mount .wrapper-1ucjTd:not(.modeSelected-1zApJ_):hover .name-3_Dsmg,
+#app-mount .wrapper-1ucjTd:not(.modeSelected-1zApJ_):hover svg {
+  color: var(--blurple);
+  /* opacity: 0; */
+}
+
+/* A. Channels Header */
+#app-mount .channelNotice-tO6Tus {
+  background-color: var(--blurple-sheer);
+}
+
+.container-3O_wAf,
+.icon-1SdhiF {
+  background: var(--black-hole) center/30% fixed;
+}
+#app-mount
+  .channelNotices-41mJbj
+  .channelNotice-tO6Tus
+  .message-3KLVy1
+  .btn-38SvSS {
+  background-color: var(--blurple-sheer);
+  border-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+#app-mount
+  .channelNotices-41mJbj
+  .channelNotice-tO6Tus
+  .message-3KLVy1
+  .btn-38SvSS:hover {
+  background-color: var(--blurple);
+}
+
+.container-PNkimc,
+.animatedContainer-1pJv5C,
+.sidebar-1tnWFu,
+.scrollableContainer-38zsVD,
+.channels-Ie2l6A {
+  background-color: transparent;
+  opacity: 1.5;
+}
+
+/* B. Channel Groups and Individual Channels */
+.containerDefault-3GGEv_,
+.containerDragAfter-3TEhpe,
+.containerDragBefore-3Dzc5x,
+.containerUserOver-1Tcb7l {
+  padding-top: 20px;
+}
+
+.contentSelectedText-3wUhMi,
+.contentSelectedVoice-1WDIBM,
+.contentConnectedVoice-qL-YrL,
+.wrapper-2NJDcI,
+.containerDefault-YUSmu3.selected-2TbFuo .content-1gYQeQ,
+.containerDefault-YUSmu3.selected-2TbFuo:hover .content-1gYQeQ {
+  background: var(--veil) var(--stars) top left;
+  background-attachment: fixed;
+  color: var(--blurple);
+}
+
+.containerDefault-YUSmu3.selected-2TbFuo .content-1gYQeQ .name-28HaxV {
+  color: var(--color-brand-lighter);
+}
+
+.contentConnectedVoice-qL-YrL:active,
+.contentHoveredText-2D9B-x,
+.contentHoveredVoice-3p_NEO:active,
+.contentSelectedVoice-1WDIBM:active,
+#app-mount .listeningAlong-2UPsxf,
+#app-mount .wrapper-1ucjTd:hover .content-1gYQeQ {
+  background-color: transparent;
+}
+
+.contentSelectedText-3wUhMi .icon-sxakjD,
+.contentSelectedVoice-1WDIBM .icon-sxakjD {
+  opacity: 1;
+  filter: brightness(100%);
+}
+
+.colorHoveredText-OZnAgu,
+.colorHoveredVoice-1kucsK,
+#app-mount .wrapper-1ucjTd:not(.modeSelected-1zApJ_):hover .name-3_Dsmg,
+#app-mount .wrapper-1ucjTd:not(.modeSelected-1zApJ_):hover svg {
+  color: var(--blurple);
+  opacity: 1;
+}
+
+.nameConnectedText-3CzNQn,
+.nameConnectedVoice-MHUX5F,
+.nameSelectedText-sp_EUw,
+.nameSelectedVoice-1qSph5,
+.colorConnectedText-1c_uzY,
+.colorConnectedVoice-3kyvUN,
+.colorSelectedText-1y4Wvs,
+.colorSelectedVoice-Xcb_9R {
+  color: currentColor;
+}
+
+.unread-2wipsx {
+  background-color: var(--blurple-sheer);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.unread-2wipsx:hover {
+  background-color: var(--blurple);
+}
+
+.mention-3XBnnZ {
+  background-color: var(--dnd-sheer);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.mention-3XBnnZ:hover {
+  background-color: var(--dnd);
+}
+/* C. Guild Folders */
+#app-mount .expandedFolderBackground-1cujaW,
+#app-mount .folder-1hbNCn {
+  background-color: transparent;
+}
+
+#app-mount .expandedFolderBackground-1cujaW::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% + 6px);
+  width: 100%;
+  opacity: 0.4;
+  background-color: var(--blurple-sheer);
+  border-radius: calc(var(--roundness) / 5);
+}
+
+#app-mount .folder-1hbNCn [style*="rgba(114, 137, 218, 0.4)"] {
+  background-color: transparent !important;
+}
+
+/* V. Pages */
+/* A. Main Areas */
+.chat-2ZfjoI,
+#app-mount .activityFeed-28jde9,
+#app-mount .activityFeed-1C0EmJ,
+#app-mount .gameLibrary-TTDw4Y,
+#app-mount .container-3gCOGc,
+#app-mount .applicationStore-2nk7Lo,
+#app-mount .pageWrapper-2PwDoS,
+#app-mount .root-1BQpZw,
+#app-mount .container-2cd8Mz,
+.threadSidebar-1o3BTy {
+  background-color: transparent !important;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.tabBody-2dgbAs {
+  margin-bottom: 55px;
+  overflow: visible;
+  background: var(--quatro) var(--stars) top left fixed !important;
+}
+
+.tabBody-2dgbAs:before {
+  top: unset;
+  bottom: -55px;
+  height: 55px;
+  background: var(--veil) var(--stars) top left fixed !important;
+}
+
+#app-mount .messages-3amgkR,
+.sidebarRegionScroller-FXiQOh,
+.contentRegionScroller-2_GT_N,
+.scroller-2XLwLg,
+.scroller-5bBood,
+.scroller-29cQFV,
+.scroller-3_YDR2,
+[class*="scroller-"],
+.scrollableContainer-15eg7h,
+.nowPlayingColumn-1eCBCN,
+.container-1NXEtd,
+.container-1oAagU,
+.section-3G9aLW,
+.stageSection-3mAD8V {
+  background-color: transparent;
+  
+}
+
+.bg-AYqtMd {
+  -webkit-mask: linear-gradient(rgb(0, 0, 0) 50%, transparent);
+  mask: linear-gradient(rgb(0, 0, 0) 50%, transparent);
+}
+
+#app-mount .searchBox-pyIJJj {
+  background: var(--veil);
+}
+
+#app-mount .title-31SJ6t,
+#app-mount .titleCall-_b9o8P,
+#app-mount .headerBar-UHpsPw,
+#app-mount .container-ZMc96U,
+#app-mount .header-2EadGG,
+#app-mount .chat-2ZfjoI .channelTextArea-1FufC0,
+#app-mount .friendsTable-133bsv .friendsRow-2yicud:hover,
+#app-mount .video-eAcneW {
+  background: var(--veil) var(--stars) top left !important;
+  background-attachment: fixed;
+}
+
+.wrapper-1gVUIN.minimum-fXpVNc,
+.wrapper-1gVUIN,
+#app-mount .outer-2JOHae.interactive-2zD88a:hover {
+  background: var(--sheer) var(--stars) top left !important;
+  background-attachment: fixed;
+}
+
+.chat-2ZfjoI .textArea-2CLwUE {
+  background-color: transparent !important;
+  line-height: 1.25rem !important;
+  margin-top: 8px;
+}
+
+.friendsTable-133bsv .friendsTableBody-1ZhKif {
+  background: transparent;
+}
+
+.channelTextAreaDisabled-rZtG8r {
+  opacity: 1;
+}
+
+#app-mount .children-3xh0VB:after {
+  display: none;
+}
+
+#app-mount .gameUpdates-3Ts_5W {
+  background: linear-gradient(var(--blurple-sheer), transparent 80%),
+    var(--veil) var(--stars) top left fixed;
+}
+
+#app-mount .content-1jQy2l,
+#app-mount .chat-2ZfjoI form .inner-zqa7da,
+#app-mount .chat-2ZfjoI form,
+#app-mount .itemBackground-2vEldQ,
+#app-mount .wrapper-29NfPK {
+  background-color: transparent;
+}
+
+#app-mount
+  .divider-2rZFJK.isUnread-3Lojb-.hasContent-31hcsn
+  .content-3spvdd::before {
+  content: " | ";
+  margin-right: 10px;
+}
+
+#app-mount .divider-2rZFJK:after {
+  content: "";
+  position: relative;
+  flex: 1 0 auto;
+  margin-left: 5px;
+  height: 1px;
+  border: 1px;
+  background: linear-gradient(to right, var(--blurple-sheer) 50%, transparent);
+}
+
+#app-mount .divider-2rZFJK.isUnread-3Lojb-:after {
+  margin-left: 30px;
+  background: linear-gradient(to right, var(--dnd-sheer) 50%, transparent);
+}
+
+#app-mount .messagesWrapper-3lZDfY {
+  background-color: transparent;
+}
+
+#app-mount .content-1jQy2l,
+#app-mount .activityFeed-28jde9m,
+.gameLibrary-TTDw4Y .scrollerWrap-2lJEkd,
+.friendsTable-133bsv,
+.applicationStore-2nk7Lo .scrollerWrap-2lJEkd,
+.activityFeed-1C0EmJ .scrollerWrap-2lJEkd,
+.root-1BQpZw .scrollerWrap-2lJEkd,
+#app-mount .noChannel-Z1DQK7,
+.submenu-1apzyU,
+.threadSidebar-1o3BTy .chat-1rZYgu {
+  background: var(--quatro) var(--stars) top left !important;
+  background-attachment: fixed;
+  
+}
+
+.chat-2ZfjoI .textArea-2Spzkt {
+  background-color: transparent !important;
+  line-height: 1.25rem !important;
+  margin-top: 8px;
+}
+
+.gatedContent-31-gID::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 55px;
+  width: 101.5%;
+  background: var(--veil) var(--stars) top left;
+  background-attachment: fixed;
+}
+
+.applicationStore-2nk7Lo .gatedContent-31-gID::after {
+  display: none;
+}
+
+/* C. Top Bar & Typing Status */
+#app-mount .search-1FM8Qc .searchBar-zdmu7v,
+#app-mount .darkTheme-3uETC4.container-1SX9VC,
+#app-mount .container-2oNtJn {
+  background: transparent;
+
+}
+/* B. Members List */
+#app-mount .container-2o3qEW {
+  background-color: transparent;
+}
+
+#app-mount .membersWrap-3NUR2t,
+#app-mount .members-3WRCEx .content-2a4AW9 {
+  height: 100% !important;
+}
+
+#app-mount .members-3WRCEx {
+  background-color: transparent;
+  margin-bottom: 55px;
+}
+
+.members-3WRCEx > div {
+  background-color: transparent;
+}
+
+#app-mount .membersWrap-3NUR2t::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 55px;
+  width: 100%;
+  background: var(--veil) var(--stars) top left;
+  background-attachment: fixed;
+}
+
+#app-mount .member-3W1lQa {
+  border-right: 2px solid transparent;
+}
+
+#app-mount .member-3W1lQa:hover {
+  background: transparent;
+  border-right-color: var(--blurple);
+}
+
+#app-mount .member-3W1lQa.popout-open,
+#app-mount .member-3W1lQa.popout-open:hover,
+#app-mount .codeRedemptionRedirect-3SBiCp,
+#app-mount .elevationHigh-28Pty4 {
+  background: var(--veil) var(--stars) top left;
+  background-attachment: fixed;
+}
+
+#app-mount
+  .elevationHigh-28Pty4[style*="background-color: rgba(32, 34, 37, 0.9)"] {
+  background: linear-gradient(to right, var(--blurple-sheer), transparent 80%),
+    var(--veil) var(--stars) top left fixed !important;
+}
+
+#app-mount .status-2s6iDp,
+#app-mount .status-2kJpnA,
+#app-mount .status-1ibiUI {
+  border-color: transparent;
+  right: -4px;
+}
+/* ############################################################### */
+/*Some snippets for looks: Credits BetterDiscord Developers*/
+#sticker-picker-tab {
+  display: none;
+}
+.stickerButton-1-nFh2 {
+  display: none;
+}
+.setIdentityLink-hOFsMl {
+  display: none;
+}
+#private-channels [href="/store"] {
+  display: none;
+}
+.numberBadge-37OJ3S {
+  background-color: #4373c5 !important;
+}
+.tutorialContainer-30WoTp + div {
+  display: none;
+}
+#status-picker {
+  margin-bottom: 5px;
+}
+
+#status-picker > div {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+}
+
+.statusItem-2hiCNB {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.statusItem-2hiCNB > svg {
+  width: 16px;
+  height: auto;
+}
+
+#status-picker .item-1OdjEX {
+  margin: 0;
+  width: 25%;
+}
+
+#status-picker .status-3TYC5W,
+#status-picker .description-3Cwkxk,
+#status-picker .separator-1So4YB:nth-child(2) {
+  display: none;
+}
+
+#status-picker .separator-1So4YB,
+#status-picker #status-picker-custom-status {
+  display: block;
+  width: 100%;
+}
+
+#status-picker-custom-status .status-3TYC5W {
+  display: block;
+  margin-left: 6px;
+}
+
+.button-12Fmur {
+  padding: 0 2px;
+}
+.avatarWrapper-1B9FTW {
+  margin-right: 8px;
+  margin-left: 2px;
+  height: 40px;
+}
+.search-1FM8Qc:not(.open-3y3yI_) .searchBar-zdmu7v {
+  width: 27px;
+  transition: 0.25s;
+  background-color: transparent;
+  opacity: 1;
+}
+.search-1FM8Qc:not(.open-3y3yI_):hover .searchBar-zdmu7v {
+  width: 240px;
+  background-color: var(--background-tertiary);
+}
+.search-1FM8Qc:not(.open-3y3yI_) .iconContainer-1RqWJj {
+  transform: scale(1.3);
+  transition: 0.25s;
+}
+.search-1FM8Qc:not(.open-3y3yI_):hover .iconContainer-1RqWJj {
+  transform: scale(1);
+}
+.icon-18rqoe {
+  color: var(--text-normal);
+}
+/*right click animation*/
+.menu-1QACrS {
+  animation: custom-menu-animation 250ms ease;
+  transform-origin: top;
+}
+
+@keyframes custom-menu-animation {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.emojiItemDisabled-3VVnwp {
+  filter: grayscale(0%);
+}
+
+.containerDefault-YUSmu3.selected-2TbFuo {
+  border-left: 6px solid var(--color-brand-lighter);
+}
+
+/*remove gift nitro button*/
+[class^="buttons-"]
+  > button[class*="lookBlank-"][class*="grow-"]
+  > div:not([class*="translateButton-"]) {
+  display: none;
+}
+/*remove file button (idk why'd you want that)*/
+.attachWrapper-3slhXI {
+  display: none;
+}
+.numberBadge-37OJ3S {
+  background-color: #4373c5 !important;
+}
+
+/* Discord: Modal */
+.bd-modal-wrapper .bd-modal-inner {
+  border: 0;
+  box-shadow: var(--shadow-popout);
+}
+
+.bd-modal-wrapper .header {
+  background-color: var(--background-tertiary);
+  box-shadow: var(--shadow-bottom);
+}
+
+.bd-modal-wrapper .bd-modal-body {
+  background-color: var(--background-tertiary);
+}
+
+.bd-modal-wrapper .tab-bar-container {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.bd-modal-wrapper .tab-bar-container .tab-bar-item {
+  opacity: 1;
+  border-width: 1px;
+}
+
+.bd-modal-wrapper .tab-bar-container .tab-bar-item.selected {
+  color: var(--color-brand) !important;
+  border-color: var(--color-brand);
+}
+
+.footer-31IekZ {
+  background-color: var(--background-tertiary) !important;
+  box-shadow: var(--shadow-bottom) !important;
+}
+
+.bd-modal-wrapper .footer button {
+  background-color: var(--color-brand);
+}
+
+.bd-modal-wrapper .footer button:active,
+.bd-modal-wrapper .footer button:hover {
+  background-color: var(--color-brand-darker);
+}
+
+/* Discord: Home: Friends - Top pills */
+.children-3xh0VB,
+.topPill-3DJJNV {
+  height: 100%;
+}
+
+.topPill-3DJJNV .themed-2-lozF.item-3XjbnG {
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  height: 100%;
+  margin: 0;
+}
+
+.topPill-3DJJNV .themed-2-lozF.item-3XjbnG:hover {
+  background-color: transparent;
+  color: var(--color-brand);
+}
+
+.topPill-3DJJNV .themed-2-lozF.selected-g-kMVV.item-3XjbnG {
+  background-color: transparent !important;
+  color: var(--color-brand);
+  border-color: var(--color-brand);
+}
+
+.root-SR8cQa .tabBarContainer-1s1u-z {
+  margin: 0 20px;
+}
+
+/* .root-SR8cQa .item-3XjbnG {
+  font-size: 11px;
+} */
+
+/* Discord: Home: Search form */
+.input-3r5zZY {
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  background-color: #3e3e40;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.input-3r5zZY:hover {
+  border-color: #575758;
+  background-color: #3e3e40;
+}
+
+.input-3r5zZY:focus-within {
+  background-color: #000;
+  border-color: var(--color-brand-lighter);
+}
+
+/* Discord: Chat: Form */
+.input-2g-os5,
+.scrollableContainer-15eg7h {
+  background-color: #000000;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  border: 2px solid transparent;
+  outline: none;
+  /* border-color: ; */
+}
+
+.input-2g-os5:hover,
+.scrollableContainer-15eg7h:hover {
+  border-color: #4373c5;
+  background-color: #000000;
+}
+
+.input-2g-os5:focus-within,
+.scrollableContainer-15eg7h:focus-within {
+  background-color: #000;
+  border-color: var(--color-brand-lighter);
+}
+
+.noBorder-2p63tM {
+  border: none !important;
+}
+
+/* .input-2g-os5,
+.scrollableContainer-15eg7h {
+  background-color: #3e3e40;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  border: 2px solid transparent;
+  outline: none;
+}
+
+.input-2g-os5:hover,
+.scrollableContainer-15eg7h:hover {
+  border-color: #575758;
+  background-color: #3e3e40;
+}
+
+.input-2g-os5:focus-within,
+.scrollableContainer-15eg7h:focus-within {
+  background-color: #000;
+  border-color: var(--color-brand-lighter);
+}
+
+.noBorder-CTIBpT {
+  border: none !important;
+} */
+
+/* Discord: Search: Form */
+.searchBar-zdmu7v {
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  background-color: #3e3e40;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.searchBar-zdmu7v:hover {
+  border-color: #575758;
+  background-color: #3e3e40;
+}
+
+.searchBar-zdmu7v:focus-within {
+  background-color: #000;
+  border-color: var(--color-brand-lighter);
+}
+
+.searchBar-zdmu7v {
+  height: 28px;
+}
+
+/* Discord: Button: Filled - Brand */
+.lookFilled-1Gx00P.colorBrand-3pXr91,
+.lookFilled-1Gx00P.colorBrand-3pXr91:disabled {
+  background-color: var(--color-brand);
+}
+
+.lookFilled-1Gx00P.colorBrand-3pXr91:hover,
+.lookFilled-1Gx00P.colorBrand-3pXr91:active {
+  background-color: var(--color-brand-darker);
+}
+
+/* Discord: Button: Outlined - Brand */
+.lookOutlined-3sRXeN.colorBrand-3pXr91 {
+  color: var(--color-brand);
+  border-color: var(--color-brand);
+}
+
+.lookOutlined-3sRXeN.colorBrand-3pXr91:hover {
+  color: var(--color-brand-darker);
+  border-color: var(--color-brand-darker);
+}
+
+/* Discord: Button: Filled - Red */
+.lookFilled-1Gx00P.colorRed-1TFJan {
+  background-color: var(--color-red);
+}
+
+.lookFilled-1Gx00P.colorRed-1TFJan:hover,
+.lookFilled-1Gx00P.colorRed-1TFJan:active {
+  background-color: var(--color-red-darker);
+}
+
+/* Button: Outlined - Red */
+.lookOutlined-3sRXeN.colorRed-1TFJan {
+  color: var(--color-red);
+  border-color: var(--color-red);
+}
+
+.lookOutlined-3sRXeN.colorRed-1TFJan:hover {
+  color: var(--color-red-darker);
+  border-color: var(--color-red-darker);
+}
+
+/* Discord: Button: Filled - Green */
+.lookFilled-1Gx00P.colorGreen-29iAKY,
+.button-1EGGcP.buttonColor-3bP3fX.buttonActive-Uc1jHx {
+  background-color: var(--color-green);
+}
+
+.lookFilled-1Gx00P.colorGreen-29iAKY:hover,
+.button-1EGGcP.buttonColor-3bP3fX.buttonActive-Uc1jHx:hover {
+  background-color: var(--color-green-darker);
+}
+
+/* Discord: Button: Outlined - Green */
+.lookOutlined-3sRXeN.colorGreen-29iAKY {
+  color: var(--color-green);
+  border-color: var(--color-green);
+}
+
+.lookOutlined-3sRXeN.colorGreen-29iAKY:hover {
+  color: var(--color-green-darker);
+  border-color: var(--color-green-darker);
+}
+
+/* Discord: Tooltip */
+.tooltipBlack-vMYxvw {
+  background-color: #fff !important;
+  color: #000 !important;
+  /* font-weight: 100; */
+  box-shadow: var(--shadow);
+  border-radius: 0.3rem;
+}
+
+.tooltipBlack-vMYxvw .tooltipPointer-3L49xb {
+  border-top-color: #fff !important;
+}
+
+.tooltipContent-Nejnvh {
+  padding: 4px 8px;
+}
+
+/* Discord: Friends list: Status */
+.avatar-1BDn8e svg rect[fill="#ED4245"],
+.avatar-6qzftW .wrapper-1VLyxH svg rect[fill="#ED4245"] {
+  fill: var(--color-red);
+}
+
+.avatar-1BDn8e svg rect[fill="#3BA55D"],
+.avatar-6qzftW .wrapper-1VLyxH svg rect[fill="#3BA55D"] {
+  fill: var(--color-green);
+}
+
+.avatar-1BDn8e svg rect[fill="#FAA81A"],
+.avatar-6qzftW .wrapper-1VLyxH svg rect[fill="#FAA81A"] {
+  fill: var(--color-orange);
+}
+
+.avatar-1BDn8e svg rect[fill="#747f8d"],
+.avatar-6qzftW .wrapper-1VLyxH svg rect[fill="#747f8d"] {
+  fill: var(--color-gray);
+}
+
+/* Discord: Voice Chat: Ping - Green */
+.rtcConnectionQualityFine-3zZrSa .pingForeground-1BRBTc,
+.rtcConnectionStatusConnected-VRZDjy {
+  color: var(--color-green);
+}
+
+/* Discord: Settings: Sidebar */
+.side-2ur1Qk .header-2Kx1US:first-child {
+  padding-top: 20px;
+}
+
+.platform-win .standardSidebarView-E9Pc3j {
+  top: 30px;
+}
+
+.side-2ur1Qk .item-3XjbnG {
+  padding: 10px 20px;
+  border-radius: 0;
+}
+
+.side-2ur1Qk .header-2Kx1US {
+  padding: 10px 20px;
+}
+
+.side-2ur1Qk .separator-2wx7h6 {
+  margin: 10px 20px;
+}
+
+.socialLinks-2DELRE {
+  padding: 10px 20px 0px 20px;
+}
+
+.info-1sUqUG {
+  padding: 10px 20px 20px 20px;
+}
+
+/* Discord: Settings: Security */
+.userSettingsSecurity-3C5Hg5 .lockIcon-2Hj8Tq {
+  display: none;
+}
+
+.userSettingsSecurity-3C5Hg5 .isEnabled-2qCZy8 {
+  color: var(--color-green);
+}
+
+/* Discord: Settings: Privacy & Safety: Radial */
+.radioBar-3w9XY-[style*="hsl(139"] {
+  border-color: var(--color-green);
+}
+
+.radioBar-3w9XY-[style*="hsl(37"] {
+  border-color: var(--color-orange);
+}
+
+.radioBar-3w9XY-[style*="hsl(359"] {
+  border-color: var(--color-red);
+}
+
+/* Discord: Settings: Authorized Apps */
+.permissionCheckmark-1SeKr2 {
+  display: none;
+}
+
+/* Discord: Settings: Discord Nitro */
+.theme-dark .featureProfile-2h92hd .featureTitle-W5O6R1 {
+  color: var(--color-green);
+}
+
+.theme-dark .featureEmoji-cnSD0D .featureTitle-W5O6R1 {
+  color: var(--color-orange);
+}
+
+.featurePremiumGuild-2uV6-N .featureTitle-W5O6R1 {
+  color: var(--color-brand);
+}
+
+.theme-dark .featureStickers-Pc_FBx .featureTitle-W5O6R1 {
+  color: var(--color-orange);
+}
+
+.featureStickers-Pc_FBx .badgeNew-16P_X0 {
+  background-color: var(--color-brand);
+}
+
+/* Discord: Settings: Billing */
+.theme-dark .paymentPane-ut5qKZ {
+  background-color: var(--background-secondary);
+  color: var(--text-normal);
+}
+
+.theme-dark .payment-2bOh4k {
+  background-color: var(--background-secondary);
+  color: var(--text-normal);
+}
+
+.theme-dark .paginator-1eqD2g {
+  background: var(--background-secondary);
+}
+
+.theme-dark .codeRedemptionRedi-1wVR4b {
+  background-color: var(--background-secondary);
+  color: var(--text-normal);
+  border-color: transparent;
+}
+
+/* Discord: Settings: Keybinds */
+.warning-RBGtx2 .icon-2fP4ae {
+  color: var(--color-orange);
+}
+
+.warning-RBGtx2 {
+  background: var(--background-orange);
+  border: 1px solid var(--color-orange);
+}
+
+/* Discord: Other */
+.premiumTabItem-1QTfBr[aria-selected="true"] {
+  background-color: var(--color-brand) !important;
+}
+
+.wrapper-3Njo_c ul {
+  height: 100% !important;
+}
+
+.winButtonClose-1HsbF-:hover {
+  background-color: var(--color-red);
+}
+
+.gameVerifiedIcon-3t4jtr svg path[fill*="hsl(235"] {
+  fill: var(--color-brand);
+}
+
+.betaTag-ECPmWf {
+  background-color: var(--color-brand) !important;
+}
+
+.backgroundOptionSelected-33AYZn {
+  border-color: var(--color-brand);
+}
+
+.overlayToggleIconOff-3hGOmN .fill-MYciTJ {
+  fill: var(--color-red);
+}
+
+.overlayToggleIconOff-3hGOmN [fill*="#ED4245"] {
+  fill: var(--color-red) !important;
+}
+
+.wrapper-SdcMKg {
+  border-color: var(--color-brand);
+}
+
+.selected-18Wszc.option-1QI4c9 {
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
+}
+
+.option-1QI4c9:hover {
+  background-color: var(--color-brand-darker);
+  border-color: var(--color-brand-darker);
+}
+
+.cozy-VmLDNB .timestamp-p1Df1m.alt-1uNpEt {
+  margin: 0;
+  left: 0;
+  width: 50px;
+  text-align: left;
+  height: auto;
+  line-height: 1.5rem;
+}
+
+.cozy-VmLDNB .timestamp-p1Df1m.alt-1dvXnH {
+  text-align: center;
+}
+
+.message-2CShn3:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  z-index: -1;
+  display: none;
+}
+
+.message-2CShn3:hover:after {
+  display: block;
+}
+
+.message-2CShn3 {
+  padding-left: 50px;
+}
+
+.cozy-VmLDNB.wrapper-30-Nkg {
+  padding-left: 65px;
+  min-height: 13px;
+  padding-top: 1px;
+}
+
+.note-3HfJZ5 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.groupStart-3Mlgv1 {
+  min-height: 48px;
+  padding-bottom: 10px;
+}
+.group-spacing-16 .groupStart-3Mlgv1 {
+  margin-top: 2rem;
+}
+.avatar-2e8lTP {
+  width: 48px !important;
+  height: 48px !important;
+  left: 10px;
+}
+
+.fakeEdges-18N907:before,
+.fakeEdges-18N907:after {
+  border-radius: 0;
+}
+
+.bubble-3XikHF {
+  border-radius: 6px;
+  padding: 0 6px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid hsla(0, 0%, 100%, 0.2);
+  color: var(--text-normal);
+}
+
+.bubble-3XikHF:before {
+  display: none;
+}
+
+.cozy-VmLDNB .messageContent-2t3eCI {
+  margin: 2px;
+  padding-left: 60px;
+}
+.avatar-2e8lTP {
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.mediaBarWrapper-3D7r67 {
+  height: 4px;
+}
+
+.mediaBarGrabber-FvJKJg,
+.mediaBarProgress-1xaPtl,
+.mediaBarProgress-1xaPtl:after,
+.mediaBarProgress-1xaPtl:before {
+  background-color: var(--color-brand);
+}
+
+.mediaBarInteractionDragging-3XLL8k .mediaBarGrabber-FvJKJg,
+.mediaBarInteraction-tUE5dq:hover .mediaBarGrabber-FvJKJg {
+  background-color: #fff;
+}
+
+.mediaBarGrabber-FvJKJg {
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  margin-top: -8px;
+  margin-right: -8px;
+}
+
+/* .textarea-2r0oV8 {
+  font-size: px;
+  line-height: normal;
+  padding: 10px;
+} */
+
+.button-2fCJ0o {
+  border-radius: 4px;
+}
+
+.button-2fCJ0o:hover {
+  background-color: rgb(255, 255, 255, 0.15);
+}
+
+.jumpToPresentBar-G1R9s6 {
+  margin: 24px 64px !important;
+  border-radius: 4px !important;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.jumpToPresentBar-G1R9s6:hover,
+.jumpToPresentBar-G1R9s6:active {
+  background-color: hsla(0, 0%, 100%, 0.2);
+  box-shadow: 0 0 6px 0 hsla(0, 0%, 100%, 0.3);
+}
+
+.username-h_Y3Us {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 2.3px;
+  padding-bottom: 5px;
+  padding-right: 1px;
+  color: #6f00ff;
+}
+
+.inviteDestinationExpired-2_1Ava {
+  color: var(--color-red);
+}
+
+/* .textArea-12jD-V,
+.content-vSHmMD {
+  font-size: 9px;
+} */
+
+.markup-eYLPri {
+  font-size: 15px !important;
+  font-family: mononoki NFM;
+  color: #fafafaea;
+  /* color: #00ff00; */
+  line-height: 1.1rem;
+}
+
+.operations-3q3u6E > a {
+  color: var(--color-brand);
+  background-color: transparent;
+}
+
+/* .input-2z42oC {
+  font-size: 5px;
+} */
+
+.typeWindows-1za-n7 {
+  background-color: var(--background-primary);
+}
+
+.scrollableContainer-15eg7h {
+  border: 2px solid transparent;
+  border-radius: 0.4rem;
+}
+
+.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub,
+.wrapper-3kah-n:hover .childWrapper-1j_1ub {
+  background-color: var(--color-brand);
+}
+
+.unreadPill-3nEWYM {
+  background-color: var(--background-primary);
+  color: #ff8280;
+  padding: 0 0 0 10px;
+  border-radius: 0;
+  font-size: 11px;
+  /* font-weight: normal; */
+}
+
+.unreadPillCap-2-iI4h {
+  display: none;
+}
+
+.unreadPillCapStroke-1nE1Q8 {
+  color: var(--color-red);
+  fill: var(--color-red);
+}
+
+.isUnread-3Lojb- {
+  border-color: #ff8280;
+}
+
+.theme-dark .wrapper-1ZcZW-,
+.theme-dark .wrapper-1ZcZW-:hover {
+  border-radius: 0;
+  padding: 0;
+  color: #fff;
+  background: transparent;
+}
+
+.mention.iconMentionText-1_WCtN,
+.mention.iconMentionText-1_WCtN:hover {
+  padding-left: 1.2rem;
+}
+
+.lookFilled-1Gx00P.colorBrandNew-g5lmBU {
+  background-color: var(--color-brand);
+}
+
+.lookFilled-1Gx00P.colorBrandNew-g5lmBU:hover,
+.lookFilled-1Gx00P.colorBrandNew-g5lmBU:focus {
+  background-color: var(--color-brand-darker);
+}
+
+.userSettingsSecurity-2WQWqX .isEnabled-1uQQER {
+  color: var(--color-green);
+}
+
+.sidebarRegion-1VBisG {
+  border-right: 1px solid #303032;
+  flex: none;
+}
+
+.contentRegion-3HkfJJ {
+  flex: 1 1 0;
+}
+
+.contentColumn-1C7as6,
+.customColumn-2n-oKU {
+  max-width: 100%;
+}
+
+.containerDefault-3GGEv_,
+.containerDragAfter-3TEhpe,
+.containerDragBefore-3Dzc5x,
+.containerUserOver-1Tcb7l {
+  margin: 0.5rem 6px;
+}
+
+.newMessagesBar-1hF-9G {
+  position: absolute;
+  margin-right: -10px;
+
+  background-color: var(--color-brand);
+  color: #000;
+}
+
+.wrapper-1ucjTd {
+  height: 42px;
+}
+
+.content-3at_AU {
+  height: 42px;
+  margin-left: 0;
+  border-radius: 0;
+}
+
+.mentioned-Tre-dv:before {
+  background-color: cyan;
+}
+
+.attachButton-_ACFSu {
+  padding: 10px 10px;
+}
+
+.scroller-2wx7Hm {
+  border-right: 1px solid #303032;
+  border-left: 1px solid #303032;
+}
+
+.searchBar-3TnChZ {
+  background-color: var(--background-tertiary);
+  box-shadow: var(--shadow-bottom);
+}
+
+.scroller-WSmht3 {
+  border-right: 1px solid #303032;
+  border-left: 1px solid #303032;
+  margin-top: -8px;
+}
+
+.barBase-3xxDXu {
+  border-radius: 0;
+  left: 0;
+  right: 0;
+  min-height: 32px;
+}
+
+.body-3iLsc4,
+.footer-1fjuF6 {
+  background-color: var(--background-tertiary) !important;
+  box-shadow: var(--shadow-bottom);
+}
+
+.footer-1fjuF6 {
+  padding: 16px;
+}
+
+.rolePill-2IJ1vo {
+  background-color: rgb(53, 42, 42) transparent;
+  /* var(--profile-role-pill-background-color); */
+}
+
+.role-3paDXR,
+.role-2irmRk {
+  border-radius: 0.4rem;
+}
+
+.membersWrap-3NUR2t {
+  border-left: 1px solid #303032;
+}
+
+.root-SR8cQa {
+  background: var(--background-tertiary);
+}
+
+.theme-dark .container-2cd8Mz {
+  background-color: var(--background-primary) !important;
+}
+
+.container-3ayLPN {
+  background: var(--background-tertiary) !important;
+  box-shadow: var(--shadow-bottom) !important;
+}
+
+.option-2KkUJO:after {
+  background: transparent !important;
+}
+
+.option-2KkUJO.selected-rZcOL- {
+  background: var(--background-primary) !important;
+}
+
+.option-2KkUJO.selected-rZcOL-:after {
+  background: transparent !important;
+}
+
+.container-enaOkj,
+.body-3ND3kc {
+  background: var(--background-tertiary);
+}
+
+.container-ZMc96U.themed-Hp1KC_ {
+  background: var(--background-tertiary);
+  box-shadow: var(--shadow-bottom);
+  padding-right: 238px;
+  z-index: 0;
+}
+
+.container-1-ERn5 {
+  background: var(--background-tertiary) !important;
+}
+
+.header-3OsQeK {
+  background-color: var(--background-tertiary);
+  box-shadow: var(--shadow-bottom);
+}
+
+.panels-3wFtMD {
+  border: none;
+  border-top: 1px solid #303032;
+}
+
+.barFill-2Bh7CX {
+  background: var(--color-brand);
+}
+
+.colorDefault-2K3EoJ.focused-3afm-j {
+  background-color: var(--color-brand);
+}
+
+.colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {
+  background-color: var(--color-brand-darker);
+}
+
+.colorDanger-2qLCe1,
+.colorDanger-2qLCe1 .checkbox-3s5GYZ,
+.colorDanger-2qLCe1 .radioSelection-1HmrQS {
+  color: var(--color-red);
+}
+
+.colorDanger-2qLCe1.focused-3afm-j {
+  background-color: var(--color-red);
+}
+
+.colorDanger-2qLCe1:active:not(.hideInteraction-1iHO1O) {
+  background-color: var(--color-red-darker) !important;
+}
+
+.unread-1xRYoj {
+  opacity: 1;
+}
+
+.container-1qIct8 {
+  padding: 0;
+  height: auto;
+}
+
+.bar-2eAyLE {
+  height: auto;
+  border-radius: 0;
+  padding: 8px;
+}
+
+.roleIcon-6hK8aK {
+  top: 4px;
+  height: 16px;
+  width: 16px;
+}
+
+.unreadMentionsIndicatorTop-2bTgUU,
+.unreadMentionsIndicatorBottom-3RJMnQ {
+  padding: 0;
+  height: auto;
+  width: 50px;
+}
+
+.unreadMentionsIndicatorTop-2bTgUU {
+  margin-top: 50px;
+  z-index: 1;
+}
+
+/* .mention-3XBnnZ {
+	background-color: var(--color-red);
+	opacity: 1;
+} */
+
+.checkbox-1ix_J3[style*="235"] {
+  border-color: var(--color-brand) !important;
+  background-color: var(--color-brand) !important;
+}
+
+.numberBadge-2s8kKX[style*="240"] {
+  background-color: var(--color-red) !important;
+}
+
+.circleIconButton-jET_ig {
+  color: #8c45f4;
+}
+
+.circleIconButton-jET_ig.selected-ugP_am {
+  background-color: #8c45f4;
+}
+
+.title-1yyp9V[style*="color: hsl(359"] {
+  color: var(--color-green) !important;
+}
+
+.item-26Dhrx[style*="background-color: hsl(359"] {
+  border-color: var(--color-green) !important;
+  background-color: var(--color-green) !important;
+}
+
+.checkbox-1ix_J3[style*="border-color: hsl(359"] {
+  border-color: var(--color-green) !important;
+}
+
+.checkbox-1ix_J3 path[fill*="#3BA55C"] {
+  fill: var(--color-green) !important;
+}
+
+.title-1yyp9V[style*="color: hsl(37"] {
+  color: var(--color-orange) !important;
+}
+
+.item-26Dhrx[style*="background-color: hsl(37"] {
+  border-color: var(--color-orange) !important;
+  background-color: var(--color-orange) !important;
+}
+
+.checkbox-1ix_J3[style*="border-color: hsl(37"] {
+  border-color: var(--color-orange) !important;
+}
+
+.checkbox-1ix_J3 path[fill*="#FAA61A"] {
+  fill: var(--color-orange) !important;
+}
+
+.title-1yyp9V[style*="color: hsl(359"] {
+  color: var(--color-red) !important;
+}
+
+.item-26Dhrx[style*="background-color: hsl(359"] {
+  border-color: var(--color-red) !important;
+  background-color: var(--color-red) !important;
+}
+
+.checkbox-1ix_J3[style*="border-color: hsl(359"] {
+  border-color: var(--color-red) !important;
+}
+
+.checkbox-1ix_J3 path[fill*="#ED4245"] {
+  fill: var(--color-red) !important;
+}
+
+.item-3XjbnG[style*="color: hsl(235"] {
+  color: var(--color-brand) !important;
+}
+
+.item-3XjbnG[style*="background-color: hsl(114"] {
+  background-color: rgba(145, 71, 255, 0.1) !important;
+}
+
+.item-3XjbnG[style*="color: hsl(359"] {
+  color: var(--color-red) !important;
+}
+
+.item-3XjbnG[style*="background-color: hsl(240"] {
+  background-color: rgba(233, 25, 22, 0.1) !important;
+}
+
+.item-3XjbnG[style*="background-color: hsl(235"] {
+  color: #fff !important;
+  background-color: var(--color-brand) !important;
+}
+
+.cardPrimaryEditable-3KtE4g[style*="background-color: hsl(235"] {
+  background-color: var(--color-brand) !important;
+  border-color: var(--color-brand) !important;
+}
+
+.checkbox-1ix_J3[style*="border-color: hsl(235"] {
+  border-color: var(--color-brand) !important;
+}
+
+.checkbox-1ix_J3 path[fill*="#7289da"] {
+  fill: var(--color-brand) !important;
+}
+
+.children-3xh0VB:after {
+  background: none !important;
+}
+
+.tabBar-ra-EuL .item-3mHhwr[style*="color: hsl(139"] {
+  background-color: transparent !important;
+  color: var(--color-green) !important;
+  border-radius: 0;
+  border-bottom: 2px solid var(--color-green);
+  height: 100%;
+  margin: 0;
+}
+
+.tabBar-ra-EuL .item-3mHhwr[style*="background-color: hsl(139"] {
+  background-color: transparent !important;
+  color: var(--color-green-darker) !important;
+  border-radius: 0;
+  border-bottom: 2px solid var(--color-green-darker);
+  height: 100%;
+  margin: 0;
+}
+
+.input-2g-os5:hover,
+.scrollableContainer-15eg7h:hover {
+
+  border-color: #575758;
+  background-color: #3e3e40;
+}
+.scrollableContainer-15eg7h {
+  border-color: var(--color-brand-lighter);
+}
+
+.input-2g-os5:focus-within,
+.scrollableContainer-15eg7h:focus-within {
+  background-color: #000;
+  border-color: var(--color-brand-lighter);
+}
+
+.layer-86YKbF {
+  top: -30px !important;
+  padding-top: 30px !important;
+}
+
+.winButton-iRh8-Z {
+  top: 0;
+  width: 48px;
+  height: 30px;
+}
+
+.withFrame-haYltI {
+  height: 30px;
+  margin-top: 0;
+}
+
+.wordmarkWindows-1v0lYD svg {
+  display: none;
+}
+
+.hover-2ji_A7 {
+  background-color: #444;
+}
+
+.svg-2zuE5p,
+.wrapper-28eC3z,
+.svg-2zuE5p,
+.wrapper-28eC3z svg {
+  width: 36px;
+  height: 36px;
+}
+
+.defaultColor-2cKwKo {
+  color: var(--color-brand);
+}
+
+.bf-toolbar::before {
+  background-color: #18181b !important;
+  box-shadow: var(--shadow);
+}
+
+.peopleColumn-29fq28 {
+  background-color: var(--background-primary);
+}
+
+.nowPlayingColumn-2sl4cE {
+  border-left: 1px solid #303032;
+}
+
+.bg-1QIAus {
+  top: -30px;
+}
+
+.message-2CShn3, .cozyMessage-1DWF9U,
+.groupStart-3Mlgv1,
+.wrapper-30-Nkg,
+.cozy-VmLDNB,
+.zalgo-26OfGz, .hasReply-2Cr4KE {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  /* text-align:  ; */
+}
+
+.repliedMessage-3Z6XBG {
+  padding-inline-end: -10%;
+  font-size: small;
+}
+.repliedMessage-3Z6XBG:before {
+  padding-left: 30px;
+}
+
+.repliedTextPreview-1bvxun {
+  max-height: min-content;
+}
+
+.repliedMessage-3Z6XBG .repliedTextPreview-1bvxun .repliedTextContent-2hOYMB,
+.threadMessageAccessory-2W9mjC
+  .threadMessageAccessoryPreview-13YRmc
+  .threadMessageAccessoryContent-1HTTUq {
+  font-size: small !important;
+}
+
+.list-2bwCXU {
+  padding: 0;
+}
+
+.draggable-1KoBzC,
+.userSmall-2t9H7n {
+  height: 40px;
+}
+
+.content-3xS9Lh {
+  border-radius: 0;
+  margin: 0;
+  padding: 6px 0;
+}
+
+.searchBar-3TnChZ {
+  padding: 0;
+  box-shadow: var(--shadow-bottom);
+}
+
+.searchBar-3TnChZ .searchBarComponent-3N7dCG {
+  height: auto;
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: none;
+  color: var(--text-normal);
+  font-size: 14px;
+  line-height: normal;
+}
+
+.scroller-3X7KbA {
+  background-color: var(--background-primary);
+  padding: 0 !important;
+  contain: none;
+  margin-top: 50px;
+}
+
+.wrapper-2vIMkT {
+  background-color: var(--background-tertiary);
+}
+
+.container-ZMc96U,
+.header-3OsQeK,
+.searchBar-3TnChZ {
+  height: 50px;
+}
+
+.guildSeparator-33mFX6 {
+  height: 0;
+  border-radius: 0;
+}
+
+.wrapper-1Rf91z {
+  width: 50px;
+}
+
+.header-145e10.header-ykumBX {
+  padding: 0;
+}
+
+.header-145e10.header-ykumBX .button-1_oXub {
+  margin: 12px 16px;
+}
+
+.colorDefault-2K3EoJ .checkbox-3s5GYZ,
+.colorDefault-2K3EoJ .radioSelection-1HmrQS,
+.colorDefault-2K3EoJ.focused-3afm-j .check-1JyqgN {
+  color: var(--color-brand);
+}
+
+.block-3Xiiq7[style*="padding-top: 10"] {
+  padding-top: 0 !important;
+}
+
+.header-ykumBX,
+.messagesPopout-24nkyi {
+  box-shadow: var(--shadow-bottom);
+  padding: 8px 8px 0 8px !important;
+}
+
+.messagesPopoutWrap-1MQ1bW {
+  background-color: var(--background-tertiary);
+}
+
+.root-1gCeng {
+  background-color: var(--background-tertiary) !important;
+  box-shadow: var(--shadow) !important;
+}
+
+.block-3Xiiq7 .pro-3GwLMX[style*="color: hsl(359"] {
+  color: var(--color-green) !important;
+}
+
+.tipTitle-3FYEQp {
+  color: var(--color-brand);
+}
+
+.colorBrand-ROmMP1 {
+  color: var(--color-brand);
+}
+
+.iconBadge-3qSJIw.participating-1NvRVd {
+  background-color: var(--color-green);
+}
+
+.member-2gU6Ar {
+  margin-left: 5px;
+}
+
+.channel-1Shao0 {
+  position: relative;
+  margin-left: 10px;
+}
+
+.container-1oeRFJ {
+  padding: 0;
+  border-radius: 0;
+}
+
+.layout-1qmrhw {
+  border-radius: 0;
+  height: 40px;
+}
+
+.inviteRow-2L02ae {
+  margin-right: 0;
+}
+
+.webkit-QgSAqd .buttons-uaqb-5 {
+  margin-right: 4px;
+}
+.scroller-2hZ97C {
+  padding-left: 0;
+}
+
+.list-2x9Cl9 {
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+.content-1Tgc42 {
+  margin: 0;
+  border-radius: 0;
+  padding: 4px 0;
+}
+
+.draggable-S2aEx4 {
+  height: auto;
+}
+
+.userSmall-1Raexx {
+  height: auto;
+}
+
+.scroller-1ox3I2 {
+  padding-right: 0 !important;
+  opacity: 1000;
+}
+
+.content-1gYQeQ {
+  margin-left: 0;
+  border-radius: 0;
+}
+
+.topSectionPlaying-1J5E4n {
+  background-color: var(--color-brand);
+}
+
+.strikethrough-2Kl6HF {
+  color: var(--color-red);
+}
+
+.status-2DiCMd[style*="background-color: hsl("] {
+  background-color: var(--color-green);
+}
+
+.textBadge-1iylP6[style*="359"] {
+  background-color: var(--color-red) !important;
+}
+
+.wrapper-1gVUIN.minimum-fXpVNc {
+  z-index: 0;
+}
+
+.headerWrapper-1ULEPv {
+  padding-right: 230px;
+}
+
+.theme-dark .quickSelectPopout-2F0PXw {
+  background: var(--background-secondary);
+}
+
+.colorable-3rVGna.red-3T8maV {
+  background: var(--color-red);
+}
+
+.colorable-3rVGna.red-3T8maV:hover,
+.colorable-3rVGna.red-3T8maV:focus,
+.colorable-3rVGna.red-3T8maV:active {
+  background: var(--color-red-darker);
+}
+
+.status-1WEaea {
+  background-color: var(--color-red);
+}
+
+.slash-2yrR11 {
+  color: var(--color-red);
+}
+
+.notice-2HEN-u powercord-announcement {
+  width: calc(100% - 50px);
+  margin-top: 50px;
+  position: fixed;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+}
+
+.root-24JyNP {
+  margin-top: 50px;
+  height: calc(100% - 50px);
+}
+
+.root-22AK9z.idle-39sGPO .topControls-KKImPZ {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+}
+
+.headerWrapper-1ULEPv {
+  padding-right: 230px;
+  background-color: var(--background-tertiary);
+}
+
+.wrapper-1gVUIN {
+  z-index: 0;
+  background-color: var(--background-primary);
+}
+
+.live-1V2D-f[style*="background-color: hsl("] {
+  background-color: var(--color-red);
+}
+
+.liveShapeRound-2Tgi2d {
+  border-radius: 4px;
+}
+
+.bodyInnerWrapper-Z8WDxe {
+  padding-right: 15px;
+}
+
+.body-3iLsc4 {
+  padding: 16px 8px 16px 16px !important;
+}
+
+.scroller-3BxosC {
+  padding: 6px 8px !important;
+}
+
+.lookInverted-2D7oAl.colorBrand-3pXr91 {
+  color: var(--color-brand);
+}
+
+.content-1LAB8Z {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+
+.scroller-145h9c {
+  padding: 0 16px !important;
+}
+
+.container-iA3Qrz {
+  padding-right: 16px;
+}
+
+.colorStatusGreen-2HKYOW {
+  color: var(--color-green);
+}
+
+.botTagRegular-2HEhHi {
+  background: var(--color-brand);
+}
+
+.channelHeader-DFRX8q {
+  padding-right: 16px;
+  padding-left: 32px;
+  background-color: var(--background-primary);
+}
+
+.collapseButton-39-IRc {
+  left: 6px;
+}
+
+.messageContainer-3VTXBC {
+  padding: 16px 10px 16px 0;
+  border-radius: 0;
+}
+
+.selectorButtonSelected-t5V9On {
+  background-color: var(--color-brand);
+}
+
+.radioIconForeground-2BMavi {
+  color: var(--color-brand);
+}
+
+.scroller-2qwVWY {
+  margin-right: 0;
+}
+
+.friendWrapper-2x5j0A {
+  margin: 0 12px;
+}
+
+/* Discord: Add server / Explore */
+.circleIconButton-1VxDrg {
+  color: var(--color-green);
+}
+
+.circleIconButton-1VxDrg.selected-2tb4pB {
+  background-color: var(--color-green);
+}
+
+/* Discord: Checkbox */
+.container-2nx-BQ[style*="background-color: hsl(139"] {
+  background-color: var(--color-brand) !important;
+}
+
+.slider-32CRPX path[fill*="hsl(139"] {
+  fill: var(--color-brand) !important;
+}
+
+/* Discord: My Account: Status */
+.avatar-3mTjvZ svg rect[fill="#3BA55D"] {
+  fill: var(--color-green);
+}
+
+.avatar-3mTjvZ svg rect[fill="#FAA81A"] {
+  fill: var(--color-orange);
+}
+
+.avatar-3mTjvZ svg rect[fill="#ED4245"] {
+  fill: var(--color-red);
+}
+
+.reaction-3vwAF2.reactionMe-1PwQAc {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0.1rem 0.001rem;
+}
+
+/* .reactionInner-YJjOtT {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .125rem .375rem;
+} */
+
+/* Discord: Guild list */
+.listItem-3SmSlK {
+  margin-bottom: 10px;
+  padding: 7px 0;
+  width: 50px;
+}
+
+.wrapper-38slSD {
+  width: 50px;
+}
+
+.guilds-2JjMmN {
+  margin-left: -1px;
+}
+.guilds-2JjMmN {
+  width: 50px;
+}
+
+.expandedFolderBackground-1kSAf6 {
+  top: 5px;
+  left: 7px;
+  bottom: 4px;
+  width: 36px;
+}
+
+ul[id*="folder-items"] {
+  height: auto !important;
+}
+
+/* Discord: Speaking ring */
+/* Discord: Speaking ring: Servers */
+.avatarSpeaking-2pCGrZ {
+  box-shadow: inset 0 0 0 2px var(--color-green),
+    inset 0 0 0 3px var(--background-secondary);
+}
+
+/* Discord: Speaking ring: DMs */
+.border-Jn5IOt.speaking-B2MXPi {
+  box-shadow: inset 0 0 0 2px var(--color-green),
+    inset 0 0 0 3px var(--background-floating);
+}
+
+/* Discord: Speaking ring: Grid call */
+.border-3dQmSY.speaking-WDn8Wm {
+  box-shadow: inset 0 0 0 2px var(--color-green), inset 0 0 0 3px #000;
+}
+
+/* Discord: Speaking ring: User menu (bottom left) */
+.avatarSpeaking-33RRJU {
+  box-shadow: inset 0 0 0 2px var(--color-green),
+    inset 0 0 0 3px var(--background-secondary);
+}
+
+/* Discord: Speaking ring: Voice users */
+.speaking-3K28iH {
+  box-shadow: inset 0 0 0 2px var(--color-green),
+    inset 0 0 0 3px var(--background-secondary);
+}
+
+/* .wrapper-28eC3z {
+	bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 101;
+  width: 220px;
+} */
+
+/* Discord: Home icon */
+.tutorialContainer-1pL9QS {
+  height: 50px;
+  width: 50px;
+  margin-top: -50px;
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  background-color: var(--background-tertiary);
+  box-shadow: var(--shadow-bottom);
+}
+
+.tutorialContainer-1pL9QS .wrapper-z5ab_q {
+  display: none;
+}
+
+.tutorialContainer-1pL9QS .wrapper-28eC3z,
+.tutorialContainer-1pL9QS .wrapper-28eC3z svg {
+  width: 40px;
+  height: 40px;
+}
+
+.tutorialContainer-1pL9QS .wrapper-3kah-n {
+  width: 100%;
+  height: 100%;
+  background: url("data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20%20viewBox%3D%220%200%20100%20100%22%20width%3D%22100px%22%20height%3D%22100px%22%3E%3Cpath%20fill%3D%22%23c7ede6%22%20d%3D%22M87.215%2C56.71C88.35%2C54.555%2C89%2C52.105%2C89%2C49.5c0-6.621-4.159-12.257-10.001-14.478%09C78.999%2C35.015%2C79%2C35.008%2C79%2C35c0-11.598-9.402-21-21-21c-9.784%2C0-17.981%2C6.701-20.313%2C15.757C36.211%2C29.272%2C34.638%2C29%2C33%2C29%09c-7.692%2C0-14.023%2C5.793-14.89%2C13.252C12.906%2C43.353%2C9%2C47.969%2C9%2C53.5C9%2C59.851%2C14.149%2C65%2C20.5%2C65c0.177%2C0%2C0.352-0.012%2C0.526-0.022%09C21.022%2C65.153%2C21%2C65.324%2C21%2C65.5C21%2C76.822%2C30.178%2C86%2C41.5%2C86c6.437%2C0%2C12.175-2.972%2C15.934-7.614C59.612%2C80.611%2C62.64%2C82%2C66%2C82%09c4.65%2C0%2C8.674-2.65%2C10.666-6.518C77.718%2C75.817%2C78.837%2C76%2C80%2C76c6.075%2C0%2C11-4.925%2C11-11C91%2C61.689%2C89.53%2C58.727%2C87.215%2C56.71z%22%2F%3E%3Cpath%20fill%3D%22%23fdfcef%22%20d%3D%22M70.5%2C39.5V40h-3v-0.5c0%2C0-4.242%2C0-5.5%2C0c-2.485%2C0-4.5-2.015-4.5-4.5%09c0-2.333%2C1.782-4.229%2C4.055-4.455C61.533%2C30.364%2C61.5%2C30.187%2C61.5%2C30c0-2.485%2C2.015-4.5%2C4.5-4.5c1.438%2C0%2C2.703%2C0.686%2C3.527%2C1.736%09C69.667%2C24.6%2C71.829%2C22.5%2C74.5%2C22.5c2.761%2C0%2C5%2C2.239%2C5%2C5c0%2C0.446-0.077%2C0.87-0.187%2C1.282c0.642-0.777%2C1.6-1.282%2C2.687-1.282%09c1.781%2C0%2C3.234%2C1.335%2C3.455%2C3.055C85.636%2C30.533%2C85.813%2C30.5%2C86%2C30.5c2.485%2C0%2C4.5%2C2.015%2C4.5%2C4.5s-2.015%2C4.5-4.5%2C4.5s-9.5%2C0-9.5%2C0%09H70.5z%22%2F%3E%3Cpath%20fill%3D%22%23472b29%22%20d%3D%22M74.5%2C22c3.033%2C0%2C5.5%2C2.467%2C5.5%2C5.5c0%2C0.016%2C0%2C0.031%2C0%2C0.047C80.602%2C27.192%2C81.29%2C27%2C82%2C27%09c1.831%2C0%2C3.411%2C1.261%2C3.858%2C3.005C85.905%2C30.002%2C85.952%2C30%2C86%2C30c2.757%2C0%2C5%2C2.243%2C5%2C5s-2.243%2C5-5%2C5H70.5c-0.276%2C0-0.5-0.224-0.5-0.5%09s0.224-0.5%2C0.5-0.5H86c2.206%2C0%2C4-1.794%2C4-4s-1.794-4-4-4c-0.117%2C0-0.23%2C0.017-0.343%2C0.032l-0.141%2C0.019%09c-0.021%2C0.003-0.041%2C0.004-0.062%2C0.004c-0.246%2C0-0.462-0.185-0.495-0.437C84.768%2C29.125%2C83.496%2C28%2C82%2C28%09c-0.885%2C0-1.723%2C0.401-2.301%2C1.1c-0.098%2C0.118-0.241%2C0.182-0.386%2C0.182c-0.078%2C0-0.156-0.018-0.228-0.056%09c-0.209-0.107-0.314-0.346-0.254-0.573C78.946%2C28.218%2C79%2C27.852%2C79%2C27.5c0-2.481-2.019-4.5-4.5-4.5%09c-2.381%2C0-4.347%2C1.872-4.474%2C4.263c-0.011%2C0.208-0.15%2C0.387-0.349%2C0.45c-0.05%2C0.016-0.101%2C0.024-0.152%2C0.024%09c-0.15%2C0-0.296-0.069-0.392-0.192C68.362%2C26.563%2C67.221%2C26%2C66%2C26c-2.206%2C0-4%2C1.794-4%2C4c0%2C0.117%2C0.017%2C0.23%2C0.032%2C0.343l0.019%2C0.141%09c0.016%2C0.134-0.022%2C0.268-0.106%2C0.373s-0.207%2C0.172-0.34%2C0.185C59.549%2C31.247%2C58%2C32.949%2C58%2C35c0%2C2.206%2C1.794%2C4%2C4%2C4h5.5%09c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5S67.776%2C40%2C67.5%2C40H62c-2.757%2C0-5-2.243-5-5c0-2.397%2C1.689-4.413%2C4.003-4.877%09C61.001%2C30.082%2C61%2C30.041%2C61%2C30c0-2.757%2C2.243-5%2C5-5c1.176%2C0%2C2.293%2C0.416%2C3.183%2C1.164C69.781%2C23.76%2C71.945%2C22%2C74.5%2C22L74.5%2C22z%22%2F%3E%3Cpath%20fill%3D%22%23472b29%22%20d%3D%22M76%2C29c1.403%2C0%2C2.609%2C0.999%2C2.913%2C2.341C79.28%2C31.119%2C79.699%2C31%2C80.125%2C31%09c1.202%2C0%2C2.198%2C0.897%2C2.353%2C2.068C82.681%2C33.022%2C82.874%2C33%2C83.063%2C33c1.529%2C0%2C2.811%2C1.2%2C2.918%2C2.732%09C85.99%2C35.87%2C85.886%2C35.99%2C85.749%2C36c-0.006%2C0-0.012%2C0-0.018%2C0c-0.13%2C0-0.24-0.101-0.249-0.232%09c-0.089-1.271-1.151-2.268-2.419-2.268c-0.229%2C0-0.47%2C0.042-0.738%2C0.127c-0.022%2C0.007-0.045%2C0.01-0.067%2C0.01%09c-0.055%2C0-0.11-0.02-0.156-0.054C82.038%2C33.537%2C82%2C33.455%2C82%2C33.375c0-1.034-0.841-1.875-1.875-1.875%09c-0.447%2C0-0.885%2C0.168-1.231%2C0.473c-0.047%2C0.041-0.106%2C0.063-0.165%2C0.063c-0.032%2C0-0.063-0.006-0.093-0.019%09c-0.088-0.035-0.148-0.117-0.155-0.212C78.377%2C30.512%2C77.288%2C29.5%2C76%2C29.5c-0.208%2C0-0.425%2C0.034-0.682%2C0.107%09c-0.023%2C0.007-0.047%2C0.01-0.07%2C0.01c-0.109%2C0-0.207-0.073-0.239-0.182c-0.038-0.133%2C0.039-0.271%2C0.172-0.309%09C75.483%2C29.04%2C75.744%2C29%2C76%2C29L76%2C29z%22%2F%3E%3Cpath%20fill%3D%22%23472b29%22%20d%3D%22M62.117%2C30.5c1.326%2C0%2C2.508%2C0.897%2C2.874%2C2.182c0.038%2C0.133-0.039%2C0.271-0.172%2C0.309%09C64.795%2C32.997%2C64.772%2C33%2C64.75%2C33c-0.109%2C0-0.209-0.072-0.24-0.182C64.205%2C31.748%2C63.221%2C31%2C62.117%2C31%09c-0.117%2C0-0.23%2C0.014-0.342%2C0.029c-0.012%2C0.002-0.023%2C0.003-0.035%2C0.003c-0.121%2C0-0.229-0.092-0.246-0.217%09c-0.019-0.137%2C0.077-0.263%2C0.214-0.281C61.842%2C30.516%2C61.978%2C30.5%2C62.117%2C30.5L62.117%2C30.5z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M14.5%2C54h-10C4.224%2C54%2C4%2C53.776%2C4%2C53.5S4.224%2C53%2C4.5%2C53h10c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S14.777%2C54%2C14.5%2C54z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M17.5%2C54h-1c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h1c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S17.777%2C54%2C17.5%2C54z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M22.491%2C56H13.5c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h8.991c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S22.767%2C56%2C22.491%2C56z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M11.5%2C56h-1c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h1c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S11.777%2C56%2C11.5%2C56z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M8.5%2C56h-2C6.224%2C56%2C6%2C55.776%2C6%2C55.5S6.224%2C55%2C6.5%2C55h2C8.776%2C55%2C9%2C55.224%2C9%2C55.5S8.777%2C56%2C8.5%2C56z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M14.5%2C58h-2c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h2c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S14.776%2C58%2C14.5%2C58z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M17.5%2C49c-0.177%2C0-0.823%2C0-1%2C0c-0.276%2C0-0.5%2C0.224-0.5%2C0.5s0.224%2C0.5%2C0.5%2C0.5c0.177%2C0%2C0.823%2C0%2C1%2C0%20c0.276%2C0%2C0.5-0.224%2C0.5-0.5S17.776%2C49%2C17.5%2C49z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M17.5%2C51c-0.177%2C0-4.823%2C0-5%2C0c-0.276%2C0-0.5%2C0.224-0.5%2C0.5s0.224%2C0.5%2C0.5%2C0.5c0.177%2C0%2C4.823%2C0%2C5%2C0%20c0.276%2C0%2C0.5-0.224%2C0.5-0.5S17.776%2C51%2C17.5%2C51z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M22.5%2C53c-0.177%2C0-2.823%2C0-3%2C0c-0.276%2C0-0.5%2C0.224-0.5%2C0.5s0.224%2C0.5%2C0.5%2C0.5c0.177%2C0%2C2.823%2C0%2C3%2C0%20c0.276%2C0%2C0.5-0.224%2C0.5-0.5S22.776%2C53%2C22.5%2C53z%22%2F%3E%3Cg%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M88.5%2C46h-10c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h10c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S88.776%2C46%2C88.5%2C46z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M92.5%2C46h-2c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h2c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S92.776%2C46%2C92.5%2C46z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M97.5%2C48h-10c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h10c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S97.777%2C48%2C97.5%2C48z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M85.5%2C48h-1c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h1c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S85.776%2C48%2C85.5%2C48z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M82.47%2C48H80.5c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h1.97c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S82.746%2C48%2C82.47%2C48z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M91.5%2C44h-5c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h5c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S91.777%2C44%2C91.5%2C44z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M88.5%2C50h-2c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h2c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S88.776%2C50%2C88.5%2C50z%22%2F%3E%3C%2Fg%3E%3Cg%3E%3Ccircle%20cx%3D%2251%22%20cy%3D%2251.875%22%20r%3D%2224.25%22%20fill%3D%22%2333253e%22%2F%3E%3Cpath%20fill%3D%22%237e7a9b%22%20d%3D%22M51%2C76.825c-13.757%2C0-24.95-11.193-24.95-24.95S37.243%2C27.077%2C51%2C27.077s24.95%2C11.041%2C24.95%2C24.798%20S64.757%2C76.825%2C51%2C76.825z%20M51%2C28.325c-12.985%2C0-23.55%2C10.564-23.55%2C23.55S38.015%2C75.425%2C51%2C75.425s23.55-10.564%2C23.55-23.55%20S63.985%2C28.325%2C51%2C28.325z%22%2F%3E%3Cpath%20fill%3D%22%23224064%22%20d%3D%22M54.519%2C59.396c7.159-2.896%2C12.567-8.424%2C16.014-13.739C67.899%2C37.376%2C60.153%2C31.375%2C51%2C31.375%20c-11.322%2C0-20.5%2C9.178-20.5%2C20.5c0%2C2.692%2C0.533%2C5.256%2C1.476%2C7.612C40.099%2C62.188%2C47.666%2C62.168%2C54.519%2C59.396z%20M34.113%2C56.403%20c-0.387-1.447-0.613-2.959-0.613-4.528c0-9.665%2C7.835-17.5%2C17.5-17.5c7.23%2C0%2C13.433%2C4.385%2C16.102%2C10.64%20c-3.369%2C4.167-7.932%2C8.094-13.583%2C10.38C47.556%2C57.809%2C41.052%2C58.136%2C34.113%2C56.403z%22%2F%3E%3Cpath%20fill%3D%22%23476682%22%20d%3D%22M43.608%2C61.742c-3.754%2C0-7.666-0.673-11.711-2.018c-0.07-0.023-0.125-0.076-0.153-0.144%20c-0.992-2.476-1.495-5.068-1.495-7.705c0-11.442%2C9.309-20.75%2C20.75-20.75c9.076%2C0%2C17.021%2C5.809%2C19.772%2C14.455%20c0.022%2C0.071%2C0.012%2C0.149-0.028%2C0.212c-2.401%2C3.701-7.688%2C10.42-16.131%2C13.835l0%2C0C51.129%2C61.037%2C47.451%2C61.742%2C43.608%2C61.742z%20M32.166%2C59.286c8.026%2C2.647%2C15.516%2C2.606%2C22.259-0.122l0%2C0c8.241-3.334%2C13.436-9.873%2C15.834-13.544%20C67.542%2C37.244%2C59.817%2C31.625%2C51%2C31.625c-11.166%2C0-20.25%2C9.084-20.25%2C20.25C30.75%2C54.409%2C31.226%2C56.902%2C32.166%2C59.286z%20M42.601%2C57.741c-2.769%2C0-5.622-0.365-8.549-1.096c-0.088-0.022-0.157-0.09-0.181-0.178c-0.412-1.54-0.621-3.086-0.621-4.592%20c0-9.787%2C7.962-17.75%2C17.75-17.75c7.124%2C0%2C13.535%2C4.236%2C16.332%2C10.792c0.036%2C0.085%2C0.022%2C0.183-0.036%2C0.255%20c-2.696%2C3.335-7.259%2C7.856-13.683%2C10.455C50.132%2C57.036%2C46.449%2C57.741%2C42.601%2C57.741z%20M34.317%2C56.196%20c6.836%2C1.68%2C13.264%2C1.333%2C19.108-1.032c6.25-2.529%2C10.716-6.911%2C13.387-10.189c-2.749-6.292-8.939-10.35-15.812-10.35%20c-9.512%2C0-17.25%2C7.738-17.25%2C17.25C33.75%2C53.292%2C33.94%2C54.745%2C34.317%2C56.196z%22%2F%3E%3Cpath%20fill%3D%22%23224064%22%20d%3D%22M71.465%2C51.179c-3.783%2C4.769-8.968%2C9.304-15.446%2C11.924c-3.964%2C1.604-8.118%2C2.405-12.434%2C2.405%20c-2.844%2C0-5.759-0.348-8.739-1.043c3.752%2C4.807%2C9.585%2C7.909%2C16.154%2C7.909c11.322%2C0%2C20.5-9.178%2C20.5-20.5%20C71.5%2C51.64%2C71.473%2C51.412%2C71.465%2C51.179z%22%2F%3E%3Cpath%20fill%3D%22%23476682%22%20d%3D%22M51%2C72.625c-6.421%2C0-12.381-2.918-16.352-8.005c-0.065-0.084-0.07-0.199-0.013-0.288%20c0.057-0.089%2C0.167-0.133%2C0.267-0.109c7.426%2C1.732%2C14.532%2C1.276%2C21.023-1.351c7.235-2.927%2C12.337-8.058%2C15.344-11.848%20c0.065-0.082%2C0.176-0.115%2C0.274-0.082c0.1%2C0.033%2C0.168%2C0.124%2C0.172%2C0.229c0.003%2C0.094%2C0.009%2C0.187%2C0.016%2C0.281%20c0.01%2C0.14%2C0.019%2C0.281%2C0.019%2C0.424C71.75%2C63.317%2C62.441%2C72.625%2C51%2C72.625z%20M35.491%2C64.867c3.868%2C4.622%2C9.48%2C7.258%2C15.509%2C7.258%20c11.166%2C0%2C20.25-9.084%2C20.25-20.25c0-0.01%2C0-0.02%2C0-0.03c-3.088%2C3.776-8.121%2C8.653-15.137%2C11.491%20C49.729%2C65.918%2C42.771%2C66.436%2C35.491%2C64.867z%22%2F%3E%3Cpath%20fill%3D%22%23e4b2e5%22%20d%3D%22M36.5%2C52c-1.93%2C0-3.5-1.57-3.5-3.5v-3c0-1.93%2C1.57-3.5%2C3.5-3.5c1.26%2C0%2C2.429%2C0.682%2C3.049%2C1.78%20c0.136%2C0.24%2C0.051%2C0.545-0.189%2C0.681c-0.242%2C0.136-0.545%2C0.051-0.682-0.189C38.235%2C43.487%2C37.4%2C43%2C36.5%2C43%20c-1.378%2C0-2.5%2C1.122-2.5%2C2.5v3c0%2C1.378%2C1.122%2C2.5%2C2.5%2C2.5s2.5-1.122%2C2.5-2.5v-0.979c0-0.276%2C0.224-0.5%2C0.5-0.5s0.5%2C0.224%2C0.5%2C0.5%20V48.5C40%2C50.43%2C38.43%2C52%2C36.5%2C52z%22%2F%3E%3Cpath%20fill%3D%22%23f7deff%22%20d%3D%22M34.203%2C44.07c-0.113%2C0-0.228-0.039-0.322-0.118c-0.211-0.178-0.238-0.493-0.06-0.705%20c0.48-0.57%2C1.142-0.98%2C1.863-1.152c0.271-0.064%2C0.539%2C0.101%2C0.603%2C0.37c0.064%2C0.269-0.102%2C0.538-0.37%2C0.603%20c-0.514%2C0.123-0.987%2C0.415-1.331%2C0.824C34.487%2C44.009%2C34.345%2C44.07%2C34.203%2C44.07z%22%2F%3E%3Cpath%20fill%3D%22%23e4b2e5%22%20d%3D%22M47.276%2C52c-0.2%2C0-0.389-0.121-0.466-0.319l-3.034-7.802l-3.034%2C7.802%20c-0.1%2C0.258-0.392%2C0.384-0.647%2C0.285c-0.257-0.1-0.385-0.39-0.285-0.647l3.5-9c0.149-0.384%2C0.782-0.384%2C0.932%2C0l3.5%2C9%20c0.1%2C0.257-0.027%2C0.547-0.285%2C0.647C47.398%2C51.989%2C47.337%2C52%2C47.276%2C52z%22%2F%3E%3Cpath%20fill%3D%22%23e4b2e5%22%20d%3D%22M51.5%2C52c-2.481%2C0-4.5-2.243-4.5-5s2.019-5%2C4.5-5c0.793%2C0%2C1.558%2C0.237%2C2.274%2C0.706%20c0.231%2C0.151%2C0.296%2C0.461%2C0.145%2C0.692c-0.151%2C0.231-0.46%2C0.296-0.692%2C0.145C52.676%2C43.182%2C52.095%2C43%2C51.5%2C43%20c-1.93%2C0-3.5%2C1.794-3.5%2C4s1.57%2C4%2C3.5%2C4c0.595%2C0%2C1.176-0.182%2C1.726-0.542c0.231-0.151%2C0.541-0.086%2C0.692%2C0.145%20s0.086%2C0.541-0.145%2C0.692C53.058%2C51.763%2C52.293%2C52%2C51.5%2C52z%22%2F%3E%3Cpath%20fill%3D%22%23e4b2e5%22%20d%3D%22M55.5%2C52c-0.276%2C0-0.5-0.224-0.5-0.5v-9c0-0.276%2C0.224-0.5%2C0.5-0.5s0.5%2C0.224%2C0.5%2C0.5v9%20C56%2C51.776%2C55.776%2C52%2C55.5%2C52z%22%2F%3E%3Cpath%20fill%3D%22%23e4b2e5%22%20d%3D%22M61.5%2C52c-0.276%2C0-0.5-0.224-0.5-0.5v-9c0-0.276%2C0.224-0.5%2C0.5-0.5s0.5%2C0.224%2C0.5%2C0.5v9%20C62%2C51.776%2C61.776%2C52%2C61.5%2C52z%22%2F%3E%3Cpath%20fill%3D%22%23e4b2e5%22%20d%3D%22M61%2C48h-5.5c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5H61c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S61.276%2C48%2C61%2C48z%22%2F%3E%3Cpath%20fill%3D%22%23e4b2e5%22%20d%3D%22M45.532%2C49h-3.606c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h3.606c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S45.808%2C49%2C45.532%2C49z%22%2F%3E%3Cpath%20fill%3D%22%23e4b2e5%22%20d%3D%22M70.064%2C52c-0.2%2C0-0.389-0.121-0.466-0.319l-3.034-7.802l-3.034%2C7.802%20c-0.1%2C0.258-0.392%2C0.384-0.647%2C0.285c-0.257-0.1-0.385-0.39-0.285-0.647l3.5-9c0.149-0.384%2C0.782-0.384%2C0.932%2C0l3.5%2C9%20c0.1%2C0.257-0.027%2C0.547-0.285%2C0.647C70.186%2C51.989%2C70.125%2C52%2C70.064%2C52z%22%2F%3E%3Cpath%20fill%3D%22%23e4b2e5%22%20d%3D%22M68.627%2C49h-3.915c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h3.915c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S68.904%2C49%2C68.627%2C49z%22%2F%3E%3Cpath%20fill%3D%22%23e4b2e5%22%20d%3D%22M39.5%2C48h-3c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h3c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S39.776%2C48%2C39.5%2C48z%22%2F%3E%3Cpath%20fill%3D%22%239ce7ea%22%20d%3D%22M54.5%2C64c-1.93%2C0-3.5-1.57-3.5-3.5v-6c0-0.276%2C0.224-0.5%2C0.5-0.5s0.5%2C0.224%2C0.5%2C0.5v6%20c0%2C1.378%2C1.122%2C2.5%2C2.5%2C2.5s2.5-1.122%2C2.5-2.5v-6c0-0.276%2C0.224-0.5%2C0.5-0.5s0.5%2C0.224%2C0.5%2C0.5v6C58%2C62.43%2C56.43%2C64%2C54.5%2C64z%22%2F%3E%3Cpath%20fill%3D%22%239ce7ea%22%20d%3D%22M41.5%2C64c-2.481%2C0-4.5-2.243-4.5-5s2.019-5%2C4.5-5c0.793%2C0%2C1.558%2C0.237%2C2.274%2C0.706%20c0.231%2C0.151%2C0.296%2C0.461%2C0.145%2C0.692c-0.151%2C0.231-0.461%2C0.296-0.692%2C0.145C42.676%2C55.182%2C42.095%2C55%2C41.5%2C55%20c-1.93%2C0-3.5%2C1.794-3.5%2C4s1.57%2C4%2C3.5%2C4c0.595%2C0%2C1.176-0.182%2C1.726-0.542c0.231-0.151%2C0.541-0.086%2C0.692%2C0.145%20s0.086%2C0.541-0.145%2C0.692C43.058%2C63.763%2C42.293%2C64%2C41.5%2C64z%22%2F%3E%3Cpath%20fill%3D%22%239ce7ea%22%20d%3D%22M45.5%2C64c-0.276%2C0-0.5-0.224-0.5-0.5v-9c0-0.276%2C0.224-0.5%2C0.5-0.5s0.5%2C0.224%2C0.5%2C0.5v9%20C46%2C63.776%2C45.776%2C64%2C45.5%2C64z%22%2F%3E%3Cpath%20fill%3D%22%239ce7ea%22%20d%3D%22M51%2C64h-5.5c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5H51c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S51.276%2C64%2C51%2C64z%22%2F%3E%3Cpath%20fill%3D%22%239ce7ea%22%20d%3D%22M62.5%2C59h-3c-0.276%2C0-0.5-0.224-0.5-0.5v-4c0-0.276%2C0.224-0.5%2C0.5-0.5h3c1.378%2C0%2C2.5%2C1.122%2C2.5%2C2.5%20S63.878%2C59%2C62.5%2C59z%20M60%2C58h2.5c0.827%2C0%2C1.5-0.673%2C1.5-1.5S63.327%2C55%2C62.5%2C55H60V58z%22%2F%3E%3Cpath%20fill%3D%22%239ce7ea%22%20d%3D%22M63%2C64h-3.5c-0.276%2C0-0.5-0.224-0.5-0.5v-5c0-0.276%2C0.224-0.5%2C0.5-0.5H63c1.654%2C0%2C3%2C1.346%2C3%2C3%20S64.654%2C64%2C63%2C64z%20M60%2C63h3c1.103%2C0%2C2-0.897%2C2-2s-0.897-2-2-2h-3V63z%22%2F%3E%3Cpath%20fill%3D%22%23548db8%22%20d%3D%22M39.309%2C35.293c-0.075%2C0-0.15-0.034-0.199-0.099c-0.083-0.11-0.062-0.267%2C0.048-0.35%20c0.125-0.095%2C3.118-2.341%2C6.457-2.951c0.132-0.025%2C0.266%2C0.065%2C0.291%2C0.201c0.024%2C0.136-0.065%2C0.266-0.201%2C0.291%20c-3.224%2C0.589-6.215%2C2.835-6.245%2C2.858C39.415%2C35.276%2C39.361%2C35.293%2C39.309%2C35.293z%22%2F%3E%3Cpath%20fill%3D%22%23babbcd%22%20d%3D%22M37.816%2C31.335c-0.077%2C0-0.154-0.036-0.203-0.104c-0.081-0.112-0.056-0.268%2C0.056-0.349%20c0.097-0.07%2C2.39-1.711%2C4.944-2.361c0.135-0.035%2C0.27%2C0.047%2C0.304%2C0.181c0.034%2C0.134-0.047%2C0.27-0.181%2C0.304%20c-2.459%2C0.627-4.751%2C2.266-4.774%2C2.282C37.918%2C31.32%2C37.867%2C31.335%2C37.816%2C31.335z%22%2F%3E%3Cpath%20fill%3D%22%23f3fdfc%22%20d%3D%22M38.032%2C57.277c-0.063%2C0-0.126-0.012-0.188-0.037c-0.256-0.104-0.379-0.396-0.275-0.651%20c0.345-0.848%2C1.27-1.694%2C1.374-1.787c0.206-0.185%2C0.521-0.167%2C0.706%2C0.038c0.185%2C0.205%2C0.168%2C0.521-0.037%2C0.706%20c-0.236%2C0.213-0.897%2C0.882-1.116%2C1.42C38.416%2C57.159%2C38.229%2C57.277%2C38.032%2C57.277z%22%2F%3E%3Cpath%20fill%3D%22%23f7deff%22%20d%3D%22M48.169%2C45.05c-0.071%2C0-0.144-0.015-0.213-0.048c-0.25-0.118-0.356-0.416-0.239-0.665%20c0.39-0.828%2C1.36-1.622%2C1.469-1.71c0.215-0.173%2C0.529-0.139%2C0.702%2C0.076s0.139%2C0.53-0.076%2C0.703%20c-0.248%2C0.199-0.944%2C0.832-1.191%2C1.357C48.537%2C44.944%2C48.357%2C45.05%2C48.169%2C45.05z%22%2F%3E%3Cpath%20fill%3D%22%23f3fdfc%22%20d%3D%22M45.476%2C62.112c-0.276%2C0-0.5-0.224-0.5-0.5v-1.436c0-0.276%2C0.224-0.5%2C0.5-0.5s0.5%2C0.224%2C0.5%2C0.5%20v1.436C45.976%2C61.888%2C45.752%2C62.112%2C45.476%2C62.112z%22%2F%3E%3Cpath%20fill%3D%22%23f7deff%22%20d%3D%22M45.013%2C49.021h-1.436c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h1.436%20c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5S45.29%2C49.021%2C45.013%2C49.021z%22%2F%3E%3Cpath%20fill%3D%22%23f7deff%22%20d%3D%22M60.907%2C48.021h-1.436c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h1.436%20c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5S61.183%2C48.021%2C60.907%2C48.021z%22%2F%3E%3Cpath%20fill%3D%22%23f7deff%22%20d%3D%22M68.245%2C47.449c-0.202%2C0-0.393-0.123-0.468-0.324l-0.506-1.344%20c-0.098-0.258%2C0.033-0.547%2C0.292-0.644s0.547%2C0.033%2C0.644%2C0.292l0.506%2C1.344c0.098%2C0.258-0.033%2C0.547-0.292%2C0.644%20C68.363%2C47.438%2C68.304%2C47.449%2C68.245%2C47.449z%22%2F%3E%3Cpath%20fill%3D%22%23f3fdfc%22%20d%3D%22M57.492%2C57.037c-0.276%2C0-0.5-0.224-0.5-0.5v-1.436c0-0.276%2C0.224-0.5%2C0.5-0.5s0.5%2C0.224%2C0.5%2C0.5%20v1.436C57.992%2C56.813%2C57.769%2C57.037%2C57.492%2C57.037z%22%2F%3E%3Cpath%20fill%3D%22%23f3fdfc%22%20d%3D%22M63.739%2C63.787c-0.242%2C0-0.455-0.176-0.494-0.423c-0.042-0.271%2C0.143-0.526%2C0.413-0.57%20c0.04-0.007%2C0.813-0.155%2C1.15-0.987c0.104-0.256%2C0.394-0.379%2C0.651-0.276c0.256%2C0.104%2C0.379%2C0.395%2C0.276%2C0.651%20c-0.555%2C1.372-1.863%2C1.59-1.919%2C1.599C63.79%2C63.785%2C63.764%2C63.787%2C63.739%2C63.787z%22%2F%3E%3Cpath%20fill%3D%22%23928eb3%22%20d%3D%22M57.148%2C71.676c-0.119%2C0-0.225-0.086-0.246-0.207c-0.024-0.136%2C0.067-0.265%2C0.203-0.289%20c0.033-0.006%2C3.288-0.597%2C6.132-3.132c0.103-0.092%2C0.262-0.083%2C0.353%2C0.02c0.092%2C0.103%2C0.083%2C0.261-0.02%2C0.353%20c-2.956%2C2.634-6.241%2C3.227-6.379%2C3.251C57.177%2C71.674%2C57.163%2C71.676%2C57.148%2C71.676z%22%2F%3E%3Cpath%20fill%3D%22%23a2d2d4%22%20d%3D%22M59%2C74.612c-0.113%2C0-0.215-0.076-0.243-0.19c-0.033-0.134%2C0.049-0.269%2C0.183-0.302%20c0.031-0.008%2C3.159-0.795%2C5.781-2.95c0.106-0.088%2C0.264-0.072%2C0.352%2C0.034c0.088%2C0.107%2C0.073%2C0.264-0.034%2C0.352%20c-2.712%2C2.231-5.847%2C3.017-5.979%2C3.05C59.04%2C74.609%2C59.02%2C74.612%2C59%2C74.612z%22%2F%3E%3C%2Fg%3E%3Cg%3E%3Cpath%20fill%3D%22%23fdfcef%22%20d%3D%22M40.5%2C82.5c0%2C0%2C1.567%2C0%2C3.5%2C0s3.5-1.567%2C3.5-3.5c0-1.781-1.335-3.234-3.055-3.455%20C44.473%2C75.366%2C44.5%2C75.187%2C44.5%2C75c0-1.933-1.567-3.5-3.5-3.5c-1.032%2C0-1.95%2C0.455-2.59%2C1.165%20c-0.384-1.808-1.987-3.165-3.91-3.165c-2.209%2C0-4%2C1.791-4%2C4c0%2C0.191%2C0.03%2C0.374%2C0.056%2C0.558C30.128%2C73.714%2C29.592%2C73.5%2C29%2C73.5%20c-1.228%2C0-2.245%2C0.887-2.455%2C2.055C26.366%2C75.527%2C26.187%2C75.5%2C26%2C75.5c-1.933%2C0-3.5%2C1.567-3.5%2C3.5s1.567%2C3.5%2C3.5%2C3.5s7.5%2C0%2C7.5%2C0%20V83h7V82.5z%22%2F%3E%3Cpath%20fill%3D%22%23472b29%22%20d%3D%22M42.25%2C78C42.112%2C78%2C42%2C77.888%2C42%2C77.75c0-1.223%2C0.995-2.218%2C2.218-2.218%20c0.034%2C0.009%2C0.737-0.001%2C1.244%2C0.136c0.133%2C0.036%2C0.212%2C0.173%2C0.176%2C0.306c-0.036%2C0.134-0.173%2C0.213-0.306%2C0.176%20c-0.444-0.12-1.1-0.12-1.113-0.118c-0.948%2C0-1.719%2C0.771-1.719%2C1.718C42.5%2C77.888%2C42.388%2C78%2C42.25%2C78z%22%2F%3E%3Ccircle%20cx%3D%2235.5%22%20cy%3D%2282.5%22%20r%3D%22.5%22%20fill%3D%22%23472b29%22%2F%3E%3Cpath%20fill%3D%22%23472b29%22%20d%3D%22M44%2C83h-3.5c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5H44c1.654%2C0%2C3-1.346%2C3-3%20c0-1.496-1.125-2.768-2.618-2.959c-0.134-0.018-0.255-0.088-0.336-0.196s-0.115-0.244-0.094-0.377C43.975%2C75.314%2C44%2C75.16%2C44%2C75%20c0-1.654-1.346-3-3-3c-0.85%2C0-1.638%2C0.355-2.219%2C1c-0.125%2C0.139-0.321%2C0.198-0.5%2C0.148c-0.182-0.049-0.321-0.195-0.36-0.379%20C37.58%2C71.165%2C36.141%2C70%2C34.5%2C70c-1.93%2C0-3.5%2C1.57-3.5%2C3.5c0%2C0.143%2C0.021%2C0.28%2C0.041%2C0.418c0.029%2C0.203-0.063%2C0.438-0.242%2C0.54%20s-0.396%2C0.118-0.556-0.01C29.878%2C74.155%2C29.449%2C74%2C29%2C74c-0.966%2C0-1.792%2C0.691-1.963%2C1.644c-0.048%2C0.267-0.296%2C0.446-0.569%2C0.405%20C26.314%2C76.025%2C26.16%2C76%2C26%2C76c-1.654%2C0-3%2C1.346-3%2C3s1.346%2C3%2C3%2C3h7.5c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5S33.776%2C83%2C33.5%2C83H26%20c-2.206%2C0-4-1.794-4-4s1.794-4%2C4-4c0.059%2C0%2C0.116%2C0.002%2C0.174%2C0.006C26.588%2C73.82%2C27.711%2C73%2C29%2C73c0.349%2C0%2C0.689%2C0.061%2C1.011%2C0.18%20C30.176%2C70.847%2C32.126%2C69%2C34.5%2C69c1.831%2C0%2C3.466%2C1.127%2C4.153%2C2.774C39.333%2C71.276%2C40.155%2C71%2C41%2C71c2.206%2C0%2C4%2C1.794%2C4%2C4%20c0%2C0.048-0.001%2C0.095-0.004%2C0.142C46.739%2C75.59%2C48%2C77.169%2C48%2C79C48%2C81.206%2C46.206%2C83%2C44%2C83z%22%2F%3E%3Cpath%20fill%3D%22%23472b29%22%20d%3D%22M38.5%2C82c-0.159%2C0-0.841%2C0-1%2C0c-0.276%2C0-0.5%2C0.224-0.5%2C0.5s0.224%2C0.5%2C0.5%2C0.5c0.159%2C0%2C0.841%2C0%2C1%2C0%20c0.276%2C0%2C0.5-0.224%2C0.5-0.5S38.776%2C82%2C38.5%2C82z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")
+    center/contain no-repeat;
+}
+
+.tutorialContainer-1pL9QS .listItem-2P_4kh {
+  padding: 0;
+  width: 100%;
+}
+
+.tutorialContainer-1pL9QS .childWrapper-1j_1ub {
+  display: none;
+}
+
+/*Rainbow Wave USER#ID*/
+.subtext-2HDqJ7,
+.customStatus-1UAQAK,
+.hovered-20u3oh,
+.title-338goq {
+  background-image: linear-gradient(
+    to left,
+    rgb(51, 255, 0),
+    rgb(255, 230, 0),
+    red,
+    rgb(234, 0, 255),
+    rgb(0, 140, 255),
+    rgb(51, 255, 0)
+  );
+  animation: gradient-border 5s linear infinite;
+  background-size: 400% 100%;
+  color: transparent !important;
+  -webkit-background-clip: text;
+  position: relative;
+  z-index: 1;
+}
+@keyframes gradient-border {
+  0%,
+  200% {
+    background-position: 0 0;
+  }
+
+  99.999999999999999% {
+    background-position: 130% 0;
+  }
+}
+
+html .mention.wrapper-1ZcZW-.mention.interactive {
+  background-image: linear-gradient(
+    to left,
+    rgb(51, 255, 0),
+    rgb(255, 230, 0),
+    red,
+    rgb(234, 0, 255),
+    rgb(0, 140, 255),
+    rgb(51, 255, 0)
+  );
+  animation: gradient-border 3s linear infinite;
+  background-size: 400% 100%;
+  color: transparent !important;
+  -webkit-background-clip: text;
+  position: relative;
+  z-index: 1;
+}
+@keyframes gradient-border {
+  0%,
+  200% {
+    background-position: 0 0;
+  }
+
+  99.999999999999999% {
+    background-position: 130% 0;
+  }
+}
+
+/*remove stage discovery*/
+.channel-1Shao0[href="/discovery"] {
+  display: none;
+}
+/*avatar only memberlist until hover*/
+.chatContent-3KubbW {
+  /*Chat pannel and message box*/
+  margin-right: 60px;
+}
+
+.membersWrap-3NUR2t {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  transform: translateX(80%);
+  justify-content: unset;
+  transition: transform 0.25s ease-out;
+}
+/*Moves server members for aesthetic purposes*/
+.member-2gU6Ar {
+  margin-left: 2px;
+  margin-bottom: 3px;
+}
+
+/*Shows server's members*/
+.membersWrap-3NUR2t:hover {
+  transform: translateY(0%);
+}
+
+/* move user info to top conrner*/
+.panels-3wFtMD > .container-YkUktl {
+  right: 0;
+  top: 0;
+  position: absolute;
+  z-index: 101;
+  width: 230px;
+}
+
+.sidebar-nqHbhN {
+  width: 230px;
+  padding: 0;
+}
+
+.chat-2ZfjoI {
+  position: relative;
+  margin-left: 15px;
+}
+
+.sidebar-1tnWFu {
+  border-radius: 0 !important;
+  /* resize: horizontal; */
+  min-width: 13px;
+  max-width: 2rem;
+  background-color: var(--background-primary);
+  z-index: 1;
+}
+
+/* .sidebar-1tnWFu { */
+.container-1NXEtd,
+.privateChannels-oVe7HL {
+  position: absolute;
+  align-self: flex-start;
+  top: 0;
+  left: -230px;
+  height: 100%;
+  width: 230px;
+  justify-content: center;
+  transform: translate(20%);
+  /* transition: transform 0.25s ease-out; */
+  /* very slow start out */
+  transition: transform 2s cubic-bezier(0.3, 0.03, 0.93, -0.33);
+  opacity: 0.1;
+}
+
+/* .sidebar-1tnWFu:hover { */
+.container-1NXEtd:hover,
+.privateChannels-oVe7HL:hover {
+  margin: 0;
+  transform: translate(95%);
+  /* transition: transform 0.25s ease-in-out; */
+  /* transition: transform 2s cubic-bezier(.42,.44,0,1.89); */
+  transition: transform 1s cubic-bezier(0, 0.62, 0.87, 1.39);
+  opacity: 1.0;
+}
+
+.privateChannelRecipientsInviteButtonIcon-1ObKXK {
+  padding-inline-end: 5px;
+}
+/* DM customs */
+.link-39sEB3 {
+  justify-content: stretch;
+  flex-direction: row;
+}
+.content-66wMin {
+  order: -2;
+}
+.avatar-1HDIsL {
+  order: 1;
+  right: 0px;
+  margin: 0 2.5% 0 0;
+  position: absolute;
+}
+.closeButton-mupH76 {
+  order: -1;
+  justify-content: flex-start;
+}
+
+/* BetterDiscord: Settings: Buttons and switches */
+.bd-addon-views .bd-view-button.selected,
+.bd-button {
+  background-color: var(--color-brand);
+}
+
+.bd-button:hover,
+.bd-button:active,
+.bd-button:focus {
+  background-color: var(--color-brand-darker);
+}
+
+.bd-button.bd-button-danger {
+  background-color: var(--color-red);
+}
+
+.bd-button.bd-button-danger:hover,
+.bd-button.bd-button-danger:active,
+.bd-button.bd-button-danger:focus {
+  background-color: var(--color-red-darker);
+}
+
+.bd-switch input:checked + .bd-switch-body {
+  --switch-color: var(--color-green);
+}
+
+.bd-sidebar-header {
+  margin-top: -10px;
+}
+
+.bd-sidebar-header .bd-icon {
+  margin-left: -36px;
+  margin-bottom: -22px;
+}
+
+/* BetterDiscord: Public Server List: Button */
+#bd-pub-li {
+  height: 20px;
+  margin-bottom: 6px;
+  margin-top: 58px;
+  padding: 0;
+}
+
+/* BetterDiscord: Settings: Tab Item */
+#bd-settings-sidebar .ui-tab-bar-item {
+  padding: 10px;
+}
+
+#bd-settings-sidebar .ui-tab-bar-item.selected {
+  background-color: var(--background-modifier-selected);
+}
+
+/* BetterDiscord: Settings: Theme & plugin repos - Search form */
+.inner-2pOSmK {
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  background-color: #3e3e40;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.inner-2pOSmK:hover {
+  border-color: #575758;
+  background-color: #3e3e40;
+}
+
+.inner-2pOSmK:focus-within {
+  background-color: #000;
+  border-color: var(--color-brand-lighter);
+}
+
+/* BetterDiscord: Settings: Theme & plugin repos - Tab */
+.tabBarContainer-1s1u-z {
+  padding: 0 !important;
+  margin: 0 40px;
+}
+
+.top-K_jibn .item-3XjbnG {
+  border-bottom: 1px solid transparent;
+}
+
+.tabBar-2MuP6- {
+  height: 30px;
+}
+
+.top-K_jibn .selected-g-kMVV.themed-2-lozF.item-3XjbnG,
+.top-K_jibn .themed-2-lozF.item-3XjbnG:active {
+  border-bottom-color: var(--color-brand);
+  color: var(--color-brand);
+}
+
+.tabBarItem-1b8RUP {
+  margin-right: 20px;
+}
+
+/* USRBG */
+.banner-1YaD3N {
+  background: var(--user-background) center/cover no-repeat;
+}
+
+/* Plugins: MemberCount */
+#MemberCount {
+  border-bottom: 1px solid #303032;
+  margin-top: 0 !important;
+}
+
+#MemberCount .membersGroup-2eiWxl {
+  padding: 12px 10px;
+  height: auto;
+}
+
+.membersGroup-2eiWxl {
+  padding: 12px 40px 10px 14px;
+  height: auto;
+}
+
+/* Plugins: Channel Tabs */
+:root {
+  --channelTabs-tabWidth: 190px;
+  --channelTabs-tabHeight: 20px;
+  --channelTabs-favHeight: 14px;
+}
+
+.channelTabs-tab,
+.channelTabs-fav {
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+
+.channelTabs-tab.channelTabs-selected {
+  border-bottom: 2px solid var(--color-brand-lighter);
+}
+
+.channelTabs-fav.channelTabs-selected {
+  border-bottom: 2px solid var(--color-brand);
+}
+
+.channelTabs-unreadBadge {
+  background-color: var(--color-brand);
+}
+
+/* Plugins: SendAudio */
+:root {
+  --sendaudio-record: var(--interactive-normal);
+  --sendaudio-record-hover: var(--interactive-active);
+  --sendaudio-cancel: var(--interactive-normal);
+  --sendaudio-cancel-hover: var(--interactive-active);
+  --sendaudio-pause: var(--interactive-normal);
+  --sendaudio-pause-hover: var(--interactive-active);
+  --sendaudio-play: var(--interactive-normal);
+  --sendaudio-play-hover: var(--interactive-active);
+  --sendaudio-save: var(--interactive-normal);
+  --sendaudio-save-hover: var(--interactive-active);
+  --sendaudio-send: var(--interactive-normal);
+  --sendaudio-send-hover: var(--interactive-active);
+}
+
+/* Plugins: Read all */
+.button-Jt-tIg {
+  border-radius: 0;
+  margin-top: -5px;
+}
+
+/* Plugins: Htospot Options */
+.checkmark-2rIv0n {
+  color: var(--color-green);
+}
+
+.xmark-1vh9lX {
+  color: var(--color-red);
+}
+
+/* Snippets: Fix the file icon shrinking with long file namesCredits: Hekky#6869 */
+.audioMetadata-1Hrt8T::before {
+  min-width: 24px;
+}
+
+/* Snippets: Moves the role icon from the right of a person's name to the leftCredits: Little Furret#7901 */
+[class*="roleIcon"] {
+  /* float: center; */
+  margin-left: 0.4rem;
+  margin-right: 0.6rem;
+}
+/* [class*="avatar-b5OQ1N"] {
+  float: right;
+  margin-left: 0.4rem;
+  margin-right: 0.6rem;
+} */
+
+/* role icon img */
+/* img {
+    height: 18px;
+    aspect-ratio: auto 16 / 16;
+    width: 18px;
+} */
+
+/* Snippets: Remove CreArts Modal BlurCredits: christian#1111 */
+.backdrop-2ByYRN::before,
+.backdropWithLayer-3_uhz4::before {
+  backdrop-filter: none;
+}
+
+/* Snippets: Fix the channel icon being oversized in embeds and channel topicsCredits: Hekky#6869 */
+.topic-11NuQZ > .wrapper-1ZcZW- > .channelIcon-3I2O7O,
+.embedFooterText-2Mc7H9 > .wrapper-1ZcZW- > .channelIcon-3I2O7O {
+  width: calc(1.05rem * 1.05 / 1.3);
+  height: 1.05rem;
+}
+
+/* Snippets: Emote FixCredits: Qwerasd#5202 */
+img.emote {
+  text-indent: 0;
+  white-space: nowrap;
+  width: auto;
+  position: relative;
+  top: 0.25ex;
+}
+
+/* Snippets: Hide the cursor when the video controls are hiddenCredits: DoggyBootsy#3442 */
+.wrapperControlsHidden-35Gtol {
+  cursor: none;
+}
+
+/* Snippets: Disable discord's overcomplicated and extremely laggy settings animationsCredits: Tropical#4355 */
+.layer-86YKbF {
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+.layers-OrUESM > .layer-86YKbF.animating-1rIrGV *,
+.layers-OrUESM > .layer-86YKbF.animating-1rIrGV {
+  pointer-events: auto !important;
+  will-change: unset;
+}
+
+.animating-1rIrGV.stop-animations {
+  z-index: 100 !important;
+}
