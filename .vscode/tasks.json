@@ -9,7 +9,7 @@
             "windows": {
                 "command": "cp"
             },
-            "osx":{
+            "osx": {
                 "command": "cp"
             },
             "args": [
@@ -19,10 +19,7 @@
                 "-Force"
             ],
             "problemMatcher": [],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+            "group": "build"
         }
     ]
 }

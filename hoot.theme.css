@@ -18,9 +18,7 @@
 :root {
     /*Background*/
     --blurple: rgb(113, 136, 217);
-    --greyple: rgb(151, 168, 180);
     --blurple-sheer: rgba(114, 137, 218, 0.267);
-    --greyple-sheer: rgba(151, 168, 180, 0.267);
     --sheer: rgba(0,0,0,0.6);
     --veil: rgba(100, 100, 100, 0.2);
   
@@ -29,11 +27,9 @@
     --color-brand: hsl(180, 40%, 42%);
     --color-brand-darker: hsl(187, 54%, 43%);
     --color-brand-lighter: hsl(180, 100%, 50%);
-    /* --color-brand-lighter: #a970ff; */
     --color-red: #e91916;
     --color-red-darker: #bb1411;
     --color-orange: #ffca61;
-    --color-orange-darker: #fcc439;
     --background-orange: rgba(255, 165, 0, 0.1);
     --color-green: #08e600;
     --color-green-darker: #00ad96;
@@ -48,10 +44,6 @@
 /* Discord */
 .theme-dark,
 :root {
-  --info-positive-background: var(--color-green);
-  --info-positive-foreground: var(--color-green);
-  --info-warning-background: var(--color-orange);
-  --info-warning-foreground: var(--color-orange);
   --info-danger-background: var(--color-red);
   --info-danger-foreground: var(--color-red);
   --status-positive-background: var(--color-green);
@@ -141,53 +133,6 @@
   --deprecated-text-input-prefix: #dcddde;
   --font-primary: Roboto;
   --font-display: Roboto Mono;
-  --brand-experiment-100: var(--color-brand);
-  --brand-experiment-130: var(--color-brand);
-  --brand-experiment-160: var(--color-brand);
-  /* --brand-experiment-200: var(--color-brand); */
-  /* --brand-experiment-15a: var(--color-brand); */
-  --brand-experiment-230: var(--color-brand);
-  --brand-experiment-260: var(--color-brand);
-  --brand-experiment-300: var(--color-brand);
-  --brand-experiment-330: var(--color-brand);
-  --brand-experiment-360: var(--color-brand);
-  --brand-experiment-400: var(--color-brand);
-  --brand-experiment-430: var(--color-brand);
-  --brand-experiment-460: var(--color-brand);
-  --brand-experiment: var(--color-brand);
-  --brand-experiment-500: var(--color-brand);
-  --brand-experiment-530: var(--color-brand);
-  --brand-experiment-560: var(--color-brand);
-  --brand-experiment-600: var(--color-brand);
-  --brand-experiment-630: var(--color-brand);
-  --brand-experiment-660: var(--color-brand);
-  --brand-experiment-700: var(--color-brand);
-  --brand-experiment-730: var(--color-brand);
-  --brand-experiment-760: var(--color-brand);
-  --brand-experiment-800: var(--color-brand);
-  --brand-experiment-830: var(--color-brand);
-  --brand-experiment-860: var(--color-brand);
-  --brand-experiment-900: var(--color-brand);
-  --brand-experiment-05a: var(--color-brand);
-  --brand-experiment-10a: var(--color-brand);
-  --brand-experiment-20a: var(--color-brand);
-  --brand-experiment-25a: var(--color-brand);
-  --brand-experiment-30a: var(--color-brand);
-  --brand-experiment-35a: var(--color-brand);
-  --brand-experiment-40a: var(--color-brand);
-  --brand-experiment-45a: var(--color-brand);
-  --brand-experiment-50a: var(--color-brand);
-  --brand-experiment-55a: var(--color-brand);
-  --brand-experiment-60a: var(--color-brand);
-  --brand-experiment-65a: var(--color-brand);
-  --brand-experiment-70a: var(--color-brand);
-  --brand-experiment-75a: var(--color-brand);
-  --brand-experiment-80a: var(--color-brand);
-  --brand-experiment-85a: var(--color-brand);
-  --brand-experiment-90a: var(--color-brand);
-  --brand-experiment-95a: var(--color-brand);
-  --sheer: rgba(0, 0, 0, 0.6);
-  --blurple: rgb(113, 136, 217);
 }
 
 ::selection {
@@ -211,11 +156,11 @@ body,
 #app-mount .layers-OrUESM, 
 .privateChannels-oVe7HL,
 .container-1eFtFS,
-
 #app-mount .layer-86YKbF,
 .bg-1QIAus {
   background-color: transparent;
 }
+
 
 #app-mount,
 .container-2RRFHK,
@@ -230,16 +175,20 @@ body,
 }
 
 .titleBar-1it3bQ:not(.typeMacOS-3V4xXE)::after {
-  content: "𐌁𐌋𐌀𐌂𐌊 𐋏𐍈𐌋𐌄";
+  content: "TRANSCENDENCE";
   position: absolute;
   top: 5px;
-  left: 10px;
-  color: rgb(170, 170, 170);
+  left: 500px;
+  color: rgb(255, 0, 234);
   display: block;
   height: 16px;
   width: fit-content;
+  margin-top: 6px;
   pointer-events: none;
-  font-size: 14px;
+  font-family: FuraMono NFM;
+  font-size: 16px;
+  letter-spacing: 20px;
+  font-weight: bolder;
 }
 
 .winButtonMinMax-3RsPUg:hover {
@@ -250,42 +199,144 @@ body,
   background-color: transparent;
 }
 
+/* ######## GLOBAL ################*/
+/* TO DO remove server discorevery button*/
+/* Discord: Guild list */
+
+/* .scroller-3X7KbA .none-2-_0dP .scrollerBase-_bVAAt > .listItem-3SmSlK > .listItemWrapper-3d87LP > .wrapper-28eC3z {
+  display: none;
+
+} */
+.scroller-3X7KbA {
+	background-color: transparent !important;
+	padding: 0 !important;
+	contain: none;
+	margin-top: 50px;
+}
+
+.listItem-3SmSlK {
+  margin-bottom: 10px;
+  padding: 7px 0;
+  width: 50px;
+}
+
+.wrapper-38slSD {
+  width: 50px;
+}
+
+.guilds-2JjMmN {
+  margin-left: -1px;
+}
+.guilds-2JjMmN {
+  width: 50px;
+}
+
+.expandedFolderBackground-1kSAf6 {
+  top: 5px;
+  left: 7px;
+  bottom: 4px;
+  width: 36px;
+}
+
+ul[id*="folder-items"] {
+  height: auto !important;
+}
+
+/* ############# Friends & DM ########## */
+
+/* DM customs */
+.link-39sEB3 {
+  justify-content: stretch;
+  flex-direction: row;
+}
+.content-66wMin {
+  order: -2;
+}
+.avatar-1HDIsL {
+  order: 1;
+  right: 0px;
+  margin: 0 2.5% 0 0;
+  position: absolute;
+}
+.closeButton-mupH76 {
+  order: -1;
+  justify-content: flex-start;
+}
+
+/* Discord: Home: Friends - Top pills */
+.children-3xh0VB,
+.topPill-3DJJNV {
+	height: 100%;
+}
+
+.topPill-3DJJNV .themed-2-lozF.item-3XjbnG {
+	border-radius: 0;
+	border-bottom: 2px solid transparent;
+	height: 100%;
+	margin: 0;
+}
+
+.topPill-3DJJNV .themed-2-lozF.item-3XjbnG:hover {
+	background-color: transparent;
+	color: var(--color-brand);
+}
+
+.topPill-3DJJNV .themed-2-lozF.selected-g-kMVV.item-3XjbnG {
+	background-color: transparent !important;
+	color: var(--color-brand);
+	border-color: var(--color-brand);
+}
+
+.root-SR8cQa .tabBarContainer-1s1u-z {
+	margin: 0 20px;
+}
+
+.root-SR8cQa .item-3XjbnG {
+	font-size: 13px;
+	font-weight: 400;
+}
+
+/* Discord: Home icon */
+/* .tutorialContainer-1pL9QS {
+  height: 50px;
+  width: 50px;
+  margin-top: -5px;
+  position: fixed; 
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  background-color: var(--background-tertiary);
+  box-shadow: var(--shadow-bottom);
+}
+
+.tutorialContainer-1pL9QS.wrapper-z5ab_q {
+  display: none;
+}
+
+.tutorialContainer-1pL9QS .wrapper-28eC3z,
+.tutorialContainer-1pL9QS .wrapper-28eC3z png {
+  width: 40px;
+  height: 40px;
+}
+ */
+.tutorialContainer-2sGCg9 .wrapper-3kah-n {
+	width: 100%;
+	height: 100%;
+	background: url("https://i.imgur.com/hYJJsdI.png") center/contain no-repeat;
+}
+
+
+.tutorialContainer-1pL9QS .listItem-2P_4kh {
+  padding: 0;
+  width: 100%;
+}
+
+/* .tutorialContainer-1pL9QS .childWrapper-1j_1ub {
+  display: none;
+} */
+
+
 /* III. Channel Area */
-/* B. Channel Groups and Individual Channels */
-
-.contentSelectedText-3wUhMi,
-.contentSelectedVoice-1WDIBM,
-.contentConnectedVoice-qL-YrL,
-.wrapper-2NJDcI,
-.containerDefault-YUSmu3.selected-2TbFuo .content-1gYQeQ,
-.containerDefault-YUSmu3.selected-2TbFuo:hover .content-1gYQeQ {
-  background: var(--veil) var(--stars) top left;
-  background-attachment: fixed;
-  color: var(--blurple);
-}
-
-.contentConnectedVoice-qL-YrL:active,
-.contentHoveredText-2D9B-x,
-.contentHoveredVoice-3p_NEO:active,
-.contentSelectedVoice-1WDIBM:active,
-#app-mount .listeningAlong-2UPsxf,
-#app-mount .wrapper-1ucjTd:hover .content-1gYQeQ {
-  background-color: transparent;
-}
-
-.contentSelectedText-3wUhMi .icon-sxakjD,
-.contentSelectedVoice-1WDIBM .icon-sxakjD {
-  opacity: 0.6;
-  filter: brightness(100%);
-}
-
-.colorHoveredText-OZnAgu,
-.colorHoveredVoice-1kucsK,
-#app-mount .wrapper-1ucjTd:not(.modeSelected-1zApJ_):hover .name-3_Dsmg,
-#app-mount .wrapper-1ucjTd:not(.modeSelected-1zApJ_):hover svg {
-  color: var(--blurple);
-  /* opacity: 0; */
-}
 
 /* A. Channels Header */
 #app-mount .channelNotice-tO6Tus {
@@ -357,7 +408,7 @@ body,
 
 .contentSelectedText-3wUhMi .icon-sxakjD,
 .contentSelectedVoice-1WDIBM .icon-sxakjD {
-  opacity: 1;
+  opacity: 0.6;
   filter: brightness(100%);
 }
 
@@ -397,28 +448,6 @@ body,
 .mention-3XBnnZ:hover {
   background-color: var(--dnd);
 }
-/* C. Guild Folders */
-#app-mount .expandedFolderBackground-1cujaW,
-#app-mount .folder-1hbNCn {
-  background-color: transparent;
-}
-
-#app-mount .expandedFolderBackground-1cujaW::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: calc(100% + 6px);
-  width: 100%;
-  opacity: 0.4;
-  background-color: var(--blurple-sheer);
-  border-radius: calc(var(--roundness) / 5);
-}
-
-#app-mount .folder-1hbNCn [style*="rgba(114, 137, 218, 0.4)"] {
-  background-color: transparent !important;
-}
-
 /* V. Pages */
 /* A. Main Areas */
 .chat-2ZfjoI,
@@ -519,17 +548,17 @@ body,
     var(--veil) var(--stars) top left fixed;
 }
 
-#app-mount .content-1jQy2l,
+/* #app-mount .content-1jQy2l,
 #app-mount .chat-2ZfjoI form .inner-zqa7da,
 #app-mount .chat-2ZfjoI form,
 #app-mount .itemBackground-2vEldQ,
 #app-mount .wrapper-29NfPK {
   background-color: transparent;
-}
+} */
 
 
 
-#app-mount .content-1jQy2l,
+/* #app-mount .content-1jQy2l,
 #app-mount .activityFeed-28jde9m,
 .gameLibrary-TTDw4Y .scrollerWrap-2lJEkd,
 .friendsTable-133bsv,
@@ -542,13 +571,13 @@ body,
   background: var(--quatro) var(--stars) top left !important;
   background-attachment: fixed;
   
-}
-
+} */
+/* 
 .chat-2ZfjoI .textArea-2Spzkt {
   background-color: transparent !important;
   line-height: 1.25rem !important;
   margin-top: 8px;
-}
+} */
 
 .gatedContent-31-gID::after {
   content: "";
@@ -646,9 +675,9 @@ body,
 .numberBadge-37OJ3S {
   background-color: #4373c5 !important;
 }
-.tutorialContainer-30WoTp + div {
+/* .tutorialContainer-30WoTp + div {
   display: none;
-}
+} */
 #status-picker {
   margin-bottom: 5px;
 }
@@ -788,10 +817,10 @@ body,
   border-color: var(--color-brand);
 }
 
-.footer-31IekZ {
+/* .footer-31IekZ {
   background-color: var(--background-tertiary) !important;
   box-shadow: var(--shadow-bottom) !important;
-}
+} */
 
 .bd-modal-wrapper .footer button {
   background-color: var(--color-brand);
@@ -801,38 +830,6 @@ body,
 .bd-modal-wrapper .footer button:hover {
   background-color: var(--color-brand-darker);
 }
-
-/* Discord: Home: Friends - Top pills */
-.children-3xh0VB,
-.topPill-3DJJNV {
-  height: 100%;
-}
-
-.topPill-3DJJNV .themed-2-lozF.item-3XjbnG {
-  border-radius: 0;
-  border-bottom: 2px solid transparent;
-  height: 100%;
-  margin: 0;
-}
-
-.topPill-3DJJNV .themed-2-lozF.item-3XjbnG:hover {
-  background-color: transparent;
-  color: var(--color-brand);
-}
-
-.topPill-3DJJNV .themed-2-lozF.selected-g-kMVV.item-3XjbnG {
-  background-color: transparent !important;
-  color: var(--color-brand);
-  border-color: var(--color-brand);
-}
-
-.root-SR8cQa .tabBarContainer-1s1u-z {
-  margin: 0 20px;
-}
-
-/* .root-SR8cQa .item-3XjbnG {
-  font-size: 11px;
-} */
 
 /* Discord: Home: Search form */
 .input-3r5zZY {
@@ -878,6 +875,9 @@ body,
 .noBorder-2p63tM {
   border: none !important;
 }
+.noBorder-CTIBpT {
+  border: none !important;
+}
 
 /* .input-2g-os5,
 .scrollableContainer-15eg7h {
@@ -897,11 +897,9 @@ body,
 .scrollableContainer-15eg7h:focus-within {
   background-color: #000;
   border-color: var(--color-brand-lighter);
-}
-
-.noBorder-CTIBpT {
-  border: none !important;
 } */
+
+
 
 /* Discord: Search: Form */
 .searchBar-zdmu7v {
@@ -1216,11 +1214,11 @@ body,
   display: none;
 }
 
-.message-2CShn3:hover:after {
+/* .message-2CShn3:hover:after {
   display: block;
-}
+} */
 
-.message-2CShn3 {
+/* .message-2CShn3 {
   padding-left: 50px;
 }
 
@@ -1241,19 +1239,19 @@ body,
 }
 .group-spacing-16 .groupStart-3Mlgv1 {
   margin-top: 2rem;
-}
+} */
 .avatar-2e8lTP {
   width: 48px !important;
   height: 48px !important;
   left: 10px;
 }
 
-.fakeEdges-18N907:before,
+/* .fakeEdges-18N907:before,
 .fakeEdges-18N907:after {
   border-radius: 0;
-}
+} */
 
-.bubble-3XikHF {
+/* .bubble-3XikHF {
   border-radius: 6px;
   padding: 0 6px;
   background-color: rgba(0, 0, 0, 0.6);
@@ -1263,19 +1261,19 @@ body,
 
 .bubble-3XikHF:before {
   display: none;
-}
+} */
 
-.cozy-VmLDNB .messageContent-2t3eCI {
+/* .cozy-VmLDNB .messageContent-2t3eCI {
   margin: 2px;
   padding-left: 60px;
-}
-.avatar-2e8lTP {
+} */
+/* .avatar-2e8lTP {
   padding-left: 55px;
   padding-right: 55px;
   padding-top: 25px;
   padding-bottom: 25px;
-}
-
+} */
+/* 
 .mediaBarWrapper-3D7r67 {
   height: 4px;
 }
@@ -1300,11 +1298,11 @@ body,
   margin-right: -8px;
 }
 
-/* .textarea-2r0oV8 {
+.textarea-2r0oV8 {
   font-size: px;
   line-height: normal;
   padding: 10px;
-} */
+}
 
 .button-2fCJ0o {
   border-radius: 4px;
@@ -1312,7 +1310,7 @@ body,
 
 .button-2fCJ0o:hover {
   background-color: rgb(255, 255, 255, 0.15);
-}
+} */
 
 .jumpToPresentBar-G1R9s6 {
   margin: 24px 64px !important;
@@ -1357,10 +1355,6 @@ body,
   color: var(--color-brand);
   background-color: transparent;
 }
-
-/* .input-2z42oC {
-  font-size: 5px;
-} */
 
 .typeWindows-1za-n7 {
   background-color: var(--background-primary);
@@ -1825,29 +1819,7 @@ body,
 .bg-1QIAus {
   top: -30px;
 }
-
-.message-2CShn3, .cozyMessage-1DWF9U,
-.groupStart-3Mlgv1,
-.wrapper-30-Nkg,
-.cozy-VmLDNB,
-.zalgo-26OfGz, .hasReply-2Cr4KE {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  /* text-align:  ; */
-}
-
-.repliedMessage-3Z6XBG {
-  padding-inline-end: -10%;
-  font-size: small;
-}
-.repliedMessage-3Z6XBG:before {
-  padding-left: 30px;
-}
-
-.repliedTextPreview-1bvxun {
-  max-height: min-content;
-}
+/* CHAT AND MESSAGES */
 
 .repliedMessage-3Z6XBG .repliedTextPreview-1bvxun .repliedTextContent-2hOYMB,
 .threadMessageAccessory-2W9mjC
@@ -1865,11 +1837,7 @@ body,
   height: 40px;
 }
 
-.content-3xS9Lh {
-  border-radius: 0;
-  margin: 0;
-  padding: 6px 0;
-}
+
 
 .searchBar-3TnChZ {
   padding: 0;
@@ -1886,13 +1854,6 @@ body,
   line-height: normal;
 }
 
-.scroller-3X7KbA {
-  background-color: var(--background-primary);
-  padding: 0 !important;
-  contain: none;
-  margin-top: 50px;
-}
-
 .wrapper-2vIMkT {
   background-color: var(--background-tertiary);
 }
@@ -1901,11 +1862,6 @@ body,
 .header-3OsQeK,
 .searchBar-3TnChZ {
   height: 50px;
-}
-
-.guildSeparator-33mFX6 {
-  height: 0;
-  border-radius: 0;
 }
 
 .wrapper-1Rf91z {
@@ -1953,9 +1909,9 @@ body,
   color: var(--color-brand);
 }
 
-.colorBrand-ROmMP1 {
+/* .colorBrand-ROmMP1 {
   color: var(--color-brand);
-}
+} */
 
 .iconBadge-3qSJIw.participating-1NvRVd {
   background-color: var(--color-green);
@@ -2066,18 +2022,18 @@ body,
   color: var(--color-red);
 }
 
-.notice-2HEN-u powercord-announcement {
-  width: calc(100% - 50px);
-  margin-top: 50px;
-  position: fixed;
-  padding-left: 0;
-  padding-right: 0;
-  border-radius: 0;
+.notice-2HEN-u {
+	width: calc(100% - 50px);
+	margin-top: 50px;
+	position: fixed;
+	padding-left: 0;
+	padding-right: 0;
+	border-radius: 0;
 }
 
 .root-24JyNP {
-  margin-top: 50px;
-  height: calc(100% - 50px);
+	margin-top: 50px;
+	height: calc(100% - 50px);
 }
 
 .root-22AK9z.idle-39sGPO .topControls-KKImPZ {
@@ -2220,34 +2176,6 @@ body,
     padding: .125rem .375rem;
 } */
 
-/* Discord: Guild list */
-.listItem-3SmSlK {
-  margin-bottom: 10px;
-  padding: 7px 0;
-  width: 50px;
-}
-
-.wrapper-38slSD {
-  width: 50px;
-}
-
-.guilds-2JjMmN {
-  margin-left: -1px;
-}
-.guilds-2JjMmN {
-  width: 50px;
-}
-
-.expandedFolderBackground-1kSAf6 {
-  top: 5px;
-  left: 7px;
-  bottom: 4px;
-  width: 36px;
-}
-
-ul[id*="folder-items"] {
-  height: auto !important;
-}
 
 /* Discord: Speaking ring */
 /* Discord: Speaking ring: Servers */
@@ -2279,52 +2207,7 @@ ul[id*="folder-items"] {
     inset 0 0 0 3px var(--background-secondary);
 }
 
-/* .wrapper-28eC3z {
-	bottom: 0;
-  left: 0;
-  position: absolute;
-  z-index: 101;
-  width: 220px;
-} */
 
-/* Discord: Home icon */
-.tutorialContainer-1pL9QS {
-  height: 50px;
-  width: 50px;
-  margin-top: -50px;
-  position: fixed;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  background-color: var(--background-tertiary);
-  box-shadow: var(--shadow-bottom);
-}
-
-.tutorialContainer-1pL9QS .wrapper-z5ab_q {
-  display: none;
-}
-
-.tutorialContainer-1pL9QS .wrapper-28eC3z,
-.tutorialContainer-1pL9QS .wrapper-28eC3z svg {
-  width: 40px;
-  height: 40px;
-}
-
-.tutorialContainer-1pL9QS .wrapper-3kah-n {
-  width: 100%;
-  height: 100%;
-  background: url("data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20%20viewBox%3D%220%200%20100%20100%22%20width%3D%22100px%22%20height%3D%22100px%22%3E%3Cpath%20fill%3D%22%23c7ede6%22%20d%3D%22M87.215%2C56.71C88.35%2C54.555%2C89%2C52.105%2C89%2C49.5c0-6.621-4.159-12.257-10.001-14.478%09C78.999%2C35.015%2C79%2C35.008%2C79%2C35c0-11.598-9.402-21-21-21c-9.784%2C0-17.981%2C6.701-20.313%2C15.757C36.211%2C29.272%2C34.638%2C29%2C33%2C29%09c-7.692%2C0-14.023%2C5.793-14.89%2C13.252C12.906%2C43.353%2C9%2C47.969%2C9%2C53.5C9%2C59.851%2C14.149%2C65%2C20.5%2C65c0.177%2C0%2C0.352-0.012%2C0.526-0.022%09C21.022%2C65.153%2C21%2C65.324%2C21%2C65.5C21%2C76.822%2C30.178%2C86%2C41.5%2C86c6.437%2C0%2C12.175-2.972%2C15.934-7.614C59.612%2C80.611%2C62.64%2C82%2C66%2C82%09c4.65%2C0%2C8.674-2.65%2C10.666-6.518C77.718%2C75.817%2C78.837%2C76%2C80%2C76c6.075%2C0%2C11-4.925%2C11-11C91%2C61.689%2C89.53%2C58.727%2C87.215%2C56.71z%22%2F%3E%3Cpath%20fill%3D%22%23fdfcef%22%20d%3D%22M70.5%2C39.5V40h-3v-0.5c0%2C0-4.242%2C0-5.5%2C0c-2.485%2C0-4.5-2.015-4.5-4.5%09c0-2.333%2C1.782-4.229%2C4.055-4.455C61.533%2C30.364%2C61.5%2C30.187%2C61.5%2C30c0-2.485%2C2.015-4.5%2C4.5-4.5c1.438%2C0%2C2.703%2C0.686%2C3.527%2C1.736%09C69.667%2C24.6%2C71.829%2C22.5%2C74.5%2C22.5c2.761%2C0%2C5%2C2.239%2C5%2C5c0%2C0.446-0.077%2C0.87-0.187%2C1.282c0.642-0.777%2C1.6-1.282%2C2.687-1.282%09c1.781%2C0%2C3.234%2C1.335%2C3.455%2C3.055C85.636%2C30.533%2C85.813%2C30.5%2C86%2C30.5c2.485%2C0%2C4.5%2C2.015%2C4.5%2C4.5s-2.015%2C4.5-4.5%2C4.5s-9.5%2C0-9.5%2C0%09H70.5z%22%2F%3E%3Cpath%20fill%3D%22%23472b29%22%20d%3D%22M74.5%2C22c3.033%2C0%2C5.5%2C2.467%2C5.5%2C5.5c0%2C0.016%2C0%2C0.031%2C0%2C0.047C80.602%2C27.192%2C81.29%2C27%2C82%2C27%09c1.831%2C0%2C3.411%2C1.261%2C3.858%2C3.005C85.905%2C30.002%2C85.952%2C30%2C86%2C30c2.757%2C0%2C5%2C2.243%2C5%2C5s-2.243%2C5-5%2C5H70.5c-0.276%2C0-0.5-0.224-0.5-0.5%09s0.224-0.5%2C0.5-0.5H86c2.206%2C0%2C4-1.794%2C4-4s-1.794-4-4-4c-0.117%2C0-0.23%2C0.017-0.343%2C0.032l-0.141%2C0.019%09c-0.021%2C0.003-0.041%2C0.004-0.062%2C0.004c-0.246%2C0-0.462-0.185-0.495-0.437C84.768%2C29.125%2C83.496%2C28%2C82%2C28%09c-0.885%2C0-1.723%2C0.401-2.301%2C1.1c-0.098%2C0.118-0.241%2C0.182-0.386%2C0.182c-0.078%2C0-0.156-0.018-0.228-0.056%09c-0.209-0.107-0.314-0.346-0.254-0.573C78.946%2C28.218%2C79%2C27.852%2C79%2C27.5c0-2.481-2.019-4.5-4.5-4.5%09c-2.381%2C0-4.347%2C1.872-4.474%2C4.263c-0.011%2C0.208-0.15%2C0.387-0.349%2C0.45c-0.05%2C0.016-0.101%2C0.024-0.152%2C0.024%09c-0.15%2C0-0.296-0.069-0.392-0.192C68.362%2C26.563%2C67.221%2C26%2C66%2C26c-2.206%2C0-4%2C1.794-4%2C4c0%2C0.117%2C0.017%2C0.23%2C0.032%2C0.343l0.019%2C0.141%09c0.016%2C0.134-0.022%2C0.268-0.106%2C0.373s-0.207%2C0.172-0.34%2C0.185C59.549%2C31.247%2C58%2C32.949%2C58%2C35c0%2C2.206%2C1.794%2C4%2C4%2C4h5.5%09c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5S67.776%2C40%2C67.5%2C40H62c-2.757%2C0-5-2.243-5-5c0-2.397%2C1.689-4.413%2C4.003-4.877%09C61.001%2C30.082%2C61%2C30.041%2C61%2C30c0-2.757%2C2.243-5%2C5-5c1.176%2C0%2C2.293%2C0.416%2C3.183%2C1.164C69.781%2C23.76%2C71.945%2C22%2C74.5%2C22L74.5%2C22z%22%2F%3E%3Cpath%20fill%3D%22%23472b29%22%20d%3D%22M76%2C29c1.403%2C0%2C2.609%2C0.999%2C2.913%2C2.341C79.28%2C31.119%2C79.699%2C31%2C80.125%2C31%09c1.202%2C0%2C2.198%2C0.897%2C2.353%2C2.068C82.681%2C33.022%2C82.874%2C33%2C83.063%2C33c1.529%2C0%2C2.811%2C1.2%2C2.918%2C2.732%09C85.99%2C35.87%2C85.886%2C35.99%2C85.749%2C36c-0.006%2C0-0.012%2C0-0.018%2C0c-0.13%2C0-0.24-0.101-0.249-0.232%09c-0.089-1.271-1.151-2.268-2.419-2.268c-0.229%2C0-0.47%2C0.042-0.738%2C0.127c-0.022%2C0.007-0.045%2C0.01-0.067%2C0.01%09c-0.055%2C0-0.11-0.02-0.156-0.054C82.038%2C33.537%2C82%2C33.455%2C82%2C33.375c0-1.034-0.841-1.875-1.875-1.875%09c-0.447%2C0-0.885%2C0.168-1.231%2C0.473c-0.047%2C0.041-0.106%2C0.063-0.165%2C0.063c-0.032%2C0-0.063-0.006-0.093-0.019%09c-0.088-0.035-0.148-0.117-0.155-0.212C78.377%2C30.512%2C77.288%2C29.5%2C76%2C29.5c-0.208%2C0-0.425%2C0.034-0.682%2C0.107%09c-0.023%2C0.007-0.047%2C0.01-0.07%2C0.01c-0.109%2C0-0.207-0.073-0.239-0.182c-0.038-0.133%2C0.039-0.271%2C0.172-0.309%09C75.483%2C29.04%2C75.744%2C29%2C76%2C29L76%2C29z%22%2F%3E%3Cpath%20fill%3D%22%23472b29%22%20d%3D%22M62.117%2C30.5c1.326%2C0%2C2.508%2C0.897%2C2.874%2C2.182c0.038%2C0.133-0.039%2C0.271-0.172%2C0.309%09C64.795%2C32.997%2C64.772%2C33%2C64.75%2C33c-0.109%2C0-0.209-0.072-0.24-0.182C64.205%2C31.748%2C63.221%2C31%2C62.117%2C31%09c-0.117%2C0-0.23%2C0.014-0.342%2C0.029c-0.012%2C0.002-0.023%2C0.003-0.035%2C0.003c-0.121%2C0-0.229-0.092-0.246-0.217%09c-0.019-0.137%2C0.077-0.263%2C0.214-0.281C61.842%2C30.516%2C61.978%2C30.5%2C62.117%2C30.5L62.117%2C30.5z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M14.5%2C54h-10C4.224%2C54%2C4%2C53.776%2C4%2C53.5S4.224%2C53%2C4.5%2C53h10c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S14.777%2C54%2C14.5%2C54z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M17.5%2C54h-1c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h1c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S17.777%2C54%2C17.5%2C54z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M22.491%2C56H13.5c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h8.991c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S22.767%2C56%2C22.491%2C56z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M11.5%2C56h-1c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h1c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S11.777%2C56%2C11.5%2C56z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M8.5%2C56h-2C6.224%2C56%2C6%2C55.776%2C6%2C55.5S6.224%2C55%2C6.5%2C55h2C8.776%2C55%2C9%2C55.224%2C9%2C55.5S8.777%2C56%2C8.5%2C56z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M14.5%2C58h-2c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h2c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S14.776%2C58%2C14.5%2C58z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M17.5%2C49c-0.177%2C0-0.823%2C0-1%2C0c-0.276%2C0-0.5%2C0.224-0.5%2C0.5s0.224%2C0.5%2C0.5%2C0.5c0.177%2C0%2C0.823%2C0%2C1%2C0%20c0.276%2C0%2C0.5-0.224%2C0.5-0.5S17.776%2C49%2C17.5%2C49z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M17.5%2C51c-0.177%2C0-4.823%2C0-5%2C0c-0.276%2C0-0.5%2C0.224-0.5%2C0.5s0.224%2C0.5%2C0.5%2C0.5c0.177%2C0%2C4.823%2C0%2C5%2C0%20c0.276%2C0%2C0.5-0.224%2C0.5-0.5S17.776%2C51%2C17.5%2C51z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M22.5%2C53c-0.177%2C0-2.823%2C0-3%2C0c-0.276%2C0-0.5%2C0.224-0.5%2C0.5s0.224%2C0.5%2C0.5%2C0.5c0.177%2C0%2C2.823%2C0%2C3%2C0%20c0.276%2C0%2C0.5-0.224%2C0.5-0.5S22.776%2C53%2C22.5%2C53z%22%2F%3E%3Cg%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M88.5%2C46h-10c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h10c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S88.776%2C46%2C88.5%2C46z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M92.5%2C46h-2c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h2c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S92.776%2C46%2C92.5%2C46z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M97.5%2C48h-10c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h10c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S97.777%2C48%2C97.5%2C48z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M85.5%2C48h-1c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h1c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S85.776%2C48%2C85.5%2C48z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M82.47%2C48H80.5c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h1.97c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S82.746%2C48%2C82.47%2C48z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M91.5%2C44h-5c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h5c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S91.777%2C44%2C91.5%2C44z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M88.5%2C50h-2c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h2c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S88.776%2C50%2C88.5%2C50z%22%2F%3E%3C%2Fg%3E%3Cg%3E%3Ccircle%20cx%3D%2251%22%20cy%3D%2251.875%22%20r%3D%2224.25%22%20fill%3D%22%2333253e%22%2F%3E%3Cpath%20fill%3D%22%237e7a9b%22%20d%3D%22M51%2C76.825c-13.757%2C0-24.95-11.193-24.95-24.95S37.243%2C27.077%2C51%2C27.077s24.95%2C11.041%2C24.95%2C24.798%20S64.757%2C76.825%2C51%2C76.825z%20M51%2C28.325c-12.985%2C0-23.55%2C10.564-23.55%2C23.55S38.015%2C75.425%2C51%2C75.425s23.55-10.564%2C23.55-23.55%20S63.985%2C28.325%2C51%2C28.325z%22%2F%3E%3Cpath%20fill%3D%22%23224064%22%20d%3D%22M54.519%2C59.396c7.159-2.896%2C12.567-8.424%2C16.014-13.739C67.899%2C37.376%2C60.153%2C31.375%2C51%2C31.375%20c-11.322%2C0-20.5%2C9.178-20.5%2C20.5c0%2C2.692%2C0.533%2C5.256%2C1.476%2C7.612C40.099%2C62.188%2C47.666%2C62.168%2C54.519%2C59.396z%20M34.113%2C56.403%20c-0.387-1.447-0.613-2.959-0.613-4.528c0-9.665%2C7.835-17.5%2C17.5-17.5c7.23%2C0%2C13.433%2C4.385%2C16.102%2C10.64%20c-3.369%2C4.167-7.932%2C8.094-13.583%2C10.38C47.556%2C57.809%2C41.052%2C58.136%2C34.113%2C56.403z%22%2F%3E%3Cpath%20fill%3D%22%23476682%22%20d%3D%22M43.608%2C61.742c-3.754%2C0-7.666-0.673-11.711-2.018c-0.07-0.023-0.125-0.076-0.153-0.144%20c-0.992-2.476-1.495-5.068-1.495-7.705c0-11.442%2C9.309-20.75%2C20.75-20.75c9.076%2C0%2C17.021%2C5.809%2C19.772%2C14.455%20c0.022%2C0.071%2C0.012%2C0.149-0.028%2C0.212c-2.401%2C3.701-7.688%2C10.42-16.131%2C13.835l0%2C0C51.129%2C61.037%2C47.451%2C61.742%2C43.608%2C61.742z%20M32.166%2C59.286c8.026%2C2.647%2C15.516%2C2.606%2C22.259-0.122l0%2C0c8.241-3.334%2C13.436-9.873%2C15.834-13.544%20C67.542%2C37.244%2C59.817%2C31.625%2C51%2C31.625c-11.166%2C0-20.25%2C9.084-20.25%2C20.25C30.75%2C54.409%2C31.226%2C56.902%2C32.166%2C59.286z%20M42.601%2C57.741c-2.769%2C0-5.622-0.365-8.549-1.096c-0.088-0.022-0.157-0.09-0.181-0.178c-0.412-1.54-0.621-3.086-0.621-4.592%20c0-9.787%2C7.962-17.75%2C17.75-17.75c7.124%2C0%2C13.535%2C4.236%2C16.332%2C10.792c0.036%2C0.085%2C0.022%2C0.183-0.036%2C0.255%20c-2.696%2C3.335-7.259%2C7.856-13.683%2C10.455C50.132%2C57.036%2C46.449%2C57.741%2C42.601%2C57.741z%20M34.317%2C56.196%20c6.836%2C1.68%2C13.264%2C1.333%2C19.108-1.032c6.25-2.529%2C10.716-6.911%2C13.387-10.189c-2.749-6.292-8.939-10.35-15.812-10.35%20c-9.512%2C0-17.25%2C7.738-17.25%2C17.25C33.75%2C53.292%2C33.94%2C54.745%2C34.317%2C56.196z%22%2F%3E%3Cpath%20fill%3D%22%23224064%22%20d%3D%22M71.465%2C51.179c-3.783%2C4.769-8.968%2C9.304-15.446%2C11.924c-3.964%2C1.604-8.118%2C2.405-12.434%2C2.405%20c-2.844%2C0-5.759-0.348-8.739-1.043c3.752%2C4.807%2C9.585%2C7.909%2C16.154%2C7.909c11.322%2C0%2C20.5-9.178%2C20.5-20.5%20C71.5%2C51.64%2C71.473%2C51.412%2C71.465%2C51.179z%22%2F%3E%3Cpath%20fill%3D%22%23476682%22%20d%3D%22M51%2C72.625c-6.421%2C0-12.381-2.918-16.352-8.005c-0.065-0.084-0.07-0.199-0.013-0.288%20c0.057-0.089%2C0.167-0.133%2C0.267-0.109c7.426%2C1.732%2C14.532%2C1.276%2C21.023-1.351c7.235-2.927%2C12.337-8.058%2C15.344-11.848%20c0.065-0.082%2C0.176-0.115%2C0.274-0.082c0.1%2C0.033%2C0.168%2C0.124%2C0.172%2C0.229c0.003%2C0.094%2C0.009%2C0.187%2C0.016%2C0.281%20c0.01%2C0.14%2C0.019%2C0.281%2C0.019%2C0.424C71.75%2C63.317%2C62.441%2C72.625%2C51%2C72.625z%20M35.491%2C64.867c3.868%2C4.622%2C9.48%2C7.258%2C15.509%2C7.258%20c11.166%2C0%2C20.25-9.084%2C20.25-20.25c0-0.01%2C0-0.02%2C0-0.03c-3.088%2C3.776-8.121%2C8.653-15.137%2C11.491%20C49.729%2C65.918%2C42.771%2C66.436%2C35.491%2C64.867z%22%2F%3E%3Cpath%20fill%3D%22%23e4b2e5%22%20d%3D%22M36.5%2C52c-1.93%2C0-3.5-1.57-3.5-3.5v-3c0-1.93%2C1.57-3.5%2C3.5-3.5c1.26%2C0%2C2.429%2C0.682%2C3.049%2C1.78%20c0.136%2C0.24%2C0.051%2C0.545-0.189%2C0.681c-0.242%2C0.136-0.545%2C0.051-0.682-0.189C38.235%2C43.487%2C37.4%2C43%2C36.5%2C43%20c-1.378%2C0-2.5%2C1.122-2.5%2C2.5v3c0%2C1.378%2C1.122%2C2.5%2C2.5%2C2.5s2.5-1.122%2C2.5-2.5v-0.979c0-0.276%2C0.224-0.5%2C0.5-0.5s0.5%2C0.224%2C0.5%2C0.5%20V48.5C40%2C50.43%2C38.43%2C52%2C36.5%2C52z%22%2F%3E%3Cpath%20fill%3D%22%23f7deff%22%20d%3D%22M34.203%2C44.07c-0.113%2C0-0.228-0.039-0.322-0.118c-0.211-0.178-0.238-0.493-0.06-0.705%20c0.48-0.57%2C1.142-0.98%2C1.863-1.152c0.271-0.064%2C0.539%2C0.101%2C0.603%2C0.37c0.064%2C0.269-0.102%2C0.538-0.37%2C0.603%20c-0.514%2C0.123-0.987%2C0.415-1.331%2C0.824C34.487%2C44.009%2C34.345%2C44.07%2C34.203%2C44.07z%22%2F%3E%3Cpath%20fill%3D%22%23e4b2e5%22%20d%3D%22M47.276%2C52c-0.2%2C0-0.389-0.121-0.466-0.319l-3.034-7.802l-3.034%2C7.802%20c-0.1%2C0.258-0.392%2C0.384-0.647%2C0.285c-0.257-0.1-0.385-0.39-0.285-0.647l3.5-9c0.149-0.384%2C0.782-0.384%2C0.932%2C0l3.5%2C9%20c0.1%2C0.257-0.027%2C0.547-0.285%2C0.647C47.398%2C51.989%2C47.337%2C52%2C47.276%2C52z%22%2F%3E%3Cpath%20fill%3D%22%23e4b2e5%22%20d%3D%22M51.5%2C52c-2.481%2C0-4.5-2.243-4.5-5s2.019-5%2C4.5-5c0.793%2C0%2C1.558%2C0.237%2C2.274%2C0.706%20c0.231%2C0.151%2C0.296%2C0.461%2C0.145%2C0.692c-0.151%2C0.231-0.46%2C0.296-0.692%2C0.145C52.676%2C43.182%2C52.095%2C43%2C51.5%2C43%20c-1.93%2C0-3.5%2C1.794-3.5%2C4s1.57%2C4%2C3.5%2C4c0.595%2C0%2C1.176-0.182%2C1.726-0.542c0.231-0.151%2C0.541-0.086%2C0.692%2C0.145%20s0.086%2C0.541-0.145%2C0.692C53.058%2C51.763%2C52.293%2C52%2C51.5%2C52z%22%2F%3E%3Cpath%20fill%3D%22%23e4b2e5%22%20d%3D%22M55.5%2C52c-0.276%2C0-0.5-0.224-0.5-0.5v-9c0-0.276%2C0.224-0.5%2C0.5-0.5s0.5%2C0.224%2C0.5%2C0.5v9%20C56%2C51.776%2C55.776%2C52%2C55.5%2C52z%22%2F%3E%3Cpath%20fill%3D%22%23e4b2e5%22%20d%3D%22M61.5%2C52c-0.276%2C0-0.5-0.224-0.5-0.5v-9c0-0.276%2C0.224-0.5%2C0.5-0.5s0.5%2C0.224%2C0.5%2C0.5v9%20C62%2C51.776%2C61.776%2C52%2C61.5%2C52z%22%2F%3E%3Cpath%20fill%3D%22%23e4b2e5%22%20d%3D%22M61%2C48h-5.5c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5H61c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S61.276%2C48%2C61%2C48z%22%2F%3E%3Cpath%20fill%3D%22%23e4b2e5%22%20d%3D%22M45.532%2C49h-3.606c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h3.606c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S45.808%2C49%2C45.532%2C49z%22%2F%3E%3Cpath%20fill%3D%22%23e4b2e5%22%20d%3D%22M70.064%2C52c-0.2%2C0-0.389-0.121-0.466-0.319l-3.034-7.802l-3.034%2C7.802%20c-0.1%2C0.258-0.392%2C0.384-0.647%2C0.285c-0.257-0.1-0.385-0.39-0.285-0.647l3.5-9c0.149-0.384%2C0.782-0.384%2C0.932%2C0l3.5%2C9%20c0.1%2C0.257-0.027%2C0.547-0.285%2C0.647C70.186%2C51.989%2C70.125%2C52%2C70.064%2C52z%22%2F%3E%3Cpath%20fill%3D%22%23e4b2e5%22%20d%3D%22M68.627%2C49h-3.915c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h3.915c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S68.904%2C49%2C68.627%2C49z%22%2F%3E%3Cpath%20fill%3D%22%23e4b2e5%22%20d%3D%22M39.5%2C48h-3c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h3c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S39.776%2C48%2C39.5%2C48z%22%2F%3E%3Cpath%20fill%3D%22%239ce7ea%22%20d%3D%22M54.5%2C64c-1.93%2C0-3.5-1.57-3.5-3.5v-6c0-0.276%2C0.224-0.5%2C0.5-0.5s0.5%2C0.224%2C0.5%2C0.5v6%20c0%2C1.378%2C1.122%2C2.5%2C2.5%2C2.5s2.5-1.122%2C2.5-2.5v-6c0-0.276%2C0.224-0.5%2C0.5-0.5s0.5%2C0.224%2C0.5%2C0.5v6C58%2C62.43%2C56.43%2C64%2C54.5%2C64z%22%2F%3E%3Cpath%20fill%3D%22%239ce7ea%22%20d%3D%22M41.5%2C64c-2.481%2C0-4.5-2.243-4.5-5s2.019-5%2C4.5-5c0.793%2C0%2C1.558%2C0.237%2C2.274%2C0.706%20c0.231%2C0.151%2C0.296%2C0.461%2C0.145%2C0.692c-0.151%2C0.231-0.461%2C0.296-0.692%2C0.145C42.676%2C55.182%2C42.095%2C55%2C41.5%2C55%20c-1.93%2C0-3.5%2C1.794-3.5%2C4s1.57%2C4%2C3.5%2C4c0.595%2C0%2C1.176-0.182%2C1.726-0.542c0.231-0.151%2C0.541-0.086%2C0.692%2C0.145%20s0.086%2C0.541-0.145%2C0.692C43.058%2C63.763%2C42.293%2C64%2C41.5%2C64z%22%2F%3E%3Cpath%20fill%3D%22%239ce7ea%22%20d%3D%22M45.5%2C64c-0.276%2C0-0.5-0.224-0.5-0.5v-9c0-0.276%2C0.224-0.5%2C0.5-0.5s0.5%2C0.224%2C0.5%2C0.5v9%20C46%2C63.776%2C45.776%2C64%2C45.5%2C64z%22%2F%3E%3Cpath%20fill%3D%22%239ce7ea%22%20d%3D%22M51%2C64h-5.5c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5H51c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5%20S51.276%2C64%2C51%2C64z%22%2F%3E%3Cpath%20fill%3D%22%239ce7ea%22%20d%3D%22M62.5%2C59h-3c-0.276%2C0-0.5-0.224-0.5-0.5v-4c0-0.276%2C0.224-0.5%2C0.5-0.5h3c1.378%2C0%2C2.5%2C1.122%2C2.5%2C2.5%20S63.878%2C59%2C62.5%2C59z%20M60%2C58h2.5c0.827%2C0%2C1.5-0.673%2C1.5-1.5S63.327%2C55%2C62.5%2C55H60V58z%22%2F%3E%3Cpath%20fill%3D%22%239ce7ea%22%20d%3D%22M63%2C64h-3.5c-0.276%2C0-0.5-0.224-0.5-0.5v-5c0-0.276%2C0.224-0.5%2C0.5-0.5H63c1.654%2C0%2C3%2C1.346%2C3%2C3%20S64.654%2C64%2C63%2C64z%20M60%2C63h3c1.103%2C0%2C2-0.897%2C2-2s-0.897-2-2-2h-3V63z%22%2F%3E%3Cpath%20fill%3D%22%23548db8%22%20d%3D%22M39.309%2C35.293c-0.075%2C0-0.15-0.034-0.199-0.099c-0.083-0.11-0.062-0.267%2C0.048-0.35%20c0.125-0.095%2C3.118-2.341%2C6.457-2.951c0.132-0.025%2C0.266%2C0.065%2C0.291%2C0.201c0.024%2C0.136-0.065%2C0.266-0.201%2C0.291%20c-3.224%2C0.589-6.215%2C2.835-6.245%2C2.858C39.415%2C35.276%2C39.361%2C35.293%2C39.309%2C35.293z%22%2F%3E%3Cpath%20fill%3D%22%23babbcd%22%20d%3D%22M37.816%2C31.335c-0.077%2C0-0.154-0.036-0.203-0.104c-0.081-0.112-0.056-0.268%2C0.056-0.349%20c0.097-0.07%2C2.39-1.711%2C4.944-2.361c0.135-0.035%2C0.27%2C0.047%2C0.304%2C0.181c0.034%2C0.134-0.047%2C0.27-0.181%2C0.304%20c-2.459%2C0.627-4.751%2C2.266-4.774%2C2.282C37.918%2C31.32%2C37.867%2C31.335%2C37.816%2C31.335z%22%2F%3E%3Cpath%20fill%3D%22%23f3fdfc%22%20d%3D%22M38.032%2C57.277c-0.063%2C0-0.126-0.012-0.188-0.037c-0.256-0.104-0.379-0.396-0.275-0.651%20c0.345-0.848%2C1.27-1.694%2C1.374-1.787c0.206-0.185%2C0.521-0.167%2C0.706%2C0.038c0.185%2C0.205%2C0.168%2C0.521-0.037%2C0.706%20c-0.236%2C0.213-0.897%2C0.882-1.116%2C1.42C38.416%2C57.159%2C38.229%2C57.277%2C38.032%2C57.277z%22%2F%3E%3Cpath%20fill%3D%22%23f7deff%22%20d%3D%22M48.169%2C45.05c-0.071%2C0-0.144-0.015-0.213-0.048c-0.25-0.118-0.356-0.416-0.239-0.665%20c0.39-0.828%2C1.36-1.622%2C1.469-1.71c0.215-0.173%2C0.529-0.139%2C0.702%2C0.076s0.139%2C0.53-0.076%2C0.703%20c-0.248%2C0.199-0.944%2C0.832-1.191%2C1.357C48.537%2C44.944%2C48.357%2C45.05%2C48.169%2C45.05z%22%2F%3E%3Cpath%20fill%3D%22%23f3fdfc%22%20d%3D%22M45.476%2C62.112c-0.276%2C0-0.5-0.224-0.5-0.5v-1.436c0-0.276%2C0.224-0.5%2C0.5-0.5s0.5%2C0.224%2C0.5%2C0.5%20v1.436C45.976%2C61.888%2C45.752%2C62.112%2C45.476%2C62.112z%22%2F%3E%3Cpath%20fill%3D%22%23f7deff%22%20d%3D%22M45.013%2C49.021h-1.436c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h1.436%20c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5S45.29%2C49.021%2C45.013%2C49.021z%22%2F%3E%3Cpath%20fill%3D%22%23f7deff%22%20d%3D%22M60.907%2C48.021h-1.436c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5h1.436%20c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5S61.183%2C48.021%2C60.907%2C48.021z%22%2F%3E%3Cpath%20fill%3D%22%23f7deff%22%20d%3D%22M68.245%2C47.449c-0.202%2C0-0.393-0.123-0.468-0.324l-0.506-1.344%20c-0.098-0.258%2C0.033-0.547%2C0.292-0.644s0.547%2C0.033%2C0.644%2C0.292l0.506%2C1.344c0.098%2C0.258-0.033%2C0.547-0.292%2C0.644%20C68.363%2C47.438%2C68.304%2C47.449%2C68.245%2C47.449z%22%2F%3E%3Cpath%20fill%3D%22%23f3fdfc%22%20d%3D%22M57.492%2C57.037c-0.276%2C0-0.5-0.224-0.5-0.5v-1.436c0-0.276%2C0.224-0.5%2C0.5-0.5s0.5%2C0.224%2C0.5%2C0.5%20v1.436C57.992%2C56.813%2C57.769%2C57.037%2C57.492%2C57.037z%22%2F%3E%3Cpath%20fill%3D%22%23f3fdfc%22%20d%3D%22M63.739%2C63.787c-0.242%2C0-0.455-0.176-0.494-0.423c-0.042-0.271%2C0.143-0.526%2C0.413-0.57%20c0.04-0.007%2C0.813-0.155%2C1.15-0.987c0.104-0.256%2C0.394-0.379%2C0.651-0.276c0.256%2C0.104%2C0.379%2C0.395%2C0.276%2C0.651%20c-0.555%2C1.372-1.863%2C1.59-1.919%2C1.599C63.79%2C63.785%2C63.764%2C63.787%2C63.739%2C63.787z%22%2F%3E%3Cpath%20fill%3D%22%23928eb3%22%20d%3D%22M57.148%2C71.676c-0.119%2C0-0.225-0.086-0.246-0.207c-0.024-0.136%2C0.067-0.265%2C0.203-0.289%20c0.033-0.006%2C3.288-0.597%2C6.132-3.132c0.103-0.092%2C0.262-0.083%2C0.353%2C0.02c0.092%2C0.103%2C0.083%2C0.261-0.02%2C0.353%20c-2.956%2C2.634-6.241%2C3.227-6.379%2C3.251C57.177%2C71.674%2C57.163%2C71.676%2C57.148%2C71.676z%22%2F%3E%3Cpath%20fill%3D%22%23a2d2d4%22%20d%3D%22M59%2C74.612c-0.113%2C0-0.215-0.076-0.243-0.19c-0.033-0.134%2C0.049-0.269%2C0.183-0.302%20c0.031-0.008%2C3.159-0.795%2C5.781-2.95c0.106-0.088%2C0.264-0.072%2C0.352%2C0.034c0.088%2C0.107%2C0.073%2C0.264-0.034%2C0.352%20c-2.712%2C2.231-5.847%2C3.017-5.979%2C3.05C59.04%2C74.609%2C59.02%2C74.612%2C59%2C74.612z%22%2F%3E%3C%2Fg%3E%3Cg%3E%3Cpath%20fill%3D%22%23fdfcef%22%20d%3D%22M40.5%2C82.5c0%2C0%2C1.567%2C0%2C3.5%2C0s3.5-1.567%2C3.5-3.5c0-1.781-1.335-3.234-3.055-3.455%20C44.473%2C75.366%2C44.5%2C75.187%2C44.5%2C75c0-1.933-1.567-3.5-3.5-3.5c-1.032%2C0-1.95%2C0.455-2.59%2C1.165%20c-0.384-1.808-1.987-3.165-3.91-3.165c-2.209%2C0-4%2C1.791-4%2C4c0%2C0.191%2C0.03%2C0.374%2C0.056%2C0.558C30.128%2C73.714%2C29.592%2C73.5%2C29%2C73.5%20c-1.228%2C0-2.245%2C0.887-2.455%2C2.055C26.366%2C75.527%2C26.187%2C75.5%2C26%2C75.5c-1.933%2C0-3.5%2C1.567-3.5%2C3.5s1.567%2C3.5%2C3.5%2C3.5s7.5%2C0%2C7.5%2C0%20V83h7V82.5z%22%2F%3E%3Cpath%20fill%3D%22%23472b29%22%20d%3D%22M42.25%2C78C42.112%2C78%2C42%2C77.888%2C42%2C77.75c0-1.223%2C0.995-2.218%2C2.218-2.218%20c0.034%2C0.009%2C0.737-0.001%2C1.244%2C0.136c0.133%2C0.036%2C0.212%2C0.173%2C0.176%2C0.306c-0.036%2C0.134-0.173%2C0.213-0.306%2C0.176%20c-0.444-0.12-1.1-0.12-1.113-0.118c-0.948%2C0-1.719%2C0.771-1.719%2C1.718C42.5%2C77.888%2C42.388%2C78%2C42.25%2C78z%22%2F%3E%3Ccircle%20cx%3D%2235.5%22%20cy%3D%2282.5%22%20r%3D%22.5%22%20fill%3D%22%23472b29%22%2F%3E%3Cpath%20fill%3D%22%23472b29%22%20d%3D%22M44%2C83h-3.5c-0.276%2C0-0.5-0.224-0.5-0.5s0.224-0.5%2C0.5-0.5H44c1.654%2C0%2C3-1.346%2C3-3%20c0-1.496-1.125-2.768-2.618-2.959c-0.134-0.018-0.255-0.088-0.336-0.196s-0.115-0.244-0.094-0.377C43.975%2C75.314%2C44%2C75.16%2C44%2C75%20c0-1.654-1.346-3-3-3c-0.85%2C0-1.638%2C0.355-2.219%2C1c-0.125%2C0.139-0.321%2C0.198-0.5%2C0.148c-0.182-0.049-0.321-0.195-0.36-0.379%20C37.58%2C71.165%2C36.141%2C70%2C34.5%2C70c-1.93%2C0-3.5%2C1.57-3.5%2C3.5c0%2C0.143%2C0.021%2C0.28%2C0.041%2C0.418c0.029%2C0.203-0.063%2C0.438-0.242%2C0.54%20s-0.396%2C0.118-0.556-0.01C29.878%2C74.155%2C29.449%2C74%2C29%2C74c-0.966%2C0-1.792%2C0.691-1.963%2C1.644c-0.048%2C0.267-0.296%2C0.446-0.569%2C0.405%20C26.314%2C76.025%2C26.16%2C76%2C26%2C76c-1.654%2C0-3%2C1.346-3%2C3s1.346%2C3%2C3%2C3h7.5c0.276%2C0%2C0.5%2C0.224%2C0.5%2C0.5S33.776%2C83%2C33.5%2C83H26%20c-2.206%2C0-4-1.794-4-4s1.794-4%2C4-4c0.059%2C0%2C0.116%2C0.002%2C0.174%2C0.006C26.588%2C73.82%2C27.711%2C73%2C29%2C73c0.349%2C0%2C0.689%2C0.061%2C1.011%2C0.18%20C30.176%2C70.847%2C32.126%2C69%2C34.5%2C69c1.831%2C0%2C3.466%2C1.127%2C4.153%2C2.774C39.333%2C71.276%2C40.155%2C71%2C41%2C71c2.206%2C0%2C4%2C1.794%2C4%2C4%20c0%2C0.048-0.001%2C0.095-0.004%2C0.142C46.739%2C75.59%2C48%2C77.169%2C48%2C79C48%2C81.206%2C46.206%2C83%2C44%2C83z%22%2F%3E%3Cpath%20fill%3D%22%23472b29%22%20d%3D%22M38.5%2C82c-0.159%2C0-0.841%2C0-1%2C0c-0.276%2C0-0.5%2C0.224-0.5%2C0.5s0.224%2C0.5%2C0.5%2C0.5c0.159%2C0%2C0.841%2C0%2C1%2C0%20c0.276%2C0%2C0.5-0.224%2C0.5-0.5S38.776%2C82%2C38.5%2C82z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")
-    center/contain no-repeat;
-}
-
-.tutorialContainer-1pL9QS .listItem-2P_4kh {
-  padding: 0;
-  width: 100%;
-}
-
-.tutorialContainer-1pL9QS .childWrapper-1j_1ub {
-  display: none;
-}
 
 /*Rainbow Wave USER#ID*/
 .subtext-2HDqJ7,
@@ -2393,7 +2276,7 @@ html .mention.wrapper-1ZcZW-.mention.interactive {
 /*avatar only memberlist until hover*/
 .chatContent-3KubbW {
   /*Chat pannel and message box*/
-  margin-right: 60px;
+  margin-right: 0px;
 }
 
 .membersWrap-3NUR2t {
@@ -2428,23 +2311,21 @@ html .mention.wrapper-1ZcZW-.mention.interactive {
 .sidebar-nqHbhN {
   width: 230px;
   padding: 0;
+  background-color: transparent;
 }
 
 .chat-2ZfjoI {
   position: relative;
-  margin-left: 15px;
 }
 
 .sidebar-1tnWFu {
   border-radius: 0 !important;
-  /* resize: horizontal; */
-  min-width: 13px;
+  min-width: 0px;
   max-width: 2rem;
-  background-color: var(--background-primary);
+  background-color: transparent;
   z-index: 1;
 }
 
-/* .sidebar-1tnWFu { */
 .container-1NXEtd,
 .privateChannels-oVe7HL {
   position: absolute;
@@ -2455,19 +2336,15 @@ html .mention.wrapper-1ZcZW-.mention.interactive {
   width: 230px;
   justify-content: center;
   transform: translate(20%);
-  /* transition: transform 0.25s ease-out; */
   /* very slow start out */
   transition: transform 2s cubic-bezier(0.3, 0.03, 0.93, -0.33);
   opacity: 0.1;
 }
 
-/* .sidebar-1tnWFu:hover { */
 .container-1NXEtd:hover,
 .privateChannels-oVe7HL:hover {
   margin: 0;
   transform: translate(95%);
-  /* transition: transform 0.25s ease-in-out; */
-  /* transition: transform 2s cubic-bezier(.42,.44,0,1.89); */
   transition: transform 1s cubic-bezier(0, 0.62, 0.87, 1.39);
   opacity: 1.0;
 }
@@ -2475,24 +2352,8 @@ html .mention.wrapper-1ZcZW-.mention.interactive {
 .privateChannelRecipientsInviteButtonIcon-1ObKXK {
   padding-inline-end: 5px;
 }
-/* DM customs */
-.link-39sEB3 {
-  justify-content: stretch;
-  flex-direction: row;
-}
-.content-66wMin {
-  order: -2;
-}
-.avatar-1HDIsL {
-  order: 1;
-  right: 0px;
-  margin: 0 2.5% 0 0;
-  position: absolute;
-}
-.closeButton-mupH76 {
-  order: -1;
-  justify-content: flex-start;
-}
+
+
 
 /* BetterDiscord: Settings: Buttons and switches */
 .bd-addon-views .bd-view-button.selected,
