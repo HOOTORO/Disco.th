@@ -15,6 +15,8 @@ TODO:
 2. horizontal guild bar on top
 3. Avatar under nickname
 4. Guild Channel deeper custom
+5. fix sidebars headers 
+6. button helptext fix
 */
 /* FONT */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700;800&display=swap");
@@ -31,6 +33,7 @@ body.powercord .header-QKLPzZ {
   --color-red: #ff0000;
   --color-red-darker: #bb1411;
   --color-purple: #6f00ff;
+
   --color-orange: #ffaa00;
   --color-orange-darker: #dfaf38;
   --background-orange: rgba(255, 165, 0, 0.1);
@@ -206,7 +209,7 @@ body {
   background-color: transparent !important;
   padding: 0 !important;
   contain: none;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 /* frinds and dm hit */
 .chat-2ZfjoI,
@@ -464,20 +467,42 @@ body {
 }
 
 /* Discord: Home: Search form */
-.homeIcon-FuNwkv {
-  background-color: white;
-  -webkit-mask: url("./assets/black-mesa.svg");
-  /* -webkit-mask: url(file:///C:/Users/maruk/vscode/.icons/material/black-mesa.svg); */
-  -webkit-mask-size: 45px;
+.homeIcon-r0w4ny {
+  /* color: var(--color-orange); */
+  background-color: var(--color-orange);
+  fill: var(--color-orange);
+  stroke: var(--color-red);
+  stroke-width: 3;
+  -webkit-mask: url(https://raw.githubusercontent.com/Hootsdev/hoot/master/assets/black-mesa.svg);
+  -webkit-mask-size: 50px;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
-  transform: scale(0.5);
-  transition: background-color 0.2s ease-in-out;
+  transform: scale(1);
+  /* transition: background-color 0.2s ease-in-out; */
   -webkit-mask-position: center;
   margin-left: 0px;
   height: 100% !important;
   width: 100% !important;
 }
+
+/* ##### HOVER OVER DM ########## */
+/* TODO: Optimize? */
+.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub,
+.wrapper-3kah-n:hover .childWrapper-1j_1ub  {
+  /* transition: background-color 0.11s ease-in-out; */
+  /* color: var(--color-purple); */
+  /* background-color: var(--color-purple); */
+}
+
+
+.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub .homeIcon-r0w4ny:hover,
+.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub .homeIcon-r0w4ny {
+  /* transition: background-color 0.2s ease-in-out; */
+  /* color: var(--info-warning-text);
+  background-color: var(--info-warning-text); */
+}
+/* ############################################  */
+
 
 .input-3r5zZY {
   border-width: 2px;
@@ -931,8 +956,8 @@ body {
 .username-h_Y3Us {
   font-family: var(--font-username);
   font-weight: bold;
-  font-size: 17px;
-  letter-spacing: 2px;
+  font-size: 18px;
+  letter-spacing: 4px;
   color: #6f00ff;
 }
 .inviteDestinationExpired-1n9a5a {
@@ -975,11 +1000,6 @@ body {
   border-radius: 0.4rem;
 }
 
-.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub,
-.wrapper-3kah-n:hover .childWrapper-1j_1ub {
-  color: black;
-  background-color: var(--color-brand);
-}
 
 .unreadPill-3nEWYM {
   background-color: var(--background-primary);
@@ -1168,8 +1188,8 @@ body {
 .container-ZMc96U.themed-Hp1KC_ {
   /* background: var(--background-tertiary); */
   background: transparent;
-  border-radius: 10px;
-  border: 3px var(--color-purple);
+  border-radius: 15px;
+  border: 6px var(--color-purple);
   border-bottom-style: ridge;
   box-shadow: var(--shadow);
   padding-right: 238px;
@@ -1515,11 +1535,8 @@ div[id*="folder-items"] {
 }
 
 .scroller-3X7KbA {
-  /* background-color: var(--background-primary); */
-  /* background-color: var(--test-color); */
   padding: 0 !important;
   contain: none;
-  /* margin-top: 50px; */
 }
 
 .wrapper-2vIMkT {
@@ -1532,7 +1549,7 @@ div[id*="folder-items"] {
   height: 50px;
 }
 
-.tutorialContainer-2sGCg9 {
+/* .tutorialContainer-2sGCg9 {
   height: 50px;
   width: 50px;
   margin-top: -50px;
@@ -1541,36 +1558,10 @@ div[id*="folder-items"] {
   display: flex;
   align-items: center;
   background-color: var(--test-color);
-  /* background-color: var(--background-tertiary); */
+  background-color: var(--background-tertiary);
   box-shadow: var(--shadow-bottom);
-}
+} */
 
-.tutorialContainer-2sGCg9 .wrapper-z5ab_q {
-  display: none;
-}
-
-.tutorialContainer-2sGCg9 .wrapper-28eC3z,
-.tutorialContainer-2sGCg9 .wrapper-28eC3z svg {
-  width: 40px;
-  height: 40px;
-}
-/* TODO: make custom logo */
-.tutorialContainer-2sGCg9 .wrapper-3kah-n {
-  width: 100%;
-  height: 100%;
-  /* background: url("data/svg, ../../assets/black-mesa.svg") */
-  background: url(file:///C:/Users/maruk/vscode/.icons/material/black-mesa.svg)
-    center/contain no-repeat;
-}
-
-.tutorialContainer-2sGCg9 .listItem-2P_4kh {
-  padding: 0;
-  width: 100%;
-}
-
-.tutorialContainer-2sGCg9 .childWrapper-1j_1ub {
-  display: none;
-}
 
 .guildSeparator-33mFX6 {
   height: 0;
@@ -1733,7 +1724,7 @@ div[id*="folder-items"] {
 }
 
 .theme-dark .quickSelectPopout-2F0PXw {
-  background: var(--background-secondary);
+  background: var(--test-color);
 }
 
 .colorable-3rVGna.red-3T8maV {
