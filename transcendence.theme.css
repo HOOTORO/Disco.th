@@ -46,6 +46,8 @@ body.powercord .header-QKLPzZ {
   --color-gray-darker: #4f545c;
   --shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 0 4px rgba(0, 0, 0, 0.4);
   --shadow-bottom: 0 1px 2px rgba(0, 0, 0, 0.9), 0 0 2px rgba(0, 0, 0, 0.9);
+  --trans-cyan: rgba(0, 238, 255, 0.025);
+  --trans-black: rgba(59, 57, 57, 0.651)
   --user-background: #18181b;
 
   --test-color: #fff000;
@@ -78,6 +80,7 @@ body.powercord .header-QKLPzZ {
 /* Discord */
 .theme-dark,
 :root {
+  --color-just-black: rgba(0, 0, 0,0.9);
   --header-primary: #fff;
   --header-secondary: #b9bbbe;
   --text-normal: #dcddde;
@@ -488,25 +491,25 @@ body {
 } */
 /* Discord: Home icon */
 .tutorialContainer-1pL9QS {
-	/* height: 50px; */
-	/* width: 50px; */
-	/* margin-top: 50px; */
-	/* position: fixed; */
-	z-index: 2;
-	display: flex;
-	align-items: center;
-	background-color: transparent;
-	box-shadow: var(--shadow-bottom);
+  /* height: 50px; */
+  /* width: 50px; */
+  /* margin-top: 50px; */
+  /* position: fixed; */
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  box-shadow: var(--shadow-bottom);
 }
 
 .tutorialContainer-1pL9QS .wrapper-z5ab_q {
-	display: none;
+  display: none;
 }
 
 .tutorialContainer-1pL9QS .wrapper-28eC3z,
 .tutorialContainer-1pL9QS .wrapper-28eC3z svg {
-	width: 40px;
-	height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .wrapper-28eC3z svg {
@@ -514,25 +517,25 @@ body {
 }
 
 .tutorialContainer-1pL9QS .wrapper-3kah-n {
-	width: 100%;
-	height: 100%;
-	background: url(https://raw.githubusercontent.com/Hootsdev/hoot/master/assets/kitsu.svg) center/contain no-repeat;
+  width: 100%;
+  height: 100%;
+  background: url(https://raw.githubusercontent.com/Hootsdev/hoot/master/assets/kitsu.svg)
+    center/contain no-repeat;
   background-color: var(--color-brand);
 }
 .tutorialContainer-1pL9QS .wrapper-3kah-n:hover,
-.tutorialContainer-1pL9QS .wrapper-3kah-n.selected-1Drb7Z
- {
+.tutorialContainer-1pL9QS .wrapper-3kah-n.selected-1Drb7Z {
   transition: background-color 0.11s ease-in-out;
   background-color: var(--pink);
 }
 
 .tutorialContainer-1pL9QS .listItem-2P_4kh {
-	padding: 0;
-	width: 100%;
+  padding: 0;
+  width: 100%;
 }
 
 .tutorialContainer-1pL9QS .childWrapper-1j_1ub {
-	display: none;
+  display: none;
 }
 /* ##### HOVER OVER DM ########## */
 /* TODO: Optimize? */
@@ -572,16 +575,18 @@ body {
 }
 
 /* Discord: Chat: Form */
-
-.form-3gdLxP {
-  padding-left: 15%;
-  padding-right: 15%;
+.scrollerInner-2PPAp2, /*messages*/
+.content-1jQy2l, /*forum channels*/
+.form-3gdLxP { /*input form*/
+  padding-left: 10%;
+  padding-right: 10%;
   justify-content: center;
 }
-.scrollerInner-2PPAp2 {
-  padding-left: 15%;
-  padding-right: 15%;
+.theme-dark .container-3wLKDe {
+  background-color: transparent;
 }
+
+
 .input-2g-os5,
 .scrollableContainer-15eg7h {
   background-color: #000000;
@@ -1057,10 +1062,20 @@ body {
   color: var(--color-green-darker);
   display: -webkit-box;
   justify-content: center;
-  padding: 0 0 0 10px;
-  border-radius: 0;
+  padding: 0 10px 0 10px;
+  margin: 0 60%;
+  border-left: 3px solid var(--color-green-darker) ;
+  border-right: 3px solid var(--color-green-darker) ;
+  border-radius: 7rem;
   font-size: 11px;
   font-weight: normal;
+}
+
+.content-3spvdd {
+  border-left: 3px solid var(--color-red-darker) ;
+  border-right: 3px solid var(--color-red-darker) ;
+  border-radius: 7rem;
+  padding: 0 10px 0 10px;
 }
 
 .unreadPillCap-2-iI4h {
@@ -1128,19 +1143,22 @@ body {
   margin: 0.5rem 6px;
 }
 
-/* NEW MESSAGES BAR */
+/* NEW MESSAGES BAR newMessagesBar-1hF-9G barBase-3xxDXu*/
 .newMessagesBar-1hF-9G {
   background-color: var(--color-brand-darker);
-  margin-top: 2px;
+  margin: 0 10%;
+
 }
 .barBase-3xxDXu {
   border-radius: 0;
   left: 0;
   right: 0;
-  min-height: 32px;
+  min-height: 30px;
 }
 .barButtonBase-Sk2mdB {
-  color: var(--background-primary);
+  font-weight: 1000;
+  /* color: var(--background-primary); */
+  color: var(--color-orange);
 }
 /* END MESSAGES BAR */
 
@@ -1173,17 +1191,15 @@ body {
   box-shadow: var(--shadow-bottom);
 }
 
-
 /* #app-mount > .appDevToolsWrapper-1QxdQf  > .app-3xd6d0 > .layers-OrUESM.layers-1YQhyW > .container-1eFtFS {
   margin-top: -40px;
 } */
 
 .scroller-WSmht3 {
+  margin-top: 40px;
   border-right: 1px solid #303032;
   border-left: 1px solid #303032;
 }
-
-
 
 .userPopout-3XzG_A {
   box-shadow: var(--shadow);
@@ -1206,7 +1222,7 @@ body {
 
 .member-48YF_l,
 .members-3WRCEx {
-  background-color: transparent;
+  background-color: var(--trans-black);
 }
 .membersWrap-3NUR2t {
   border-left: 1px solid #303032;
@@ -1517,11 +1533,6 @@ div[id*="folder-items"] {
   height: auto !important;
 }
 
-.sidebar-1tnWFu {
-  margin-top: 60px;
-  border-radius: 0 !important;
-}
-
 .defaultColor-2cKwKo {
   color: var(--color-brand);
 }
@@ -1535,10 +1546,14 @@ div[id*="folder-items"] {
   background-color: transparent;
 }
 
+.container-1oAagU,
 .nowPlayingColumn-1eCBCN {
-  background-color: transparent !important;
+  background-color: var(--trans-cyan) !important;
+
   border-left: 1px solid #05e0d5;
+
 }
+
 
 .bg-1QIAus {
   top: -30px;
@@ -1600,10 +1615,10 @@ div[id*="folder-items"] {
 .searchBar-3TnChZ {
   height: 60px;
 }
-
-
+.guildSeparator-a4uisj,
 .guildSeparator-33mFX6 {
-  height: 0;
+  height: 2px;
+  background-color:var(--color-purple);
   border-radius: 0;
 }
 
@@ -1652,7 +1667,8 @@ div[id*="folder-items"] {
   right: 0;
   top: 0;
   position: absolute;
-  z-index: 101;
+  overflow: visible;
+  z-index: 0;
   width: 220px;
   height: 55px;
   align-items: center;
@@ -1886,7 +1902,7 @@ div[id*="folder-items"] {
 .avatar-1HDIsL {
   order: 1;
   right: 0px;
-  margin: 0 2.5% 0 0;
+  margin: 0 5% 0 0;
   position: absolute;
 }
 .closeButton-mupH76 {
@@ -1927,7 +1943,6 @@ div[id*="folder-items"] {
   box-shadow: inset 0 0 0 2px var(--color-green),
     inset 0 0 0 3px var(--background-secondary);
 }
-
 
 /* BetterDiscord: Settings: Buttons and switches */
 .bd-addon-views .bd-view-button.selected,
@@ -2096,7 +2111,7 @@ div[id*="folder-items"] {
   color: transparent !important;
   -webkit-background-clip: text;
   position: relative;
-  z-index: 1;
+  z-index: 102;
 }
 @keyframes gradient-border {
   0%,
@@ -2164,12 +2179,16 @@ html .mention.wrapper-1ZcZW-.mention.interactive {
 /*Shows the server members list*/
 .membersWrap-3NUR2t:hover {
   /*Shows server's members*/
+  background-color: var(--color-just-black);
   transform: translateX(0%);
 }
 
 /* Guild channels, Fiends chats popUP */
 .sidebar-1tnWFu {
-  max-width: 2px;
+  /* resize: horizontal; */
+  max-width: 0px;
+  margin-top: 60px;
+  border-radius: 0 !important;
 }
 
 .container-1NXEtd,
@@ -2177,14 +2196,13 @@ html .mention.wrapper-1ZcZW-.mention.interactive {
   position: absolute;
   display: flex;
   align-self: flex-start;
-  top: 0;
-  left: -220px;
-  height: 100%;
-  max-width: 220px;
-  transform: translate(13%);
+  top: 60px;
+  height: 95%;
+  width: 240px;
+  max-width: 240px;
+  transform: translateX(-75%);
   /* very slow start out */
-  /* transition: transform 2s cubic-bezier(0.3, 0.03, 0.93, -0.33); */
-  transition: transform 2s cubic-bezier(1, 0.02, 0.68, 0.56);
+  transition: transform 2s cubic-bezier(1,-0.12,1,1.08);
   opacity: 0.25;
   z-index: 1;
 }
@@ -2192,8 +2210,9 @@ html .mention.wrapper-1ZcZW-.mention.interactive {
 .container-1NXEtd:hover,
 .privateChannels-oVe7HL:hover {
   margin: 0;
-  transform: translate(100%,5%);
-  transition: transform 1s cubic-bezier(0, 0.62, 0.87, 1.39);
+  transform: translate(0%);
+  /* transition: transform 1s cubic-bezier(0, 0.92, 0.87, 0); */
+  transition: transform 1s ease-in-out;
   opacity: 0.9;
 }
 
