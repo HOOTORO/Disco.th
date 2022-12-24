@@ -1,5 +1,5 @@
 /**
-  * @name !Testscendance
+  * @name !Transcendance
   * @author Hootsman#0149
   * @version 0.6
   * @description inspired by various discord themes (see README.MD)
@@ -11,8 +11,7 @@
 */
 
 
-
-@import url("base.css");
+@import url("https://hootsdev.github.io/Transcendence/css/base.css");
 
 /* TRANSCENDENCE */
 :root {
@@ -28,7 +27,7 @@
   --color-red: #ff0000;
   --color-red-darker: #bb1411;
   --color-purple: #6f00ff;
-  --color-orange: #ffaa00;
+  --color-orange: #ffaa00; 
   --background-orange: rgba(255, 165, 0, 0.1);
   --color-green: #00ff00;
   --color-green-darker: #00aa00;
