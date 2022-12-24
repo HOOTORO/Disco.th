@@ -1400,7 +1400,8 @@ body {
 #app-mount .guilds-2JjMmN {
   border: 4px;
   border-radius: 2rem;
-  border-right-style: groove;
+  /* border-right-style: groove; */
+  border-style: groove;
   border-color: var(--pink-bright);
 }
 
