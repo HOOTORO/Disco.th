@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="https://hootsdev.github.io/css/base.css">
 # Transcendence
 
 BetterDiscord theme ispired by many other themes
