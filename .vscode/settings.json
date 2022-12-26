@@ -1,9 +1,0 @@
-{
-    "task.allowAutomaticTasks": "on",
-    "triggerTaskOnSave.tasks": {
-        "cp theme": [
-            "*.css"
-        ]
-    },
-    "triggerTaskOnSave.selectedTask": "cp theme"
-}

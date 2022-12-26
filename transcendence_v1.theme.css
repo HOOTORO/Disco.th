@@ -1,5 +1,7 @@
 /**
-  * @name !Transcendance
+
+  * @name !Transcendance_OLD
+
   * @author Hootsman#0149
   * @version 0.5
   * @description inspired by various discord themes (see README.MD)
@@ -487,6 +489,8 @@ body {
 }
 
 /* Discord: Chat: Form */
+
+.typing-2J1mQU,
 .scrollerInner-2PPAp2, /*messages*/
 .content-1jQy2l, /*forum channels*/
 .form-3gdLxP {
