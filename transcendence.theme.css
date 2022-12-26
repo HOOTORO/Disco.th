@@ -1,5 +1,5 @@
 /**
-  * @name !Transcendance
+  * @name !Testscendance
   * @author Hootsman#0149
   * @version 0.7
   * @description inspired by various discord themes (see README.MD)
@@ -12,12 +12,14 @@
 
   @import url("https://hootsdev.github.io/Transcendence/css/base.css");
 
+
   @import url(https://discordstyles.github.io/Addons/windows-titlebar.css);
   @import url(https://maendisease.github.io/BetterDiscordStuff/css/ChatBubbles.css);
   
   /* Bottom HorizontalServerList. Simply remove the comments surrounding the @import to enable it. */
   @import url(https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css);
   @import url("https://discordstyles.github.io/Addons/bottomhsl.css");
+
 
   /* FONT */
   @import url(https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700;800&display=swap);
@@ -57,6 +59,7 @@
   --shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 0 4px rgba(0, 0, 0, 0.4);
   --shadow-bottom: 0 1px 2px rgba(0, 0, 0, 0.9), 0 0 2px rgba(0, 0, 0, 0.9);
   
+
   --text-normal: #dcdcdc;
   /* --background-primary: hsla(var(--background-accent-hue), var(--window-accent-tint-strength, 5%), var(--background-primary-l), 1); */
   --background-primary: #0e0e0e;
@@ -111,6 +114,7 @@
   /* --chat-bubble-box-shadow-color-a: 0.5; */
       /*  */
 
+  --angle: 0deg;
   --colorful: linear-gradient(
     to left,
     rgb(51, 255, 0),
