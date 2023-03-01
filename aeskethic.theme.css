@@ -1,0 +1,265 @@
+/**
+  * @name !aeskethic
+  * @author Hootsman#0149
+  * @version 0.1
+  * @description inspired by various discord themes (see README.MD)
+  * @authorId 666
+  * @authorLink https://hootsdev.github.com
+  * @source 
+  * @website https://hootsdev.github.com
+  * @invite gg
+
+  */
+  
+  @import url(https://maendisease.github.io/BetterDiscordStuff/css/ChatBubbles.css);
+:root {
+  --chat-bubble: 1;
+
+  --chat-bubble-background-color: var(--background-primary);
+  --chat-bubble-border-color: var(--background-secondary-alt);
+  --chat-bubble-code-background-color: hsl(120, 4%, 44%);
+
+
+  --chat-bubble-box-shadow-h-offset: 7px;
+  --chat-bubble-box-shadow-v-offset: 7px;
+  --chat-bubble-box-shadow-blur: 3px;
+
+  --chat-bubble-box-shadow-color-h: 180;
+  --chat-bubble-box-shadow-color-s: 50%;
+  --chat-bubble-box-shadow-color-l: 40%;
+  --chat-bubble-box-shadow-color-a: 0.2;
+}
+
+:root {
+  --trans-black: hsla(0, 0%, 0%, 0.229);
+  --pinky: hsl(305, 100%, 50%);
+  --trans-green:hsla(113, 100%, 50%, 0.726);
+  --trans-grey:hsla(180, 7%, 32%, 0.973);
+  --mrwhite: hsl(175, 100%, 69%);
+  --mrorange:hsl(32, 100%, 59%);
+
+  --background-primary: hsl(0, 0%, 0%);
+  --background-tertiary: var(--trans-black);
+  --background-secondary: hsl(256, 100%, 22%);
+
+  --header-bar-background: black;
+  /* Header
+    prim -> server, server pill, channel names and ALL WHITE in general
+    sec -> replied msg */
+  --header-primary: var(--mrorange);
+  --header-secondary: var(--trans-grey);
+  
+  --channels-default: snow;
+  --channel-icon: 0;
+  
+
+  --background-mentioned: rgba(165, 108, 3, 0.719);
+  --chat-background: hsla(261, 100%, 50%, 0.966);
+  /* ??? */
+  /* --chat-border: gray; */
+  /* --chat-input-container-background: rgba(255, 255, 0, 0.671); */
+
+  --bg-overlay-chat: hsla(268, 78%, 27%, 0.014);
+
+  --channel-text-area-placeholder: hsl(0, 0%, 48%);
+  --channeltextarea-background: var(--trans-black);
+
+  --background-secondary-alt: hsla(192, 100%, 50%, 0.531);
+  /* --bg-overlay-4: snow ; */
+  
+
+  /* Forum header */
+  --home-background: var(--header-bar-background);
+
+  /* changing this option often causes discord crashes */
+  /* --background-accent: hsla(59, 94%, 50%, 0.774); */
+
+  /* --background-floating: hsla(59, 94%, 50%, 0.774); */
+  --interactive-active: var(--background-secondary-alt);
+  --interactive-normal: snow;
+
+  --interactive-hover: hsl(297, 100%, 50%);
+  --interactive-muted: rgba(88, 93, 88, 0.661);
+
+  --font-primary: mononoki NF;
+}
+
+.textArea-2CLwUE{
+  background-color: var(--background-tertiary);
+}
+.username-h_Y3Us {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+#app-mount .guilds-2JjMmN,
+.titleBar-1it3bQ,
+.container-2o3qEW {
+  background-color: var(--background-primary);
+}
+
+
+.title-338goq {
+  color: var(--channels-default);
+  font-size: medium;
+}
+
+.closeButton-PCZcma {
+  position: absolute;
+  visibility: visible;
+  display: flex;
+  color: var(--pinky);
+  top: 0;
+}
+
+.wordmarkWindows-2dq6rw,
+.wordmark-2u86JB,
+.attachWrapper-3slhXI,
+.buttonContainer-2lnNiN:not(:last-of-type) {
+  display: none;
+  visibility: hidden;
+}
+:root {
+
+  --text-normal: var(--primary-230);
+  --text-muted: var(--primary-360);
+  --text-link: var(--blue-345);
+  /* --text-link-low-saturation: var(--blue-330);
+  --text-positive: var(--green-330);
+  --text-warning: var(--yellow-300);
+  --text-danger: var(--red-345);
+  --text-brand: var(--brand-360);
+  --mention-foreground: var(--brand-260);
+  --mention-background: hsl(var(--brand-500-hsl)/0.3); */
+  /* --background-primary: var(--primary-600);
+  --background-secondary: var(--primary-630);
+  --background-secondary-alt: var(--primary-660);
+  --background-tertiary: var(--primary-700);
+  --background-accent: var(--primary-530);
+  --background-floating: var(--primary-800); */
+  /* --background-nested-floating: yellow; */
+  /* --background-mobile-primary: var(--primary-600); */
+  /* --chat-background: var(--primary-600);
+
+ */
+  /* --background-modifier-hover: hsl(var(--primary-500-hsl)/0.3);
+  --background-modifier-active: hsl(var(--primary-500-hsl)/0.48);
+  --background-modifier-selected: hsl(var(--primary-500-hsl)/0.6);
+  --background-modifier-accent: hsl(var(--primary-500-hsl)/0.48);
+  --info-positive-background: rgb(0, 255, 255);
+  --info-positive-foreground: var(--green-360);
+  --info-positive-text: rgb(4, 0, 255);
+  --info-warning-background: hsl(var(--yellow-300-hsl)/0.1);
+  --info-warning-foreground: var(--yellow-300);
+  --info-warning-text: var(--white-500);
+  --info-danger-background: hsl(var(--red-400-hsl)/0.1);
+  --info-danger-foreground: var(--red-400);
+  --info-danger-text: var(--white-500);
+  --info-help-background: hsl(var(--blue-345-hsl)/0.1);
+  --info-help-foreground: var(--blue-345);
+  --info-help-text: var(--white-500);
+  --status-positive-background: var(--green-430);
+  --status-positive-text: var(--white-500);
+  --status-warning-background: var(--yellow-300);
+  --status-warning-text: var(--black-500);
+  --status-danger-background: var(--red-400);
+  --status-danger-text: var(--white-500);
+  --status-danger: var(--red-400);
+  --status-positive: var(--green-360);
+  --status-warning: var(--yellow-300);
+  --button-danger-background: var(--red-430);
+  --button-danger-background-hover: var(--red-500);
+  --button-danger-background-active: var(--red-530);
+  --button-danger-background-disabled: var(--red-430);
+  --button-positive-background: var(--green-430);
+  --button-positive-background-hover: var(--green-500);
+  --button-positive-background-active: var(--green-530);
+  --button-positive-background-disabled: var(--green-430);
+  --button-secondary-background: var(--primary-500);
+  --button-secondary-background-hover: var(--primary-430);
+  --button-secondary-background-active: var(--primary-400);
+  --button-secondary-background-disabled: var(--primary-500);
+  --button-outline-danger-text: var(--white-500);
+  --button-outline-danger-border: var(--red-400);
+  --button-outline-danger-background: hsl(var(--white-500-hsl)/0);
+  --button-outline-danger-background-hover: var(--red-430);
+  --button-outline-danger-text-hover: var(--white-500);
+  --button-outline-danger-border-hover: var(--red-430);
+  --button-outline-danger-background-active: var(--red-460);
+  --button-outline-danger-text-active: var(--white-500);
+  --button-outline-danger-border-active: var(--red-430);
+  --button-outline-positive-text: var(--white-500);
+  --button-outline-positive-border: var(--green-360);
+  --button-outline-positive-background: hsl(var(--white-500-hsl)/0);
+  --button-outline-positive-background-hover: var(--green-430);
+  --button-outline-positive-text-hover: var(--white-500);
+  --button-outline-positive-border-hover: var(--green-430);
+  --button-outline-positive-background-active: var(--green-530);
+  --button-outline-positive-text-active: var(--white-500);
+  --button-outline-positive-border-active: var(--green-530);
+  --button-outline-brand-text: var(--white-500);
+  --button-outline-brand-border: var(--brand-500);
+  --button-outline-brand-background: hsl(var(--white-500-hsl)/0);
+  --button-outline-brand-background-hover: var(--brand-500);
+  --button-outline-brand-text-hover: var(--white-500);
+  --button-outline-brand-border-hover: var(--brand-500);
+  --button-outline-brand-background-active: var(--brand-560);
+  --button-outline-brand-text-active: var(--white-500);
+  --button-outline-brand-border-active: var(--brand-560);
+  --button-outline-primary-text: var(--white-500);
+  --button-outline-primary-border: var(--primary-500);
+  --button-outline-primary-background: hsl(var(--white-500-hsl)/0);
+  --button-outline-primary-background-hover: var(--primary-500);
+  --button-outline-primary-text-hover: var(--white-500);
+  --button-outline-primary-border-hover: var(--primary-500);
+  --button-outline-primary-background-active: var(--primary-430);
+  --button-outline-primary-text-active: var(--white-500);
+  --button-outline-primary-border-active: var(--primary-430);
+  --modal-background: var(--primary-600);
+  --modal-footer-background: var(--primary-630);
+  --scrollbar-thin-thumb: var(--primary-730);
+  --scrollbar-thin-track: hsl(var(--black-500-hsl)/0);
+  --scrollbar-auto-thumb: var(--primary-730);
+  --scrollbar-auto-track: var(--primary-630);
+  --scrollbar-auto-scrollbar-color-thumb: var(--primary-730);
+  --scrollbar-auto-scrollbar-color-track: var(--primary-630); */
+  /* settings options */
+  /* --input-background: green; */
+  /* --input-placeholder-text: yellow; */
+
+  /* --logo-primary: green;
+  --focus-primary: yellow;
+  --control-brand-foreground: green;
+  --control-brand-foreground-new: yellow;
+  --background-mentioned-hover: hsl(var(--yellow-300-hsl)/0.08);
+  --background-message-hover: hsl(var(--primary-900-hsl)/0.06);
+  --background-message-automod: hsl(var(--red-400-hsl)/0.05);
+  --background-message-automod-hover: hsl(var(--red-400-hsl)/0.1);
+  --background-message-highlight: hsl(var(--brand-360-hsl)/0.08);
+  --background-message-highlight-hover: hsl(var(--brand-360-hsl)/0.06);
+  --channel-icon: var(--primary-400); */
+
+  /* --activity-card-background: var(--primary-700);
+  --spoiler-revealed-background: var(--primary-660);
+  --spoiler-hidden-background: var(--primary-700);
+  --android-navigation-bar-background: var(--primary-830);
+  --android-ripple: hsl(var(--white-500-hsl)/0.07);
+  --deprecated-card-bg: hsl(var(--primary-700-hsl)/0.6);
+  --deprecated-card-editable-bg: hsl(var(--primary-700-hsl)/0.3);
+  --deprecated-store-bg: var(--primary-600);
+  --deprecated-quickswitcher-input-background: var(--primary-400);
+  --deprecated-quickswitcher-input-placeholder: hsl(var(--white-500-hsl)/0.3);
+  --deprecated-text-input-bg: var(--primary-700);
+  --deprecated-text-input-border: hsl(var(--black-500-hsl)/0.3);
+  --android-navigation-scrim-background: hsl(var(--primary-830-hsl)/0.5);
+  --bug-reporter-modal-submitting-background: hsl(var(--primary-800-hsl)/0.6);
+  --forum-post-extra-media-count-container-background: hsl(var(--primary-660-hsl)/0.8);
+  --forum-post-tag-background: hsl(var(--primary-660-hsl)/0.9);
+  --live-stage-tile-border: hsl(var(--primary-500-hsl)/0.6);
+  --user-profile-header-overflow-background: hsl(var(--primary-700-hsl)/0.5);
+  --display-banner-overflow-background: hsl(var(--primary-700-hsl)/0.5);
+  --info-box-background: hsl(var(--blue-345-hsl)/0.1);
+  --deprecated-text-input-border-hover: var(--primary-900);
+  --deprecated-text-input-border-disabled: var(--primary-700);
+  --deprecated-text-input-prefix: var(--primary-200); */
+}
