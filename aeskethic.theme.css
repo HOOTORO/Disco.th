@@ -1,6 +1,6 @@
 /**
-  * @name !aeskethic
-  * @author Hootsman#0149
+* @name !aeskethic
+* @author Hootsman#0149
   * @version 0.1
   * @description inspired by various discord themes (see README.MD)
   * @authorId 666
@@ -35,12 +35,13 @@
   --trans-black: hsla(0, 0%, 0%, 0.594);
   --pinky: hsl(305, 100%, 50%);
   --trans-green: hsla(113, 100%, 50%, 0.091);
-  --trans-grey: hsl(6, 6%, 6%);
+  --trans-grey: hsla(0, 1%, 28%, 0.144);
   --mrwhite: hsl(175, 100%, 69%);
   --mrorange: hsl(32, 100%, 59%);
   --mryellow: hsl(57, 100%, 50%);
   --mred: hsl(0, 100%, 50%);
   --mrgreen: hsl(124, 100%, 50%);
+  --mrgrey: hsl(0, 0%, 94%);
 
   --background-primary: hsl(0, 0%, 0%);
   --background-tertiary: var(--trans-black);
@@ -51,7 +52,8 @@
     prim -> server, server pill, channel names and ALL WHITE in general
     sec -> replied msg */
   --header-primary: var(--mrorange);
-  --header-secondary: var(--trans-grey);
+  /* statuses */
+  --header-secondary: var(--mrgrey);
 
   --channels-default: rgb(255, 255, 255);
   --channel-icon: 0;
@@ -63,7 +65,7 @@
   /* --chat-input-container-background: rgba(255, 255, 0, 0.671); */
 
   /* bg bot not only */
-  /* --bg-overlay-chat: hsl(0, 15%, 12%); */
+  --bg-overlay-chat: hsla(0, 22%, 5%, 0.177);
 
   /* --bg-overlay-selected:hsl(65, 89%, 48%); */
   /* --background-modifier-selected: hsl(60, 100%, 50%); */
@@ -143,6 +145,24 @@
   font-size: calc(var(--font-size-modifier) * 0.6rem);
   font-weight: 100;
 }
+/* members panel bg */
+.container-2o3qEW {
+  background: var(--background-primary);
+}
+.membersWrap-3NUR2t {
+  height: 100%;
+}
+/* mem block */
+.members-3WRCEx {
+  background-color: transparent;
+}
+/* one mem */
+.member-48YF_l {
+  margin: 5px;
+  /* height: 71px; */
+  background-color: var(--trans-grey);
+}
+
 /* 
 #app-mount .guilds-2JjMmN,
 .titleBar-1it3bQ,
@@ -308,8 +328,8 @@
   --live-stage-tile-border: hsl(var(--primary-500-hsl)/0.6);
   --user-profile-header-overflow-background: hsl(var(--primary-700-hsl)/0.5);
   --display-banner-overflow-background: hsl(var(--primary-700-hsl)/0.5);
-  --info-box-background: hsl(var(--blue-345-hsl)/0.1);
   --deprecated-text-input-border-hover: var(--primary-900);
+  --info-box-background: hsl(var(--blue-345-hsl)/0.1);
   --deprecated-text-input-border-disabled: var(--primary-700);
   --deprecated-text-input-prefix: var(--primary-200); */
 /* } */
