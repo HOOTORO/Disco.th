@@ -11,15 +11,133 @@
 
   */
 
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css);
 @import url(https://maendisease.github.io/BetterDiscordStuff/css/ChatBubbles.css);
+@import url(https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css);
 
+/* Bottom HorizontalServerList. Simply remove the comments surrounding the @import to enable it. */
+/* @import url("https://discordstyles.github.io/Addons/bottomhsl.css"); */
+/* Addons */
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/bdAddonMini.css);
+
+/* Warning to Remove Minimum Size */
+@import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Float/addon/RemoveMinimumSize.css)
+(width: 940px);
+
+/* Source */
+@import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Float/Float.css)
+(max-width: 940px);
+
+/* If your theme has custom settings icons, delete or comment this line */
+@import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Float/addon/SettingsIcons.css)
+(max-width: 940px);
+@import url(https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css);
+
+:root {
+  --rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
+  --rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
+  --rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
+
+  --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+  --rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
+  --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
+
+  --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
+
+  --rs-online-color: #43b581; /* Colour for online status */
+  --rs-idle-color: #faa61a; /* Colour for idle status */
+  --rs-dnd-color: #f04747; /* Colour for dnd status */
+  --rs-offline-color: #636b75; /* Colour for offline status */
+  --rs-streaming-color: #643da7; /* Colour for streaming status */
+  --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
+  --rs-phone-color: var(
+    --rs-online-color
+  ); /* Colour of the ring and phone icon when a user is on their phone |  */
+
+  --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+}
+
+:root {
+  /* Guildlist */
+  --guildicon-size: 48;
+  --enable-if-using-favorites-experiment: 0; /* boolean */
+  --guildlist-collapse: 0; /* boolean */
+
+  /* Channel sidebar */
+  --slide-window-on-hover: 1; /* boolean */
+  --float-sidebar-width: 48;
+  --sidebar-hover-width: 240px;
+  --sidebar-hover-delay: 0.2s;
+  --sidebar-transition-duration: 0.4s;
+  --sidebar-window-gap: 8px;
+  --sidebar-border-radius: 8px;
+  --sidebar-usersettings-width: 66px;
+
+  /* Memberlist */
+  --float-members-width: 65px;
+  --members-hover-width: 240px;
+  --members-hover-delay: 1.5s;
+  --members-transition-duration: 0.4s;
+
+  /* Channelheader */
+  --topic-opacity: 1;
+  --toolbar-visibility: flex; /* [flex][none] */
+
+  /* Textarea buttons */ /* [flex][none] */
+  --textarea-buttons-gif: flex;
+  --textarea-buttons-sticker: none;
+  --textarea-buttons-gift: none;
+
+  /* Theme compatibility */
+  /* --float-guildlist-width-correction: 0px; */
+}
+
+/* The variables are used when the window is at the set sizes, each media query can be edited/deleted */
+@media (max-width: 700px) {
+  :root {
+    --topic-opacity: 0;
+    --toolbar-visibility: none;
+    --textarea-buttons-gif: none;
+    --textarea-buttons-sticker: none;
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    --guildicon-size: 40;
+    --float-members-width: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    --float-sidebar-width: 0;
+  }
+}
+
+@media (max-width: 300px) {
+  :root {
+    --guildlist-collapse: 1;
+  }
+}
+
+:root {
+  --HSL-server-icon-size: 40px; /* Size of the server icons | DEFAULT: 40px */
+  --HSL-server-spacing: 10px; /* Spacing between each server icon | DEFAULT: 10px */
+  --HSL-server-direction: column; /* Direct of the server list. | Options: column, column-reverse | DEFAULT: column */
+}
+:root {
+  --settingsmodalbackground: transparent; /* default:	transparent		(lowest bg color of changed windows, change it in case another theme turns them transparent)	*/
+  --settingsmodalwidth: 960px; /* default:	960px			(width of the settings modal, px/vw)															*/
+  --settingsmodalheight: 92vh; /* default:	80vh			(height of the settings modal, px/vh)															*/
+}
 :root {
   --chat-bubble: 1;
 
-  /* --chat-bubble-background-color: var(--background-primary); */
-  --chat-bubble-background-color: var(--trans-grey);
+  --chat-bubble-background-color: hsla(0, 0%, 0%, 0.601);
+  /* --chat-bubble-background-color: var(--trans-grey); */
   --chat-bubble-border-color: var(--background-secondary-alt);
-  --chat-bubble-code-background-color: hsl(120, 1%, 50%);
+  --chat-bubble-code-background-color: hsl(180, 82%, 46%);
 
   --chat-bubble-box-shadow-h-offset: 7px;
   --chat-bubble-box-shadow-v-offset: 7px;
@@ -32,53 +150,52 @@
 }
 
 :root {
-  --trans-black: hsla(0, 0%, 0%, 0.594);
+  --trans-black: hsla(0, 0%, 0%, 0.349);
   --pinky: hsl(305, 100%, 50%);
-  --trans-green: hsla(113, 100%, 50%, 0.091);
+  --trans-green: hsla(113, 100%, 50%, 0.139);
   --trans-grey: hsla(0, 1%, 28%, 0.144);
-  --mrwhite: hsl(175, 100%, 69%);
-  --mrorange: hsl(32, 100%, 59%);
-  --mryellow: hsl(57, 100%, 50%);
+  --mrwhite: hsl(0, 0%, 100%);
+  --mrorange: hsl(30, 100%, 50%);
+  --mryellow: hsl(60, 100%, 50%);
   --mred: hsl(0, 100%, 50%);
   --mrgreen: hsl(124, 100%, 50%);
-  --mrgrey: hsl(0, 0%, 94%);
+  --mrgrey: hsl(0, 0%, 67%);
 
   --background-primary: hsl(0, 0%, 0%);
   --background-tertiary: var(--trans-black);
-  --background-secondary: hsla(256, 100%, 37%, 0.2);
+  --background-secondary: hsla(256, 99%, 38%, 0.901);
 
-  --header-bar-background: hsl(180, 100%, 50%);
+  --header-bar-background: hsla(185, 100%, 50%, 0.9);
   /* Header
     prim -> server, server pill, channel names and ALL WHITE in general
     sec -> replied msg */
-  --header-primary: var(--mrorange);
+  --header-primary: var(--mryellow);
   /* statuses */
   --header-secondary: var(--mrgrey);
 
   --channels-default: rgb(255, 255, 255);
   --channel-icon: 0;
 
-  --background-mentioned: rgba(165, 110, 7, 0.719);
+  --background-mentioned: hsla(40, 100%, 50%, 0.171);
   /* --chat-background: hsla(261, 100%, 49%, 0.966); */
   /* ??? */
   /* --chat-border: gray; */
   /* --chat-input-container-background: rgba(255, 255, 0, 0.671); */
 
   /* bg bot not only */
-  --bg-overlay-chat: hsla(0, 22%, 5%, 0.177);
+  --bg-overlay-chat: hsla(273, 53%, 17%, 0.058);
+  --bg-overlay-3: hsla(252, 100%, 26%, 0.784);
+  /* --bg-overlay-4: hsla(257, 21%, 13%, 0.179) ; */
 
   /* --bg-overlay-selected:hsl(65, 89%, 48%); */
   /* --background-modifier-selected: hsl(60, 100%, 50%); */
-
-  /* --bg-overlay-3: var(--background-mentioned); */
 
   --channel-text-area-placeholder: hsl(0, 0%, 48%);
 
   /* input field bg */
   /* --channeltextarea-background: var(--mryellow); */
 
-  --background-secondary-alt: hsl(192, 100%, 50%);
-  /* --bg-overlay-4: snow ; */
+  --background-secondary-alt: hsl(185, 100%, 50%);
 
   /* Forum header */
   --home-background: var(--header-bar-background);
@@ -90,13 +207,14 @@
 
   /* choosen chanel text, all active elements */
   /* --interactive-active: var(--pinky); */
-  --interactive-normal: snow;
+  --interactive-normal: hsl(280, 100%, 50%);
 
-  --interactive-hover: hsl(297, 100%, 50%);
-  --interactive-muted: rgba(84, 81, 81, 0.953);
+  --interactive-hover: hsl(180, 100%, 50%);
+  --interactive-muted: rgba(45, 3, 100, 0.579);
+  --text-normal: hsla(255, 100%, 50%, 0.99);
   --text-muted: var(--mrgreen);
 
-  --font-primary: SF Pro Rounded, Gill Sans, mononoki NF;
+  --font-primary: Liga SFMono Nerd Font, SF Pro Rounded, Gill Sans, mononoki NF;
   --font-size-modifier: 1.2;
 }
 /* 
@@ -126,9 +244,16 @@
 
 /* Chat text */
 .markup-eYLPri {
+  color: azure;
   font-size: calc(var(--font-size-modifier) * 0.8rem);
 }
-
+/* Embed description, Text in file */
+.embedDescription-1DrJxZ, 
+.embedFieldValue-3EHtvR,
+.hljs {
+  color: aliceblue;
+}
+ 
 /* members panel*/
 .name-3Vmqxm {
   font-size: calc(var(--font-size-modifier) * 0.9rem);
@@ -162,7 +287,15 @@
   /* height: 71px; */
   background-color: var(--trans-grey);
 }
-
+.scrollableContainer-15eg7h {
+  border: 1px solid var(--pinky);
+  background-color: hsla(268, 100%, 50%, 0);
+}
+/* .typingDots-1Y8dki, */
+/* .dots-1k2MxY .themed-3dHGSa, */
+.base-3bcbY3 {
+  color: hsl(285, 100%, 50%);
+}
 /* 
 #app-mount .guilds-2JjMmN,
 .titleBar-1it3bQ,
@@ -182,7 +315,7 @@
   color: var(--pinky);
   top: 0;
 }
-
+.keybind-13vtq8,
 .wordmarkWindows-2dq6rw,
 .wordmark-2u86JB,
 .attachWrapper-3slhXI,
@@ -191,7 +324,7 @@
   visibility: hidden;
 }
 /* :root { */
-/* --text-normal: var(--primary-230);
+/* 
 
   --text-link: var(--blue-345); */
 /* --text-link-low-saturation: var(--blue-330);
