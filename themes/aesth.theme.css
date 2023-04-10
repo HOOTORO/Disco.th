@@ -11,7 +11,7 @@
 
   */
 
-@import url(https://hootsdev.github.io/Discoteca/css/aesth.css);
+
 /* Server Rings */
 /* @import url(https://objectiveslayer.github.io/ComfyGray/addons/server-rings.css); */
 
@@ -70,6 +70,8 @@
 /* floating server list, Remove the comment if you want it */
 /* @import url(https://objectiveslayer.github.io/ComfyGray/addons/floating%20guild%20list.css); */
 
+
+@import url(https://hootsdev.github.io/Discoteca/css/aesth.css);
 /* 1. Settings modal vars */
 
 :root {

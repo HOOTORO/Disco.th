@@ -12,7 +12,7 @@
 
 @import url("https://hootsdev.github.io/Transcendence/css/base.css");
 
-@import url(https://hootsdev.github.io/Discoteca/css/trans.css);
+
 
 @import url(https://discordstyles.github.io/Addons/windows-titlebar.css);
 @import url(https://maendisease.github.io/BetterDiscordStuff/css/ChatBubbles.css);
@@ -24,6 +24,8 @@
 /* FONT */
 @import url(https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700;800&display=swap);
 
+
+@import url(https://hootsdev.github.io/Discoteca/css/trans.css);
 /* TRANSCENDENCE */
 :root {
   --black-hole: url(https://images.all-free-download.com/images/graphicthumb/starry_night_192398.jpg);

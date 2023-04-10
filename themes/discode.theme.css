@@ -15,9 +15,6 @@
 /* ********************** */
 
 
-
-@import url(https://hootsdev.github.io/Discoteca/css/disc.css);
-
 /* vscord */
 @import url(https://xhylo.github.io/Visual-Studio-Code-BD-theme/EditedVSCC.theme.css);
 
@@ -30,6 +27,8 @@
 /* mac os titlebar. | Remove this line to disable. */
 /* @import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Solana/addon/mac-titlebar.css); */
 
+ /* important to load last */
+@import url(https://hootsdev.github.io/Discoteca/css/disc.css);
 /* ************************ */
 /* ******* Variables ****** */
 /* ************************ */
