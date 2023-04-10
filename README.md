@@ -4,9 +4,9 @@ inspired by many other themes:
 
 - userMacieG#7591 theme: Discord.tv
 - Xyhlo#9766 theme: VSCord
+- and many more
 
-
-## [Aesthetic](/Discoteca/css/aesth.css)
+## [Aesthetic](/themes/aesth.theme.css)
 
 imports plugins:
 - Settings Modal
@@ -14,13 +14,16 @@ imports plugins:
 - Radial Status
 - Float
 
-Almost no changes to default UI, only colors via default vars
 
-## [Discode](/Discoteca/css/disc.css)
+Almost no changes to default UI, only colors via default vars
+[src](/Discoteca/css/aesth.css)
+
+## [Discode](/themes/discode.theme.css)
 
 Cusstomized version of xhylo theme 'VSCode'
+[src](/Discoteca/css/disc.css)
 
-
-## [TRANSCENDENCE](/Discoteca/css/trans.css)
+## [TRANSCENDENCE](/themes/transcendence.theme.css)
 
 that's a lot of transparency and sliding sidepanels!
+[src](/Discoteca/css/trans.css)
