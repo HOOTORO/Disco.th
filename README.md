@@ -24,5 +24,5 @@ Cusstomized version of xhylo theme 'VSCode'
 
 
 ## [TRANSCENDENCE.TH](/themes/transcendence.theme.css)
-
+(Broken, need refactor)
 that's a lot of transparency and sliding sidepanels!  
