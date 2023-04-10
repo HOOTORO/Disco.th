@@ -1,12 +1,16 @@
 # Better Dicord Themes
 
 inspired by many other themes:
+userMacieG#7591(theme: Discord.tv), Xyhlo#9766(th: VSCord) and many more
 
-- userMacieG#7591 theme: Discord.tv
-- Xyhlo#9766 theme: VSCord
-- and many more
+## How to install
 
-## [Aesthetic](/themes/aesth.theme.css)
+1) Download theme file into your BetterDiscord\themes folder
+2) Enjoy!
+
+### [Aesthetic.th](/themes/aesth.theme.css)
+
+Almost no changes to default UI, only colors via default vars
 
 imports plugins:
 - Settings Modal
@@ -14,16 +18,11 @@ imports plugins:
 - Radial Status
 - Float
 
-
-Almost no changes to default UI, only colors via default vars
-[src](/Discoteca/css/aesth.css)
-
-## [Discode](/themes/discode.theme.css)
+## [Discode.th](/themes/discode.theme.css)
 
 Cusstomized version of xhylo theme 'VSCode'
-[src](/Discoteca/css/disc.css)
 
-## [TRANSCENDENCE](/themes/transcendence.theme.css)
 
-that's a lot of transparency and sliding sidepanels!
-[src](/Discoteca/css/trans.css)
+## [TRANSCENDENCE.TH](/themes/transcendence.theme.css)
+
+that's a lot of transparency and sliding sidepanels!  
