@@ -1,0 +1,151 @@
+/**
+  * @name !Testscendance
+  * @author Hootsman#0149
+  * @version 0.7
+  * @description inspired by various discord themes (see README.MD)
+  * @authorId 666
+  * @authorLink https://hootsdev.github.com
+  * @source https://raw.githubusercontent.com/Hootsdev/hoot/master/hoot.theme.css
+  * @website https://hootsdev.github.com
+  * @invite gg
+*/
+
+  @import url("https://hootsdev.github.io/Transcendence/css/base.css");
+
+
+  @import url(https://discordstyles.github.io/Addons/windows-titlebar.css);
+  @import url(https://maendisease.github.io/BetterDiscordStuff/css/ChatBubbles.css);
+  
+  /* Bottom HorizontalServerList. Simply remove the comments surrounding the @import to enable it. */
+  @import url(https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css);
+  @import url("https://discordstyles.github.io/Addons/bottomhsl.css");
+
+
+  /* FONT */
+  @import url(https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700;800&display=swap);
+  
+  
+/* TRANSCENDENCE */
+:root {
+  --black-hole: url(https://images.all-free-download.com/images/graphicthumb/starry_night_192398.jpg);
+  --stars: url(https://www.freeiconspng.com/uploads/twinkle-star-png-stars-9.png);
+  
+  --home-button-image: url(https://i.imgur.com/zWYX9UA.png);
+  --home-button-size: contain;
+  --home-button-position: center right;
+  
+  --gradient-primary: 103,58,183;
+  --gradient-secondary: 63,81,181;
+  
+  --white: #ffffff9f;
+  --white_double: #ffffffFF;
+  --pink: #da00da;
+  --pink-bright: #ff00ff;
+  --color-brand: #00ffff;
+  --color-brand-darker: #02495fd0;
+  --color-brand-lighter: #88ffff;
+  --color-red: #ff0000;
+  --color-red-darker: #bb1411;
+  --color-purple: #6f00ff;
+  --color-orange: #ffaa00;
+  --color-green: #00ff00;
+  --color-green-darker: #00aa00;
+  --color-gray: hsl(272, 13%, 26%);
+  --color-gray-darker: hsla(0, 0%, 0%, 0);
+  --space-color: hsla(272, 77%, 22%, 0.222);
+  
+  --interactive-active: #fff;
+  --interactive-normal: #b9bbbe;
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 0 4px rgba(0, 0, 0, 0.4);
+  --shadow-bottom: 0 1px 2px rgba(0, 0, 0, 0.9), 0 0 2px rgba(0, 0, 0, 0.9);
+  
+
+  --text-normal: #dcdcdc;
+  /* --background-primary: hsla(var(--background-accent-hue), var(--window-accent-tint-strength, 5%), var(--background-primary-l), 1); */
+  --background-primary: #0e0e0e;
+  --background-orange: rgba(255, 165, 0, 0.1);
+  --background-secondary: #18181c;
+  --background-tertiary: hsl(240, 6%, 10%);
+  --background-floating: #18191c;
+  --background-modifier-selected: rgba(79, 84, 92, 0.32);
+  --status-warning-background: var(--color-orange);
+  --background-primary-border-color: var(--color-gray);
+  
+  --trans-pink: rgba(255, 0, 255, 0.582);
+  --trans-cyan: rgba(0, 238, 255, 0.025);
+  --trans-black: rgba(0, 0, 0, 0.135);
+  --trans-blacker: rgba(0, 0, 0, 0.333);
+  --trans-blackest: rgba(0, 0, 0, 0.777);
+  --trans-orange: rgba(154, 86, 2, 0.504);
+
+  --rad-bars: 66px;
+  --rad-head: 0.2rem;
+  --rad-newmsg: 1.5rem;
+  --rad-winbtn: 0;
+  --angle: 0deg;
+  
+  --chat-inmid: 9%;
+  
+      /* Horizontal Server list vars */
+
+  --HSL-server-icon-size: 40px;  /* Size of the server icons | DEFAULT: 40px */
+  --HSL-server-spacing: 5px;  /* Spacing between each server icon | DEFAULT: 10px */
+  --HSL-server-direction: column; /* Direct of the server list. | Options: column, column-reverse | DEFAULT: column */
+        /*  */
+        /*  */
+      /* Windows title addons vars */
+
+  /* --TB-position-top: 10px; */
+  --TB-position-top: 2px;
+  --TB-position-right: 2px;
+  --TB-height: 20px;
+  --TB-width: 20px;
+  --TB-bar-height: 20px;
+      /*  */
+      /*  */
+  --user-size: 50px;
+      /* Chat bubble addon */
+  --chat-bubble: 1.5;
+  --chat-bubble-background-color: var(--trans-blackest);
+  --chat-bubble-border-color: var(--background-primary-border-color);
+  --text-link-hue: 333;
+  --chat-text-brightness: 1;
+  --background-mentioned: var(--trans-orange);
+  /* --chat-bubble-box-shadow-color-a: 0.5; */
+      /*  */
+
+  --angle: 0deg;
+  --colorful: linear-gradient(
+    to left,
+    rgb(51, 255, 0),
+    rgb(255, 230, 0),
+    red,
+    rgb(234, 0, 255),
+    rgb(0, 140, 255),
+    rgb(51, 255, 0)
+  );
+
+
+
+  /*  FONT SETTINGS
+    Channel names, usernames on rightside panel,
+    input message help text, message timestamp,
+    userbage, hovered, context menu
+*/
+  --font-primary: Hack NFM;
+  /*
+    main title
+    current channelname (top), server categories, right userpanel groups
+    */
+  --font-display: CaskaydiaCove NF Mono, mononoki NF,"Ink Free", "FuraMono NFM";
+  --font-message-text: CaskaydiaCove NF Mono, "Hack NFM", "UbuntuMono NFM";
+  --font-username: CaskaydiaCove NF Mono, UbuntuMono NFM;
+
+  --fonts-all: "LiterationSans NF", "DejaVuSansMono NF", "3270Medium NFM",
+    "3270SemiNarrow NFM", "Cascadia Code", "CaskaydiaCove NF Mono",
+    "UbuntuMono NFM", "RobotoMono NFM", "Noto Sans Mono", "mononoki NF",
+    "LiterationMono Nerd Font", "Hack Nerd Font Mono", "Hack NFM",
+    "GoMono Nerd Font", "FuraMono NF", "DroidSansMono NFM", "DaddyTimeMono NFM",
+    "DaddyTimeMono Nerd Font", "Cousine NF", "Cousine Nerd Font Mono",
+    "CodeNewRoman NFM", "mononoki Nerd Font";
+}
