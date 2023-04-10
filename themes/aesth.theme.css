@@ -11,7 +11,7 @@
 
   */
 
-  @import url(https://hootsdev.github.io/discoteca/css/aesth.css);
+@import url(https://hootsdev.github.io/Discoteca/css/aesth.css);
 /* Server Rings */
 /* @import url(https://objectiveslayer.github.io/ComfyGray/addons/server-rings.css); */
 
@@ -250,7 +250,6 @@
   /* changing this option often causes discord crashes */
   /* --background-accent: hsla(59, 94%, 50%, 0.774); */
 
-  /* --background-floating: hsla(59, 94%, 50%, 0.774); */
 
   /* choosen chanel text, all active elements */
   /* --interactive-active: var(--pinky); */
@@ -261,10 +260,6 @@
   --text-normal: hsla(255, 100%, 50%, 0.99);
   --text-muted: var(--mrgreen);
 
-  /* --font-primary: Liga SFMono Nerd Font, SF Pro Rounded, Gill Sans, mononoki NF; */
-  /* --font-primary: Liga SFMono Nerd Font, SF Pro Rounded, Gill Sans, mononoki NF; */
-  /* --font-primary: Liga SFMono Nerd Font, SF Pro Rounded, Gill Sans, mononoki NF; */
-  /* --font-primary: Liga SFMono Nerd Font, SF Pro Rounded, Gill Sans, mononoki NF; */
   --font-primary: MuseoModerno, mononoki NF, Liga SFMono Nerd Font,
     SF Pro Rounded, Gill Sans;
   --font-size-modifier: 1.2;
