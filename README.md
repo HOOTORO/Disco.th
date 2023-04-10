@@ -6,7 +6,7 @@ inspired by many other themes:
 - Xyhlo#9766 theme: VSCord
 
 
-## [Aesthetic]!(/Discoteca/css/aesth.css)
+## [Aesthetic](/Discoteca/css/aesth.css)
 
 imports plugins:
 - Settings Modal
@@ -16,11 +16,11 @@ imports plugins:
 
 Almost no changes to default UI, only colors via default vars
 
-## [Discode]!(/Discoteca/css/disc.css)
+## [Discode](/Discoteca/css/disc.css)
 
 Cusstomized version of xhylo theme 'VSCode'
 
 
-## [TRANSCENDENCE]!(/Discoteca/css/trans.css)
+## [TRANSCENDENCE](/Discoteca/css/trans.css)
 
 that's a lot of transparency and sliding sidepanels!
