@@ -1,0 +1,12 @@
+# global settings
+title: "Discoteca! BD themes"
+description: "Varioues themes for BetterDiscord"
+domain: hootsdev.github.io
+url: https://hootsdev.github.io
+permalink: /:year/:month/:day/:title/
+encoding: UTF-8
+
+sass:
+  style: compact
+  # Where you keep your scss files
+  sass_dir: _sass
