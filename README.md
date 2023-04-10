@@ -1,11 +1,11 @@
 # Better Dicord Themes
 
-inspired by many other themes:
+inspired by many other themes:  
 userMacieG#7591(theme: Discord.tv), Xyhlo#9766(th: VSCord) and many more
 
 ## How to install
 
-1) Download theme file into your BetterDiscord\themes folder
+1) Download theme file into your BetterDiscord\themes folder  
 2) Enjoy!
 
 ### [Aesthetic.th](/themes/aesth.theme.css)
