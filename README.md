@@ -20,11 +20,11 @@ added plugins via import:
 
 Un/Comment as you wish.
 
-## [Discode.th](/themes/discode.theme.css)
+### [Discode.th](/themes/discode.theme.css)
 
 Heavily customized version of xhylo theme 'VSCord'
 
-## [TRANSCENDENCE.TH](/themes/transcendence.theme.css)
+### [TRANSCENDENCE.TH](/themes/transcendence.theme.css)
 
 (Broken, need refactor)  
 that's a lot of transparency and sliding sidepanels!  
