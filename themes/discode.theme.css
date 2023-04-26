@@ -61,16 +61,17 @@
     --server-container: calc(var(--server-size) + 30px);
     /* --server-direction: var(--HSL-server-direction, column);
     --server-alignment: var(--HSL-server-alignment, flex-start); */
+    --HSL-server-icon-size: 35px;
 }
 :root {
-  /* --TB-position-top: 0; */
-  /* --TB-position-right: 0; */
-  --TB-height: 18px;
-  /* --TB-tr-roundness: 1rem; */
+  --TB-position-top: 0;
+  --TB-position-right: 0;
+  --TB-height: 22px;
+  --TB-tr-roundness: 1rem;
   /* topbar pos */
-  --TB-header-padding: 330px;
+  --TB-header-padding: 300px;
   /* --TB-bar-height: 0; */
-  --TB-width: 20px;
+  --TB-width: 22px;
 }
 
 :root {
