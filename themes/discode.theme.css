@@ -14,6 +14,8 @@
 /* ******* imports ****** */
 /* ********************** */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&family=Sofia+Sans:wght@100;300;400&display=swap');
+
 
 /* vscord */
 @import url(https://xhylo.github.io/Visual-Studio-Code-BD-theme/EditedVSCC.theme.css);
@@ -27,8 +29,12 @@
 /* mac os titlebar. | Remove this line to disable. */
 /* @import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Solana/addon/mac-titlebar.css); */
 
- /* important to load last */
+/* important to load last */
 @import url(https://hootsdev.github.io/Discoteca/css/disc.css);
+
+/* Bottom HorizontalServerList. Simply remove the comments surrounding the @import to enable it. */
+@import url(https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css);
+@import url("https://discordstyles.github.io/Addons/bottomhsl.css");
 /* ************************ */
 /* ******* Variables ****** */
 /* ************************ */
@@ -56,12 +62,12 @@
 
 :root {
   /* HSL */
-    /* --server-size: var(--HSL-server-icon-size, var(--HSL-size, 35px));
+  /* --server-size: var(--HSL-server-icon-size, var(--HSL-size, 35px));
     --server-spacing: var(--HSL-server-spacing, var(--HSL-spacing, 10px)); */
-    --server-container: calc(var(--server-size) + 30px);
-    /* --server-direction: var(--HSL-server-direction, column);
+  --server-container: calc(var(--server-size) + 30px);
+  /* --server-direction: var(--HSL-server-direction, column);
     --server-alignment: var(--HSL-server-alignment, flex-start); */
-    --HSL-server-icon-size: 35px;
+  --HSL-server-icon-size: 35px;
 }
 :root {
   --TB-position-top: 0;
@@ -93,15 +99,15 @@
 }
 :root {
   /* dock */
-  --home-icon: initial;
+  --home-icon: url(https://hootsdev.github.io/Discoteca/assets/shield-cat.svg);
   --favorites-icon: initial;
   --dock-blur: var(--window-blur);
   --dock-border-radius: 0;
 }
 
 :root {
-  --font-primary: MuseoModerno, mononoki NF, Liga SFMono Nerd Font,
-    SF Pro Rounded, Gill Sans;
+  --font-primary: 'Sofia+Sans', "Roboto Flex", sans-serif;
+  /* MuseoModerno, mononoki NF, Liga SFMono Nerd Font, SF Pro Rounded, Gill Sans; */
   --font-size-modifier: 1.2;
   /* --main-clr: hsla(256, 100%, 47%, 0.205); */
   /* --main-clr: hsla(0, 0%, 0%, 0.22); */
