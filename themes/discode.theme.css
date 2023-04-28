@@ -125,5 +125,5 @@
 
   --btn-upan-modifier: var(--TB-width);
   --chat-side-pad: 50px;
-  --box-shadow-outer-2: 5px 5px 5px #232428;
+  --box-shadow-outer-2: 0 0 3px #848688;
 }
