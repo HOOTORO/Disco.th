@@ -2,6 +2,9 @@
 /* ******* Styles ****** */
 /* ********************* */
 
+
+
+
 .titleBar-1it3bQ::after {
   display: none;
 }
@@ -25,8 +28,8 @@
 /* Username */
 
 .username-h_Y3Us {
-  font-size: calc(var(--font-size-modifier) * 1rem);
-  font-weight: 400;
+  font-size: calc(var(--font-size-modifier) * 1.1rem);
+  font-weight: 500;
 }
 
 // user hover roles display

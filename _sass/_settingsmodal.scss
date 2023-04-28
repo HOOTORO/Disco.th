@@ -313,3 +313,9 @@
 	top: 22px !important;
 	z-index: -1 !important;
 } 
+
+div[aria-label*="Gift"],
+div[aria-label*="Nitro"],
+div[aria-label*="Subscri"] {
+    display: none;
+}
