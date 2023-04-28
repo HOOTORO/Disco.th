@@ -29,12 +29,13 @@
 /* mac os titlebar. | Remove this line to disable. */
 /* @import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Solana/addon/mac-titlebar.css); */
 
+/* Bottom HorizontalServerList. Simply remove the comments surrounding the @import to enable it. */
+@import url(https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css);
+@import url(https://discordstyles.github.io/Addons/bottomhsl.css);
+
 /* important to load last */
 @import url(https://hootsdev.github.io/Discoteca/css/disc.css);
 
-/* Bottom HorizontalServerList. Simply remove the comments surrounding the @import to enable it. */
-@import url(https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css);
-@import url("https://discordstyles.github.io/Addons/bottomhsl.css");
 /* ************************ */
 /* ******* Variables ****** */
 /* ************************ */
@@ -106,7 +107,7 @@
 }
 
 :root {
-  --font-primary: 'Sofia+Sans', "Roboto Flex", sans-serif;
+  --font-primary: 'Sofia Sans', "Roboto Flex", sans-serif;
   /* MuseoModerno, mononoki NF, Liga SFMono Nerd Font, SF Pro Rounded, Gill Sans; */
   --font-size-modifier: 1.2;
   /* --main-clr: hsla(256, 100%, 47%, 0.205); */

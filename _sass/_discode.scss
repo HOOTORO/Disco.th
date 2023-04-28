@@ -174,7 +174,9 @@
 .guilds-2JjMmN {
   z-index: 100;
   -webkit-app-region: drag;
+  border-right: 1px outset darkviolet;
 }
+
 .item-2LIpTv {
   max-height: 20px;
 }
@@ -318,7 +320,7 @@
   );
 }
 
-#app-mount .guilds-2JjMmN [class*=expandedFolderBackground] {
+#app-mount .guilds-2JjMmN [class*="expandedFolderBackground"] {
   width: calc(var(--server-size) + 7px);
   left: 50%;
   border-radius: 15px;
