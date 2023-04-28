@@ -73,7 +73,7 @@
   --TB-position-top: 0;
   --TB-position-right: 0;
   --TB-height: 22px;
-  --TB-tr-roundness: 1rem;
+  /* --TB-tr-roundness: 1rem; */
   /* topbar pos */
   --TB-header-padding: 300px;
   /* --TB-bar-height: 0; */
@@ -124,4 +124,5 @@
 
   --btn-upan-modifier: var(--TB-width);
   --chat-side-pad: 50px;
+  --box-shadow-outer-2: 5px 5px 5px #232428;
 }
