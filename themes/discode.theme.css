@@ -1,15 +1,13 @@
 /**
-* @name !discodes
+* @name Discode.th
 * @author Hootsman#0149
   * @version 0.1
   * @description custom modification of xhylo theme 
-  * @authorId 666
-  * @authorLink https://hootsdev.github.com
-  * @source 
-  * @website https://hootsdev.github.com
+  * @source https://github.com/Hootsdev/Discoteca
+  * @website https://hootsdev.github.io/Discoteca/
   * @invite gg
-
   */
+
 /* ********************** */
 /* ******* imports ****** */
 /* ********************** */
@@ -21,17 +19,16 @@
 /* ********************************************************************************************************** */
 @import url(https://maendisease.github.io/BetterDiscordStuff/css/bdAddonMini.css);
 
-
 /* vscord */
 @import url(https://xhylo.github.io/Visual-Studio-Code-BD-theme/EditedVSCC.theme.css);
 
 /* chat bubbles  */
 @import url(https://maendisease.github.io/BetterDiscordStuff/css/ChatBubbles.css);
 
-/* Windows titlebar. | Remove this line to disable. */
+/* Windows titlebar. ↓ Comment this line to disable. */
 @import url(https://discordstyles.github.io/Addons/windows-titlebar.css);
 
-/* mac os titlebar. | Remove this line to disable. */
+/* mac os titlebar. ↓ Comment this line to disable. */
 /* @import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Solana/addon/mac-titlebar.css); */
 
 /* Bottom HorizontalServerList. Simply remove the comments surrounding the @import to enable it. */
@@ -45,7 +42,7 @@
 /* ******* Variables ****** */
 /* ************************ */
 
-/* VSC Cord */
+/* VSC Cord options */
 :root {
   --color-brand: #009a9a;
   --color-brand-darker: #0c1420;
@@ -66,8 +63,10 @@
   /* font-weight: 900; */
 }
 
+
+
+/* Horizontal Serever List options */
 :root {
-  /* HSL */
   /* --server-size: var(--HSL-server-icon-size, var(--HSL-size, 35px));
     --server-spacing: var(--HSL-server-spacing, var(--HSL-spacing, 10px)); */
   --server-container: calc(var(--server-size) + 30px);
@@ -75,22 +74,23 @@
     --server-alignment: var(--HSL-server-alignment, flex-start); */
   --HSL-server-icon-size: 35px;
 }
+
+/* Title Bar options */
 :root {
   --TB-position-top: 0;
   --TB-position-right: 0;
-  --TB-height: 22px;
-  /* --TB-tr-roundness: 1rem; */
-  /* topbar pos */
+  --TB-height: 21px;
+  --TB-tr-roundness: 0;
   --TB-header-padding: 300px;
-  /* --TB-bar-height: 0; */
-  --TB-width: 22px;
+  --TB-bar-height: 0;
+  --TB-width: 30px;
 }
 
+/* Chat Bubbles options */
 :root {
   --chat-bubble: 1;
   --bgsa: hsla(185, 100%, 50%, 0.733);
   --chat-bubble-background-color: hsl(180, 16%, 7%);
-  /* --chat-bubble-background-color: var(--trans-grey); */
   --chat-bubble-border-color: var(--bgsa);
   --chat-bubble-code-background-color: hsla(291, 100%, 29%, 0.76);
 
@@ -103,22 +103,22 @@
   --chat-bubble-box-shadow-color-l: 40%;
   --chat-bubble-box-shadow-color-a: 0.2;
 }
+/* dock options */
 :root {
-  /* dock */
   --home-icon: url(https://hootsdev.github.io/Discoteca/assets/shield-cat.svg);
   --favorites-icon: initial;
   --dock-blur: var(--window-blur);
   --dock-border-radius: 0;
 }
 
+/* Other options */
 :root {
-  --font-primary: 'Sofia Sans', "Roboto Flex", sans-serif;
   /* MuseoModerno, mononoki NF, Liga SFMono Nerd Font, SF Pro Rounded, Gill Sans; */
+  --font-primary: 'Sofia Sans', "Roboto Flex", sans-serif;
   --font-size-modifier: 1.2;
-  /* --main-clr: hsla(256, 100%, 47%, 0.205); */
-  /* --main-clr: hsla(0, 0%, 0%, 0.22); */
   --main-clr: hsla(0, 0%, 0%, 0.199);
   --alt-clr: #18191c;
+  --brd-clr: cyan;
   --background-primary: hsl(0, 0%, 0%);
   --background-tertiary: var(--main-clr);
   --background-secondary: var(--alt-clr);

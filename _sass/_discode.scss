@@ -4,25 +4,50 @@
 
 
 
-
+.avatarDecoration-34OC0G,
 .titleBar-1it3bQ::after {
   display: none;
 }
 
+// User panel moved to top right
 .panels-3wFtMD > .container-YkUktl {
   right: calc(var(--btn-upan-modifier) + 20px);
-  border-radius: 1rem;
   position: absolute;
   z-index: 103;
   width: 220px;
-  height: 48px;
-  top: 5px;
+  height: calc(var(--TB-height) * 2);
+  top: 10px;
+  border: 0.5px solid var(--brd-clr);
+  border-radius: 1rem;
 }
 
 .container-ZMc96U.themed-Hp1KC_,
 .platform-win .typeWindows-2-g3UY {
   background-color: black;
   height: calc(var(--TB-height) * 3);
+}
+
+/* winbuttons on the   left + drag areas. */
+
+.children-3xh0VB {
+  min-width: 20%;
+  -webkit-app-region: drag;
+}
+
+.winButton-3UMjdg {
+  background-color: black;
+}
+
+.platform-win .typeWindows-2-g3UY {
+  z-index: 103;
+  position: absolute !important;
+  flex-direction: column;
+  align-items: center;
+  left: unset;
+  top: 0;
+  right: 0;
+  width: fit-content;
+  -webkit-app-region: none;
 }
 
 /* Username */
@@ -32,9 +57,9 @@
   font-weight: 500;
 }
 
-// user hover roles display
+// user hover roles display, win-buttons
 .flex-3BkGQD {
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 /* avatar in chat */
@@ -88,27 +113,6 @@
   background: var(--background-secondary, var(--bg-overlay-chat));
 }
 
-/* winbuttons on the   left + drag areas. */
-
-.children-3xh0VB {
-  -webkit-app-region: drag;
-}
-
-.winButton-3UMjdg {
-  background-color: black;
-}
-.platform-win .typeWindows-2-g3UY {
-  z-index: 103;
-  position: absolute !important;
-  flex-direction: column;
-  align-items: center;
-  left: unset;
-  top: 0;
-  right: 0;
-  margin: 0;
-  width: fit-content;
-  -webkit-app-region: none;
-}
 
 /* Channeltabs */
 .platform-win #channelTabs-container {
@@ -128,15 +132,8 @@
   border-left: 10px ridge var(--text-link);
   border-radius: 10px;
 }
-/* .modeConnected-NrO4cP .name-28HaxV, */
-/* .modeConnected-NrO4cP:hover .name-28HaxV, */
-/* .modeSelected-3DmyhH .name-28HaxV, */
-/* .modeSelected-3DmyhH:hover .name-28HaxV, */
-.modeUnread-3Cxepe .name-28HaxV
-  /* .modeUnread-3Cxepe:hover .name-28HaxV, */
-  /* .notInteractive-2tFrlE.modeConnected-NrO4cP .name-28HaxV, */
-  /* .notInteractive-2tFrlE.modeSelected-3DmyhH */
-  /* .name-28HaxV { */ {
+
+.modeUnread-3Cxepe .name-28HaxV {
   color: hsl(57, 100%, 49%);
 }
 
@@ -177,7 +174,7 @@
 .guilds-2JjMmN {
   z-index: 100;
   -webkit-app-region: drag;
-  border-right: 1px outset darkviolet;
+  border-right: 1px outset var(--brd-clr);
 }
 
 .item-2LIpTv {
