@@ -4,6 +4,7 @@
 
 $bg-highlight: #191925;
 
+.anchor-1X4H4q,
 .avatarDecoration-34OC0G,
 .titleBar-1it3bQ::after {
   display: none;
@@ -11,11 +12,11 @@ $bg-highlight: #191925;
 
 // User panel moved to top right
 .panels-3wFtMD > .container-YkUktl {
-  right: calc(var(--btn-upan-modifier) + 20px);
+  right: calc(var(--btn-upan-modifier));
   position: absolute;
   z-index: 103;
   width: 220px;
-  height: calc(var(--TB-height) * 2) + 5px;
+  height: calc(var(--TB-height) * 2);
   top: 5px;
   border: 0.5px solid var(--brd-clr);
   border-radius: 1rem;
@@ -381,6 +382,7 @@ $bg-highlight: #191925;
 
 .toolbar-3_r2xA {
   flex: 0 0 auto;
+  flex-direction: row-reverse;
 }
 .root-22AK9z.idle-39sGPO .chatButton-10jXXp:not(.chatButtonShowing-1aD1ch) {
   transform: translate3d(0, 4px, 0);
@@ -395,5 +397,8 @@ $bg-highlight: #191925;
 
 .platform-win .container-ZMc96U {
   padding-right: 0;
-  
+}
+
+.winButtonClose-3Q8ZH5 {
+  border-bottom-left-radius: 10px;
 }
