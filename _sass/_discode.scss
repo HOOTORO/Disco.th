@@ -4,7 +4,6 @@
 
 $bg-highlight: #191925;
 
-
 .avatarDecoration-34OC0G,
 .titleBar-1it3bQ::after {
   display: none;
@@ -101,7 +100,7 @@ $bg-highlight: #191925;
   .groupStart-3Mlgv1 {
     margin-top: 10px;
   } */
-  
+
 .bg-1QIAus,
 .chat-2ZfjoI {
   background: hsla(0, 0%, 0%, 0.333);
@@ -125,7 +124,6 @@ $bg-highlight: #191925;
   height: 3rem;
   min-height: 3rem;
   vertical-align: left;
-  
 }
 
 /* members */
@@ -354,7 +352,7 @@ $bg-highlight: #191925;
 }
 
 #app-mount .guilds-2JjMmN [class*="expandedFolderBackground"] {
-  width:var(--server-size);
+  width: var(--server-size);
   left: 50%;
   border-radius: 15px;
   transform: translateX(-62%);
@@ -375,15 +373,27 @@ $bg-highlight: #191925;
 }
 
 // Voice imp
-.chatButton-10jXXp {
-    right: 300px;
-}
+
 
 .chatIcon-R5MUNn {
   padding-right: calc(var(--TB-header-padding));
-  margin-right: 0;
 }
 
+.toolbar-3_r2xA {
+  flex: 0 0 auto;
+}
 .root-22AK9z.idle-39sGPO .chatButton-10jXXp:not(.chatButtonShowing-1aD1ch) {
-  transform: translate3d(0,4px,0);
+  transform: translate3d(0, 4px, 0);
+}
+
+.headerWrapper-1ULEPv {
+  padding: 0;
+}
+.children-3xh0VB {
+  max-width:60%;
+}
+
+.platform-win .container-ZMc96U {
+  padding-right: 0;
+  
 }
