@@ -373,3 +373,17 @@ $bg-highlight: #191925;
 .numberBadge-37OJ3S {
   background-color: #ff0000 !important;
 }
+
+// Voice imp
+.chatButton-10jXXp {
+    right: 300px;
+}
+
+.chatIcon-R5MUNn {
+  padding-right: calc(var(--TB-header-padding));
+  margin-right: 0;
+}
+
+.root-22AK9z.idle-39sGPO .chatButton-10jXXp:not(.chatButtonShowing-1aD1ch) {
+  transform: translate3d(0,4px,0);
+}
