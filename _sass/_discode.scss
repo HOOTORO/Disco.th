@@ -4,10 +4,14 @@
 
 $bg-highlight: #191925;
 
-
 .avatarDecoration-34OC0G,
 .titleBar-1it3bQ::after {
   display: none;
+}
+
+// Top popouts
+.messagesPopoutWrap-3zryHW {
+  left: 340px;
 }
 
 // User panel moved to top right
@@ -295,6 +299,7 @@ $bg-highlight: #191925;
   background-color: var(--status-positive);
 }
 
+a[href*="support.discord.com"],
 .homeIcon-r0w4ny path,
 .favoriteIcon-2kWmTP path {
   display: none;
@@ -375,7 +380,6 @@ $bg-highlight: #191925;
 }
 
 // Voice imp
-
 
 .chatIcon-R5MUNn {
   padding-right: calc(var(--TB-header-padding));
