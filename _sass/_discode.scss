@@ -25,6 +25,10 @@ $bg-highlight: #191925;
   }
 }
 
+.app-2CXKsg button {
+  -webkit-app-region: no-drag;
+}
+
 .avatarDecoration-34OC0G,
 .titleBar-1it3bQ::after {
   display: none;
@@ -105,8 +109,8 @@ $bg-highlight: #191925;
 }
 
 // user hover roles display, win-buttons
-.flex-3BkGQD {
-  justify-content: space-evenly;
+.flex-3BkGQD:has(.role-2TIOKu) {
+  justify-content: space-between;
 }
 .userPopoutOuter-1OHwPL {
   width: 444px;
