@@ -110,7 +110,7 @@
 /* Other options */
 :root {
   /* MuseoModerno, mononoki NF, Liga SFMono Nerd Font, SF Pro Rounded, Gill Sans; */
-  --font-primary: 'Sofia Sans', "Roboto Flex", sans-serif;
+  --font-primary: "Roboto Flex", sans-serif;
   --font-size-modifier: 1.2;
   --main-clr: hsla(0, 0%, 0%, 0.199);
   --alt-clr: #18191c;
@@ -121,7 +121,6 @@
   --background-secondary-alt: var(--alt-clr);
   --bg-overlay-chat: hsl(0, 0%, 0%);
   --bg-overlay-app-frame: hsla(0, 0%, 0%, 0.403);
-  /* --bg-overlay-selected: hsl(186, 100%, 50%); */
   --text-link: hsl(186, 100%, 50%);
   --btn-upan-modifier: var(--TB-width);
   --chat-side-pad: 50px;

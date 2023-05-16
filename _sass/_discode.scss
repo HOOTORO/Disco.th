@@ -4,13 +4,17 @@
 
 $bg-highlight: #191925;
 // Top panel (search, pins, threads etc.)
+// .container-ZMc96U {
+//   justify-content: flex-end;
+// }
 .container-ZMc96U {
-  justify-content: flex-end;
+  justify-content: start;
+  left: 250px;
 }
 
 .toolbar-3_r2xA {
   flex: 0 0 auto;
-  flex-direction: row-reverse;
+  // flex-direction: row-reverse;
 
 
   a[href*="support.discord.com"],
@@ -70,7 +74,7 @@ $bg-highlight: #191925;
 
 .children-3xh0VB {
   min-width: 10%;
-  max-width: 25%;
+  max-width: 15vw;
   -webkit-app-region: drag;
   background-color: $bg-highlight;
   border-radius: 1rem;
@@ -102,7 +106,10 @@ $bg-highlight: #191925;
 
 // user hover roles display, win-buttons
 .flex-3BkGQD {
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+.userPopoutOuter-1OHwPL {
+  width: 444px;
 }
 
 .bg-1QIAus,
