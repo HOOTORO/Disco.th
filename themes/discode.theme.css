@@ -32,8 +32,8 @@
 /* @import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Solana/addon/mac-titlebar.css); */
 
 /* Bottom HorizontalServerList. Simply remove the comments surrounding the @import to enable it. */
-@import url(https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css);
-@import url(https://discordstyles.github.io/Addons/bottomhsl.css);
+/* @import url(https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css); */
+/* @import url(https://discordstyles.github.io/Addons/bottomhsl.css); */
 
 /* important to load last */
 @import url(https://hootsdev.github.io/Discoteca/css/disc.css);
@@ -110,19 +110,8 @@
 /* Other options */
 :root {
   /* MuseoModerno, mononoki NF, Liga SFMono Nerd Font, SF Pro Rounded, Gill Sans; */
-  --font-primary: "Roboto Flex", sans-serif;
   --font-size-modifier: 1.2;
-  --main-clr: hsla(0, 0%, 0%, 0.199);
-  --alt-clr: #18191c;
-  --brd-clr: cyan;
-  --background-primary: hsl(0, 0%, 0%);
-  --background-tertiary: var(--main-clr);
-  --background-secondary: var(--alt-clr);
-  --background-secondary-alt: var(--alt-clr);
-  --bg-overlay-chat: hsl(0, 0%, 0%);
-  --bg-overlay-app-frame: hsla(0, 0%, 0%, 0.403);
-  --text-link: hsl(186, 100%, 50%);
-  --btn-upan-modifier: var(--TB-width);
-  --chat-side-pad: 50px;
-  --box-shadow-outer-2: 0 0 3px #848688;
+  --brd-clr: #5000bb;
+  --brd-alt-clr:#00e5ff;
+  --text-link: #008cff;
 }

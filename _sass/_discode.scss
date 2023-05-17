@@ -1,8 +1,29 @@
+$main-clr: hsla(0, 0%, 0%, 0.199);
+$bg-primary: hsl(0, 0%, 0%);
+$bg-alt: #18191c;
+$bg-tetry: var($main-clr);
+$bg-over: hsla(0, 0%, 0%, 0.403);
+$bg-highlight: #191925;
+$font: "Roboto Flex", sans-serif;
+$box-shadow: 0 0 3px #848688;
+$chat-side-pad: 50px;
+
+
+:root {
+  --background-primary: $bg-primary;
+  --background-tertiary: $bg-tetry;
+  --background-secondary:$bg-alt;
+  --background-secondary-alt: $bg-alt;
+  --bg-overlay-chat: $bg-primary;
+  --bg-overlay-app-frame: $bg-over;
+  --font-primary: $font;
+  
+}
+
 /* ********************* */
 /* ******* Styles ****** */
 /* ********************* */
 
-$bg-highlight: #191925;
 // Top panel (search, pins, threads etc.)
 // .container-ZMc96U {
 //   justify-content: flex-end;
@@ -16,11 +37,9 @@ $bg-highlight: #191925;
   flex: 0 0 auto;
   // flex-direction: row-reverse;
 
-
   a[href*="support.discord.com"],
   div[aria-label="Notification Settings"],
-  div[aria-label="Hide Member List"]
-   {
+  div[aria-label="Hide Member List"] {
     display: none;
   }
 }
@@ -41,7 +60,6 @@ $bg-highlight: #191925;
 
 // User panel moved to top right
 .panels-3wFtMD > .container-YkUktl {
-  // right: calc(var(--btn-upan-modifier));
   left: 250px;
   position: absolute;
   z-index: 103;
@@ -112,9 +130,7 @@ $bg-highlight: #191925;
 .flex-3BkGQD:has(.role-2TIOKu) {
   justify-content: space-between;
 }
-.userPopoutOuter-1OHwPL {
-  width: 444px;
-}
+
 
 .bg-1QIAus,
 .chat-2ZfjoI {
@@ -125,7 +141,7 @@ $bg-highlight: #191925;
   background: var(--bg-overlay-chat, var(--background-primary));
   background-color: transparent;
   margin-right: 48px;
-  padding: 0 var(--chat-side-pad) 0 var(--chat-side-pad);
+  padding: 0 $chat-side-pad 0 $chat-side-pad;
 }
 
 .markup-eYLPri {
@@ -185,7 +201,7 @@ $bg-highlight: #191925;
 .scrollableContainer-15eg7h {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  border: dashed 0.5px var(--text-link);
+  border: groove 0.5px var(--brd-alt-clr);
 }
 .replyBar-1oi75v {
   border: solid 0.5px var(--text-link);
@@ -232,7 +248,7 @@ $bg-highlight: #191925;
   height: fit-content;
   max-height: calc(100% - 48px);
   -webkit-app-region: no-drag;
-  width: 50px;
+  width: 60px;
 }
 
 #app-mount .scroller-3X7KbA {
@@ -271,7 +287,7 @@ $bg-highlight: #191925;
 
 .expandedFolderBackground-1kSAf6:not(.collapsed-uGXEbi) {
   background-color: var(--background-modifier-accent);
-  box-shadow: var(--box-shadow-outer-2);
+  box-shadow: $box-shadow;
 }
 
 .theme-light .expandedFolderBackground-1kSAf6:not(.collapsed-uGXEbi) {
