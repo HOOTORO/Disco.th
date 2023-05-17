@@ -63,25 +63,24 @@ $chat-side-pad: 50px;
   left: 250px;
   position: absolute;
   z-index: 103;
-  width: 220px;
+  width: 230px;
   height: calc(var(--TB-height) * 2);
   top: 10px;
   border: 0.5px solid var(--brd-clr);
   border-radius: 1rem;
 }
+.nameTag-sc-gpq{
+  margin-right: 0;
+}
 .hovered-20u3oh {
   bottom: 1px;
 }
-.nameTag-sc-gpq {
-  min-width: unset;
-  padding-top: unset !important;
-}
-.text-xs-normal-3O7EaX {
-  font-size: 14px;
-}
-.subtext-2HDqJ7 {
-  line-height: 10px;
-}
+// .text-xs-normal-3O7EaX {
+//   font-size: 14px;
+// }
+// .subtext-2HDqJ7 {
+//   line-height: 10px;
+// }
 
 .mainContent-20q_Hp {
   padding: 4px 0;

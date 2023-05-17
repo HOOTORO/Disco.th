@@ -26,7 +26,7 @@
 @import url(https://maendisease.github.io/BetterDiscordStuff/css/ChatBubbles.css);
 
 /* Windows titlebar. ↓ Comment this line to disable. */
-@import url(https://discordstyles.github.io/Addons/windows-titlebar.css);
+/* @import url(https://discordstyles.github.io/Addons/windows-titlebar.css); */
 
 /* mac os titlebar. ↓ Comment this line to disable. */
 /* @import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Solana/addon/mac-titlebar.css); */
@@ -109,7 +109,6 @@
 
 /* Other options */
 :root {
-  /* MuseoModerno, mononoki NF, Liga SFMono Nerd Font, SF Pro Rounded, Gill Sans; */
   --font-size-modifier: 1.2;
   --brd-clr: #5000bb;
   --brd-alt-clr:#00e5ff;
