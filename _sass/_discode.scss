@@ -42,7 +42,7 @@
   position: absolute;
   z-index: 103;
   width: 230px;
-  height: calc(var(--TB-height) * 2);
+  height: calc(var(--TB-height) * 2.5);
   top: $chat-top-offset;
   border: 0.5px solid var(--brd-clr);
   border-radius: 1rem;
@@ -69,8 +69,9 @@
 .container-ZMc96U.themed-Hp1KC_,
 .platform-win .typeWindows-2-g3UY {
   background-color: black;
-  height: calc(var(--TB-height) * 3);
+  height: calc(var(--TB-height) * 2.5);
   top: $chat-top-offset;
+  border-bottom: 0.5px solid var(--brd-clr);
 }
 
 /* winbuttons on the   left + drag areas. */
