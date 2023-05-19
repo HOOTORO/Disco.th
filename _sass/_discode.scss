@@ -43,7 +43,7 @@
   z-index: 103;
   width: 230px;
   height: calc(var(--TB-height) * 2.5);
-  top: $chat-top-offset;
+  top: calc($chat-top-offset - 2px);
   border: 0.5px solid var(--brd-clr);
   border-radius: 1rem;
 }
@@ -237,7 +237,7 @@
   contain: unset;
   border-radius: calc(1.1rem * (1 + var(--dock-border-radius)));
   box-shadow: var(--box-shadow-m);
-  background-color: var(--servers-bg);
+  background-color: var(--server-bg);
   border-top: var(--background-modifier-accent-border);
   border-right: var(--background-modifier-accent-border);
   backdrop-filter: blur(var(--dock-blur-calc));
