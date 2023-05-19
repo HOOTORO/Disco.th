@@ -12,8 +12,8 @@
   --bg-overlay-chat: #{$bg-primary};
   --bg-overlay-app-frame: #{$bg-over};
   --font-primary: #{$font};
-  --box-shadow-m: $box-shd;
-  --background-modifier-selected: $bg-mod-sel;
-  --background-modifier-accent-border: $bg-mod-acc-brd;
-  --dock-blur-calc: $dock-blur;
+  --box-shadow-m: #{$box-shd};
+  --background-modifier-selected: #{$bg-mod-sel};
+  --background-modifier-accent-border: #{$bg-mod-acc-brd};
+  --dock-blur-calc: #{$dock-blur};
 }
