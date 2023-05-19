@@ -43,7 +43,7 @@
   z-index: 103;
   width: 230px;
   height: calc(var(--TB-height) * 2.5);
-  top: calc($chat-top-offset - 2px);
+  top: calc(var($chat-top-offset) - 2px);
   border: 0.5px solid var(--brd-clr);
   border-radius: 1rem;
 }
