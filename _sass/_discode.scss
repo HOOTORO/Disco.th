@@ -43,9 +43,12 @@
   z-index: 103;
   width: 230px;
   height: calc(var(--TB-height) * 2);
-  top: 10px;
+  top: $chat-top-offset;
   border: 0.5px solid var(--brd-clr);
   border-radius: 1rem;
+}
+.content-1jQy2l {
+  top: $chat-top-offset;
 }
 .nameTag-sc-gpq{
   margin-right: 0;
@@ -67,6 +70,7 @@
 .platform-win .typeWindows-2-g3UY {
   background-color: black;
   height: calc(var(--TB-height) * 3);
+  top: $chat-top-offset;
 }
 
 /* winbuttons on the   left + drag areas. */
@@ -231,11 +235,12 @@
 #app-mount .scroller-3X7KbA {
   contain: unset;
   border-radius: calc(1.1rem * (1 + var(--dock-border-radius)));
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
-  background-color: var(--background-modifier-selected);
+  box-shadow: var(--box-shadow-m);
+  background-color: var(--servers-bg);
   border-top: var(--background-modifier-accent-border);
   border-right: var(--background-modifier-accent-border);
   backdrop-filter: blur(var(--dock-blur-calc));
+  padding-top: 20px !important;
 }
 
 .theme-light .guilds-2JjMmN:not(.theme-dark) .scroller-3X7KbA {
