@@ -18,7 +18,7 @@
 }
 
 .container-ZMc96U {
-  // justify-content: start;
+  justify-content: space-between;
   left: 230px;
 }
 
@@ -80,7 +80,7 @@
 }
 
 
-.container-ZMc96U.themed-Hp1KC_,
+// .container-ZMc96U.themed-Hp1KC_,
 .platform-win .typeWindows-2-g3UY {
   background-color: black;
   height: calc(var(--TB-height) * 2.5);
@@ -111,7 +111,7 @@
 
 .children-3xh0VB {
   min-width: 10%;
-  max-width: 15vw;
+  // max-width: 15vw;
   -webkit-app-region: drag;
   background-color: $bg-highlight;
   border-radius: 1rem;
