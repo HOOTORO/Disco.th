@@ -3,16 +3,27 @@
 /* ********************* */
 
 // Top panel (search, pins, threads etc.)
-// .container-ZMc96U {
-//   justify-content: flex-end;
-// }
+// userpanel and top header related
+
+
+.panels-3wFtMD > .container-YkUktl {
+  left: 240px;
+  position: absolute;
+  z-index: 103;
+  width: 220px;
+  height: calc(var(--TB-height) * 2);
+  top: 5px;
+  border: 0.5px solid var(--brd-clr);
+  border-radius: 1rem;
+}
+
 .container-ZMc96U {
   justify-content: start;
-  left: 250px;
+  left: 230px;
 }
 
 .toolbar-3_r2xA {
-  flex: 0 0 auto;
+  // flex: 0 0 auto;
   // flex-direction: row-reverse;
 
   a[href*="support.discord.com"],
@@ -21,6 +32,60 @@
     display: none;
   }
 }
+
+/* .content-1jQy2l {
+  top: 10px;
+} */
+
+
+/* .container-ZMc96U.themed-Hp1KC_, .platform-win .typeWindows-2-g3UY {
+  background-color: black;
+  height: calc(var(--TB-height) * 2.5);
+  top: 10px;
+  border-bottom: 0.5px solid var(--brd-clr);
+}
+*/
+/* winbuttons on the   left + drag areas. */
+/* .children-3xh0VB {
+  min-width: 10%;
+  max-width: 15vw;
+  -webkit-app-region: drag;
+  background-color: #191925;
+  border-radius: 1rem;
+  height: 70%;
+}
+*/
+
+.nameTag-sc-gpq {
+  margin-right: 0;
+}
+
+.hovered-20u3oh {
+  bottom: 1px;
+}
+
+.mainContent-20q_Hp {
+  padding: 4px 0;
+}
+// .text-xs-normal-3O7EaX {
+//   font-size: 14px;
+// }
+// .subtext-2HDqJ7 {
+//   line-height: 10px;
+// }
+
+
+.container-ZMc96U.themed-Hp1KC_,
+.platform-win .typeWindows-2-g3UY {
+  background-color: black;
+  height: calc(var(--TB-height) * 2.5);
+  top: $chat-top-offset;
+  border-bottom: 0.5px solid var(--brd-clr);
+}
+// END Userpanel and top content
+
+
+
 
 .app-2CXKsg button {
   -webkit-app-region: no-drag;
@@ -36,43 +101,6 @@
   // left: 340px;
 }
 
-// User panel moved to top right
-.panels-3wFtMD > .container-YkUktl {
-  left: 250px;
-  position: absolute;
-  z-index: 103;
-  width: 230px;
-  height: calc(var(--TB-height) * 2.5);
-  top: 8px;
-  border: 0.5px solid var(--brd-clr);
-  border-radius: 1rem;
-}
-.content-1jQy2l {
-  top: $chat-top-offset;
-}
-.nameTag-sc-gpq{
-  margin-right: 0;
-}
-.hovered-20u3oh {
-  bottom: 1px;
-}
-// .text-xs-normal-3O7EaX {
-//   font-size: 14px;
-// }
-// .subtext-2HDqJ7 {
-//   line-height: 10px;
-// }
-
-.mainContent-20q_Hp {
-  padding: 4px 0;
-}
-.container-ZMc96U.themed-Hp1KC_,
-.platform-win .typeWindows-2-g3UY {
-  background-color: black;
-  height: calc(var(--TB-height) * 2.5);
-  top: $chat-top-offset;
-  border-bottom: 0.5px solid var(--brd-clr);
-}
 
 /* winbuttons on the   left + drag areas. */
 
@@ -416,4 +444,3 @@
   border: 1px groove #7a00ff;
   margin-bottom: 45px;
 }
-
