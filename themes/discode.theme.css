@@ -110,7 +110,7 @@
 /* Other options */
 :root {
   --font-primary: "Roboto Flex", sans-serif;
-  --font-size-modifier: 1.2;
+  --font-size-modifier: 1;
   --brd-clr: #5000bb;
   --brd-alt-clr:#00e5ff;
   --text-link: #008cff;
