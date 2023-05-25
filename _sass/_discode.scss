@@ -11,10 +11,11 @@
   position: absolute;
   z-index: 103;
   width: 220px;
-  height: calc(var(--TB-height) * 2);
-  top: 5px;
-  border: 0.5px solid var(--brd-clr);
-  border-radius: 1rem;
+  // height: calc(var(--TB-height) * 2);
+  border: 2px solid var(--brd-clr);
+  border-top: unset;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 .container-ZMc96U {
@@ -73,10 +74,10 @@
 }
 
 .text-xs-normal-3O7EaX {
-  font-size: 10px;
+  font-size: 12px;
 }
 .subtext-2HDqJ7 {
-  line-height: 10px;
+  line-height: 12px;
 }
 
 
