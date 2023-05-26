@@ -425,6 +425,7 @@
 /// popuots ///
 /// //////
 
+.scroller-18M1mG,
 .list-2u03C-,
 .container-18GwIk,
 .container-2ebMPP,
@@ -449,7 +450,13 @@
 }
 
 .defaultColor-1GKx81 {
-    color: snow;
+  background-color: #3b3941;
+  color: snow;
+}
+
+.defaultColor-1GKx81 strong{
+  color: var(--color-brand) !important;
+  
 }
 
 .input-3O04eu {
