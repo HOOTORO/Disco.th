@@ -227,7 +227,8 @@
 .scrollableContainer-15eg7h {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  border: groove 0.5px var(--brd-alt-clr);
+  // border: 1px groove #7a00ff;
+  border: groove 1px var(--brd-alt-clr);
 }
 .replyBar-1oi75v {
   border: solid 0.5px var(--text-link);
@@ -455,8 +456,7 @@
   margin-bottom: 10px;
 }
 
-.scrollableContainer-15eg7h {
+// .scrollableContainer-15eg7h {
 /*     border: 1px groove var(--text-link); */
-  border: 1px groove #7a00ff;
-  margin-bottom: 45px;
-}
+//   border: 1px groove #7a00ff;
+// }
