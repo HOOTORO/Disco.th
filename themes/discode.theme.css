@@ -112,7 +112,8 @@
   --font-primary: "Roboto Flex", sans-serif;
   --font-size-modifier: 1;
   --brd-clr: #5000bb;
-  --brd-alt-clr:#00e5ff;
+  /* --brd-alt-clr:#00e5ff; */
+  --brd-alt-clr:#7a00ff;
   --text-link: #008cff;
   --server-bg: #00FFFF20;
 }

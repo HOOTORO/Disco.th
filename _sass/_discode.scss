@@ -5,13 +5,11 @@
 // Top panel (search, pins, threads etc.)
 // userpanel and top header related
 
-
 .panels-3wFtMD > .container-YkUktl {
   left: 240px;
   position: absolute;
   z-index: 103;
   width: 220px;
-  // height: calc(var(--TB-height) * 2);
   border: 2px solid var(--brd-clr);
   border-top: unset;
   border-bottom-left-radius: 1rem;
@@ -24,38 +22,12 @@
 }
 
 .toolbar-3_r2xA {
-  // flex: 0 0 auto;
-  // flex-direction: row-reverse;
-
   a[href*="support.discord.com"],
   div[aria-label="Notification Settings"],
   div[aria-label="Hide Member List"] {
     display: none;
   }
 }
-
-/* .content-1jQy2l {
-  top: 10px;
-} */
-
-
-/* .container-ZMc96U.themed-Hp1KC_, .platform-win .typeWindows-2-g3UY {
-  background-color: black;
-  height: calc(var(--TB-height) * 2.5);
-  top: 10px;
-  border-bottom: 0.5px solid var(--brd-clr);
-}
-*/
-/* winbuttons on the   left + drag areas. */
-/* .children-3xh0VB {
-  min-width: 10%;
-  max-width: 15vw;
-  -webkit-app-region: drag;
-  background-color: #191925;
-  border-radius: 1rem;
-  height: 70%;
-}
-*/
 
 .nameTag-sc-gpq {
   margin-right: 0;
@@ -68,18 +40,17 @@
 .mainContent-20q_Hp {
   padding: 4px 0;
 }
-.hoverRoll-2XwpoF {
-  height: 25px;
-  line-height: 7px;
-}
+// .hoverRoll-2XwpoF {
+//   height: 25px;
+//   line-height: 7px;
+// }
 
-.text-xs-normal-3O7EaX {
-  font-size: 12px;
-}
-.subtext-2HDqJ7 {
-  line-height: 12px;
-}
-
+// .text-xs-normal-3O7EaX {
+//   font-size: 12px;
+// }
+// .subtext-2HDqJ7 {
+//   line-height: 12px;
+// }
 
 // .container-ZMc96U.themed-Hp1KC_,
 .platform-win .typeWindows-2-g3UY {
@@ -90,9 +61,6 @@
 }
 // END Userpanel and top content
 
-
-
-
 .app-2CXKsg button {
   -webkit-app-region: no-drag;
 }
@@ -102,17 +70,11 @@
   display: none;
 }
 
-// Top popouts
-// .messagesPopoutWrap-3zryHW {
-  // left: 340px;
-// }
-
 
 /* winbuttons on the   left + drag areas. */
 
 .children-3xh0VB {
   min-width: 10%;
-  // max-width: 15vw;
   -webkit-app-region: drag;
   background-color: $bg-highlight;
   border-radius: 1rem;
@@ -146,7 +108,6 @@
 .flex-3BkGQD:has(.role-2TIOKu) {
   justify-content: space-between;
 }
-
 
 .bg-1QIAus,
 .chat-2ZfjoI {
@@ -227,7 +188,6 @@
 .scrollableContainer-15eg7h {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  // border: 1px groove #7a00ff;
   border: groove 1px var(--brd-alt-clr);
 }
 .replyBar-1oi75v {
@@ -455,8 +415,3 @@
 .typing-2J1mQU {
   margin-bottom: 10px;
 }
-
-// .scrollableContainer-15eg7h {
-/*     border: 1px groove var(--text-link); */
-//   border: 1px groove #7a00ff;
-// }
