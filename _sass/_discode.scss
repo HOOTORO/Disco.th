@@ -447,10 +447,26 @@
 
 .header-1w9Q93 {
     text-align:center;
-    
 }
 
-.defaultColor-1GKx81:has(.channelName-3APnhp) {
+.embedFull-1HGV2S {
+  border: 4px solid var(--background-tertiary);
+  background: #aaffff33;
+  border-radius: 4px;
+}
+
+.embedDescription-1DrJxZ, .embedFieldValue-3EHtvR {
+  color: wheat;
+  
+}
+
+.username-h_Y3Us,
+#popout_4046 .defaultColor-1GKx81,
+.defaultColor-1GKx81:has(.channelName-3APnhp),
+.header-1w9Q93 .defaultColor-1GKx81,
+.embedAuthorName-pGyUPR, 
+.embedFieldName-9LYSyR, 
+.embedTitle-2n1pEb {
   // background-color: #3b3941;
   color: snow;
 }
