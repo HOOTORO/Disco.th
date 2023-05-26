@@ -61,6 +61,10 @@
 }
 // END Userpanel and top content
 
+.container-ZMc96U.themed-Hp1KC_ {
+  background: unset;
+}
+
 .app-2CXKsg button {
   -webkit-app-region: no-drag;
 }
@@ -414,6 +418,33 @@
   border-bottom-left-radius: 10px;
 }
 
-.typing-2J1mQU {
-  margin-bottom: 10px;
+// .typing-2J1mQU {
+//   margin-bottom: 10px;
+// }
+////////
+/// popuots ///
+/// //////
+
+.container-18GwIk,
+.container-2ebMPP,
+.messages-23can0,
+.channelHeader-DFRX8q,
+.messageContainer-3VTXBC,
+.messageGroupWrapper-1jf_7C {
+    background-color: #141419;
+    border: 1px solid #7ab1e9a3;
+}
+.header-3_zmOb,
+.header-1w9Q93,
+.messagesPopoutWrap-3zryHW {
+    background-color: #3b3941
+}
+
+.header-1w9Q93 {
+    text-align:center;
+    
+}
+
+.defaultColor-1GKx81 {
+    color: snow;
 }
