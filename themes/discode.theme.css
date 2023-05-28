@@ -90,7 +90,7 @@
   --bgsa: hsla(185, 100%, 50%, 0.733);
   --chat-bubble-background-color: hsl(180, 16%, 7%);
   --chat-bubble-border-color: var(--bgsa);
-  --chat-bubble-code-background-color: hsla(291, 100%, 29%, 0.76);
+  --chat-bubble-code-background-color: hsla(180, 1%, 70%, 0.658);
   --chat-bubble-box-shadow-h-offset: 2px;
   --chat-bubble-box-shadow-v-offset: 2px;
   --chat-bubble-box-shadow-blur: 0;
