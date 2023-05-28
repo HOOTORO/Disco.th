@@ -460,6 +460,7 @@
   
 }
 
+.hljs,
 .username-h_Y3Us,
 #popout_4046 .defaultColor-1GKx81,
 .defaultColor-1GKx81:has(.channelName-3APnhp),
@@ -485,4 +486,12 @@
 .dots-1k2MxY.themed-3dHGSa,
 .base-3bcbY3 {
     color: var(--color-orange);
+}
+
+// Reactions
+.theme-light .reaction-3vwAF2.reactionMe-1PwQAc {
+  background-color: #bab8b84f;
+}
+.theme-light .reaction-3vwAF2.reactionMe-1PwQAc .reactionCount-26U4As {
+  color: var(--color-orange);
 }
