@@ -17,7 +17,7 @@
 
 /* 1. Settings Modal */
 
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css);
+/* @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css); */
 
 /* 2. Chat bubbles */
 
@@ -262,7 +262,6 @@
   --text-normal: hsla(255, 100%, 50%, 0.99);
   --text-muted: var(--mrgreen);
 
-  --font-primary: MuseoModerno, mononoki NF, Liga SFMono Nerd Font,
-    SF Pro Rounded, Gill Sans;
-  --font-size-modifier: 1.2;
+  --font-primary: 'Roboto Flex', sans-serif;
+  --font-size-modifier: 1;
 }
