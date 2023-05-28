@@ -476,6 +476,10 @@
   
 }
 
-.input-3O04eu {
+.theme-dark .input-3O04eu {
   color: var(--background-primary);
+}
+
+.theme-light .input-3O04eu {
+  color: var(--color-orange);
 }
