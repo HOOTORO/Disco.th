@@ -18,6 +18,7 @@
   
   /* 1. Settings Modal */
   @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css);
+  @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
   
   /* 2. Chat bubbles */
   @import url(https://maendisease.github.io/BetterDiscordStuff/css/ChatBubbles.css);
@@ -30,15 +31,10 @@
   /* ********************************************************************************************************** */
   @import url(https://maendisease.github.io/BetterDiscordStuff/css/bdAddonMini.css);
   
-  /* Warning to Remove Minimum Size */
-  
-  /* @import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Float/addon/RemoveMinimumSize.css) (width: 940px); */
-  
   /* Source */
-  @import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Float/Float.css)
-  (max-width: 940px);/* If your theme has custom settings icons, delete or comment this line */
+  @import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Float/Float.css) (max-width: 940px);/* If your theme has custom settings icons, delete or comment this line */
   
-  /* @import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Float/addon/SettingsIcons.css) (max-width: 940px); */
+  /* @import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Float/addon/SettingsIcons.css); */
   
   /* ******************************************************************** */
   
@@ -60,27 +56,25 @@
   
   /* TO TEST */
   
-  /* Home Icon */
-  
-  /* @import url(https://objectiveslayer.github.io/ComfyGray/addons/homeicon.css); */
-  
   /* Border Roles (makes the text and border the same color as the role color) */
-  /* @import url(https://objectiveslayer.github.io/ComfyGray/addons/roles.css); */
+  @import url(https://objectiveslayer.github.io/ComfyGray/addons/roles.css);
   
   /* User Controls Area.. Looks super cool. */
   @import url(https://objectiveslayer.github.io/ComfyGray/addons/user-controls.css);
   
   /* floating server list, Remove the comment if you want it */
-  @import url(https://objectiveslayer.github.io/ComfyGray/addons/floating%20guild%20list.css);
+  
+  /* @import url(https://objectiveslayer.github.io/ComfyGray/addons/floating%20guild%20list.css); */
+  
+  /* (max-width: 540px); */
   @import url(https://hootsdev.github.io/Discoteca/css/aesth.css);
   
   /* 1. Settings modal vars */
   :root {
     --settingsmodalbackground: transparent; /* default: transparent   (lowest bg color of changed windows, change it in case another theme turns them transparent)  */
-    --settingsmodalwidth: 600px; /* default:  960px     (width of the settings modal, px/vw)   */
-    --settingsmodalheight: 70vh; /* default:  80vh      (height of the settings modal, px/vh)  */
-    --use-settingsicons: 0;
-    --settingsicons-size: 0px;
+    --settingsmodalwidth: 800px; /* default:  960px     (width of the settings modal, px/vw)   */
+    --settingsmodalheight: 80vh; /* default:  80vh      (height of the settings modal, px/vh)  */
+    --settingsicons: 1;
   }
   
   /* 2. Chat Bubbles vars */
@@ -88,7 +82,7 @@
     --chat-bubble: 1;
     --chat-bubble-background-color: #002a33; /* --chat-bubble-background-color: var(--trans-grey); */
     --chat-bubble-border-color: var(--background-secondary-alt);
-    --chat-bubble-code-background-color: hsl(180, 82%, 46%);
+    --chat-bubble-code-background-color: #babababe;
     --chat-bubble-box-shadow-h-offset: 3px;
     --chat-bubble-box-shadow-v-offset: 3px;
     --chat-bubble-box-shadow-blur: 10px;
@@ -99,7 +93,8 @@
   }
   
   :root {
-    --window-blur: 20px;
+  
+    /* --window-blur: 20px; */
     --server-bg: #00FFFF20;
     --favorites-icon: initial;
     --dock-blur: var(--window-blur);
@@ -122,7 +117,7 @@
     --rs-streaming-color: #643da7; /* Colour for streaming status */
     --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
     --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
-    --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+    --rs-phone-visible: none; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
   }
   
   /* 4. Float */
@@ -140,9 +135,9 @@
     --sidebar-hover-delay: 0.2s;
     --sidebar-transition-duration: 0.3s;
     --sidebar-window-gap: 0px;
-    --sidebar-border-radius: 0px;
-    --sidebar-usersettings-width: 70px; /* Memberlist */
-    --float-members-width: 60px;
+    --sidebar-border-radius: 0;
+    --sidebar-usersettings-width: 60px; /* Memberlist */
+    --float-members-width: 50px;
     --members-hover-width: 240px;
     --members-hover-delay: 0.5s;
     --members-transition-duration: 0.4s; /* Channelheader */
@@ -168,33 +163,14 @@
   
   }
   
-  @media (max-width:500px) {
-    :root {
-      --guildicon-size: 40;
-      --float-members-width: 0;
-    }
-  
-  }
-  
-  @media (max-width:400px) {
-    :root {
-      --float-sidebar-width: 0;
-    }
-  
-  }
-  
-  @media (max-width:300px) {
-    :root {
-      --guildlist-collapse: 1;
-    }
-  
-  }
-  
   /* 5. Horizontal Server List vars */
   :root {
     --HSL-server-icon-size: 45px; /* Size of the server icons | DEFAULT: 40px */
     --HSL-server-spacing: 10px; /* Spacing between each server icon | DEFAULT: 10px */
     --HSL-server-direction: column; /* Direct of the server list. | Options: column, column-reverse | DEFAULT: column */
+  
+    /* User Controls Area.. Looks super cool. */
+    --radius-primary: 10px;
   }
   
   :root {
