@@ -6,6 +6,12 @@
 #app-mount .membersWrap-3NUR2t {
   background-color: var(--background-primary);
 }
+
+
+.button-2fCJ0o, // nitro button
+.actionIcon-2sw4Sl {  // onchannel buttons create invite, edit settings
+display: none;
+}
 // embed brd
 .embedFull-1HGV2S {
   border: 4px ridge var(--background-tertiary);
@@ -13,42 +19,6 @@
   background: var(--background-secondary);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-}
-
-
-.button-2fCJ0o, // nitro button
-.actionIcon-2sw4Sl,  // onchannel buttons create invite, edit settings
-.homeIcon-r0w4ny path,
-.favoriteIcon-2kWmTP path {
-  display: none;
-}
-
-.avatar-2e8lTP {
-  border: var(--ava-parameters);
-}
-/////////////////
-/// home icon //
-/// ///////////
-.homeIcon-r0w4ny,
-.favoriteIcon-2kWmTP {
-  min-width: 100%;
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.theme-dark .homeIcon-r0w4ny {
-  background-image: var(--home-icon);
-}
-
-.theme-light .homeIcon-r0w4ny {
-  background-image: var(--home-icon);
-}
-
-.wrapper-3kah-n.selected-1Drb7Z .homeIcon-r0w4ny,
-.wrapper-3kah-n:hover .homeIcon-r0w4ny {
-  background-image: var(--home-icon)
 }
 
 /* 

@@ -69,6 +69,8 @@
   /* (max-width: 540px); */
   @import url(https://hootsdev.github.io/Discoteca/css/aesth.css);
   @import url(https://hootsdev.github.io/Discoteca/css/dock.css);
+  @import url(https://hootsdev.github.io/Discoteca/css/homeicon.css);
+
   
   /* 1. Settings modal vars */
   :root {
@@ -176,7 +178,8 @@
   }
    */
   
-  /* 5. Horizontal Server List vars */:root {
+  /* 5. Horizontal Server List vars */
+  :root {
     --HSL-server-icon-size: 45px; /* Size of the server icons | DEFAULT: 40px */
     --HSL-server-spacing: 10px; /* Spacing between each server icon | DEFAULT: 10px */
     --HSL-server-direction: column; /* Direct of the server list. | Options: column, column-reverse | DEFAULT: column */
@@ -188,6 +191,11 @@
   
   :root {
     --home-icon: url(https://hootsdev.github.io/Discoteca/assets/shield-cat.svg);
+    --ava-parameters: 2px outset #bada55;  
+    --brd-clr: #bada55;
+  }
+  
+  :root {
     --trans-black: hsla(0, 0%, 0%, 0.349);
     --pinky: hsl(305, 100%, 50%);
     --trans-green: hsla(113, 100%, 50%, 0.139);
@@ -198,7 +206,6 @@
     --mred: hsl(0, 100%, 50%);
     --mrgreen: hsl(124, 100%, 50%);
     --mrgrey: hsl(0, 0%, 67%);
-    --ava-parameters: 2px outset #bada55;  /* --brd-clr: #bada55; */
     --status-positive: var(--pinky);  /* --background-primary: hsl(0, 0%, 0%); */
     --background-secondary-alt: #bada55;  /* --background-tertiary: var(--trans-black); */
   
