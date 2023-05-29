@@ -65,11 +65,10 @@
   /* floating server list, Remove the comment if you want it */
   
   /* @import url(https://objectiveslayer.github.io/ComfyGray/addons/floating%20guild%20list.css); */
-    /* (max-width: 540px); */
   
+  /* (max-width: 540px); */
   @import url(https://hootsdev.github.io/Discoteca/css/aesth.css);
   @import url(https://hootsdev.github.io/Discoteca/css/dock.css);
-
   
   /* 1. Settings modal vars */
   :root {
@@ -126,9 +125,9 @@
   :root {
   
     /* Guildlist */
-    --guildicon-size: 50;
-    --enable-if-using-favorites-experiment: 0; /* boolean */
-    --guildlist-collapse: 0; /* boolean */
+    --guildicon-size: 45;
+    --enable-if-using-favorites-experiment: 0;  /* boolean */
+    --guildlist-collapse: 0;  /* boolean */
   
     /* Channel sidebar */
     --slide-window-on-hover: 1; /* boolean */
@@ -136,8 +135,7 @@
     --sidebar-hover-width: 240px;
     --sidebar-hover-delay: 0.2s;
     --sidebar-transition-duration: 0.3s;
-    --sidebar-window-gap: 0px;
-    --sidebar-border-radius: 0;
+    --sidebar-window-gap: 0px;  /* --sidebar-border-radius: 10px; */
     --sidebar-usersettings-width: 60px; /* Memberlist */
     --float-members-width: 50px;
     --members-hover-width: 240px;
@@ -149,7 +147,7 @@
     /* Textarea buttons */ /* [flex][none] */
     --textarea-buttons-gif: none;
     --textarea-buttons-sticker: none;
-    --textarea-buttons-gift: none; /* Theme compatibility */
+    --textarea-buttons-gift: none;  /* Theme compatibility */
     --float-guildlist-width-correction: 10px;
   }
   
@@ -165,13 +163,26 @@
   
   }
   
-  /* 5. Horizontal Server List vars */
+  /* @media (max-width:1800px) {
   :root {
+  --slide-window-on-hover: 0;
+  --guildicon-size: 40;
+  --topic-opacity: 1;
+  --toolbar-visibility: none;
+  --textarea-buttons-gif: none;
+  --textarea-buttons-sticker: none;
+  }
+  
+  }
+   */
+  
+  /* 5. Horizontal Server List vars */:root {
     --HSL-server-icon-size: 45px; /* Size of the server icons | DEFAULT: 40px */
     --HSL-server-spacing: 10px; /* Spacing between each server icon | DEFAULT: 10px */
     --HSL-server-direction: column; /* Direct of the server list. | Options: column, column-reverse | DEFAULT: column */
   
     /* User Controls Area.. Looks super cool. */
+  
     --radius-primary: 10px;
   }
   
@@ -187,12 +198,9 @@
     --mred: hsl(0, 100%, 50%);
     --mrgreen: hsl(124, 100%, 50%);
     --mrgrey: hsl(0, 0%, 67%);
-    /* --brd-clr:  */
-    --ava-parametes: 3px outset #bada55;
-    --status-positive: var(--pinky);  
-    /* --background-primary: hsl(0, 0%, 0%); */
-  
-    /* --background-tertiary: var(--trans-black); */
+    --ava-parameters: 2px outset #bada55;  /* --brd-clr: #bada55; */
+    --status-positive: var(--pinky);  /* --background-primary: hsl(0, 0%, 0%); */
+    --background-secondary-alt: #bada55;  /* --background-tertiary: var(--trans-black); */
   
     /* --background-secondary: hsla(256, 99%, 38%, 0.901); */
   
@@ -240,7 +248,7 @@
   
     /* --channeltextarea-background: var(--mryellow); */
   
-    --background-secondary-alt: #bada55; /* Forum header */
+    /* Forum header */
   
     /* --home-background: var(--header-bar-background); */
   
