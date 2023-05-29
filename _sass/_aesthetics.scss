@@ -22,7 +22,7 @@
 }
 
 .imageWrapper-oMkQl4 {
-  border-radius: 20px;
+  border-radius: 10px;
   border: var(--image-wrap);
 }
 
@@ -49,6 +49,11 @@
 .modeSelected-3DmyhH .name-28HaxV,
 .modeSelected-3DmyhH:hover .name-28HaxV {
   color: var(--selected-chan);
+}
+
+.icon-2W8DHg,
+.modeSelected-3DmyhH:hover .icon-2W8DHg {
+    color: var(--hover-chan-a);
 }
 
 .containerDefault-YUSmu3.selected-2TbFuo {
