@@ -6,11 +6,15 @@
 #app-mount .membersWrap-3NUR2t {
   background-color: var(--background-primary);
 }
-
+.button-2fCJ0o, // nitro button
 .actionIcon-2sw4Sl,  // onchannel buttons create invite, edit settings
 .homeIcon-r0w4ny path,
 .favoriteIcon-2kWmTP path {
   display: none;
+}
+
+.avatar-2e8lTP {
+  border: 0.5px outset #bada55;
 }
 /////////////////
 /// home icon //
@@ -172,7 +176,8 @@
 
 .wrapper-1_HaEi {
   background-color: black !important;
-  justify-content: center;
+  justify-content: flex-start; // center for middle
+  padding-top: 100px;
 }
 
 
@@ -198,9 +203,9 @@
 
 .tree-3agP2X {
   justify-content: center;
-  align-self: flex-start;
+  align-self: center;
   height: fit-content;
-  max-height: calc(100% - 600px);
+  max-height: calc(100% - 290px);
   -webkit-app-region: no-drag;
   width: 60px;
 }
