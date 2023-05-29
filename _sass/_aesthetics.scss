@@ -116,6 +116,18 @@
 .membersWrap-3NUR2t {
   height: 100%;
 }
+.membersGroup-2eiWxl {
+  padding: 0 0 0 20px;
+  height: 15px;
+  margin: 10px;
+}
+.member-2gU6Ar {
+  margin: 0;
+}
+
+.layout-1qmrhw {
+  height: 40px;
+}
 /* mem block */
 .members-3WRCEx {
   background-color: transparent;
@@ -136,7 +148,6 @@
 
 .title-338goq {
   color: var(--channels-default);
-  // font-size: medium;
 }
 
 .closeButton-PCZcma {
@@ -153,29 +164,13 @@
 .attachWrapper-3slhXI,
 .buttonContainer-2lnNiN:not(:last-of-type) {
   display: none;
-  visibility: hidden;
 }
 
 .emoji.jumboable {
   width: 3rem;
   height: 3rem;
   min-height: 2rem;
-  /* vertical-align: top; */
 }
-
-
-
-
-// .panels-3wFtMD > .container-YkUktl {
-//     right: 7rem;
-//     top: 0;
-//     position: absolute;
-//     z-index: 101;
-//     width: 220px;
-// }
-// .container-YkUktl {
-//   height: 48px;
-// }
 
 // //////////////////////
 ///// centered dock ////
