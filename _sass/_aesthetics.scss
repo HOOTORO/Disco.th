@@ -1,3 +1,8 @@
+// settings modal fix
+#app-mount .layer-86YKbF ~ .layer-86YKbF .accountProfileCard-lbN7n- {
+  max-width: unset !important;
+}
+
 #app-mount .membersWrap-3NUR2t {
   background-color: var(--background-primary);
 }
