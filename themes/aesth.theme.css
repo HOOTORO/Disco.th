@@ -70,7 +70,6 @@
   @import url(https://hootsdev.github.io/Discoteca/css/aesth.css);
   @import url(https://hootsdev.github.io/Discoteca/css/dock.css);
   @import url(https://hootsdev.github.io/Discoteca/css/homeicon.css);
-
   
   /* 1. Settings modal vars */
   :root {
@@ -86,13 +85,13 @@
     --chat-bubble-background-color: #002a33; /* --chat-bubble-background-color: var(--trans-grey); */
     --chat-bubble-border-color: var(--background-secondary-alt);
     --chat-bubble-code-background-color: #babababe;
-    --chat-bubble-box-shadow-h-offset: 3px;
-    --chat-bubble-box-shadow-v-offset: 3px;
+    --chat-bubble-box-shadow-h-offset: 2px;
+    --chat-bubble-box-shadow-v-offset: 2px;
     --chat-bubble-box-shadow-blur: 10px;
     --chat-bubble-box-shadow-color-h: 180;
     --chat-bubble-box-shadow-color-s: 50%;
     --chat-bubble-box-shadow-color-l: 40%;
-    --chat-bubble-box-shadow-color-a: 0.4;
+    --chat-bubble-box-shadow-color-a: 0.7;
   }
   
   :root {
@@ -164,7 +163,6 @@
     }
   
   }
-
   
   /* 5. Horizontal Server List vars */
   :root {
@@ -181,9 +179,10 @@
     --font-primary: "Roboto Flex", sans-serif;
     --font-size-modifier: 1;
     --home-icon: url(https://hootsdev.github.io/Discoteca/assets/shield-cat.svg);
-    --ava-parameters: 2px outset #bada55;  
+    --ava-parameters: 3px outset #00ddd444;
     --selected-chan: var(--mrgreen);
     --selected-chan-a: cyan;
+    --image-wrap: 3px outset var(--selected-chan-a);
     --brd-clr: #bada55;
   }
   
@@ -199,7 +198,7 @@
     --mrgreen: hsl(124, 100%, 50%);
     --mrgrey: hsl(0, 0%, 67%);
     --status-positive: var(--pinky);  /* --background-primary: hsl(0, 0%, 0%); */
-    --background-secondary-alt: #bada55;  /* --background-tertiary: var(--trans-black); */
+    --background-secondary-alt: #00ddd444;  /* --background-tertiary: var(--trans-black); */
   
     /* --background-secondary: hsla(256, 99%, 38%, 0.901); */
   
@@ -268,6 +267,5 @@
     /* --text-normal: hsla(255, 100%, 50%, 0.99); */
   
     /* --text-muted: var(--mrgreen); */
-
   }
   
