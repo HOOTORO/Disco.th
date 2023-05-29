@@ -12,7 +12,9 @@
 .favoriteIcon-2kWmTP path {
   display: none;
 }
-
+/////////////////
+/// home icon //
+/// ///////////
 .homeIcon-r0w4ny,
 .favoriteIcon-2kWmTP {
   min-width: 100%;
@@ -39,7 +41,9 @@
 .textArea-2CLwUE {
   background-color: var(--interactive-muted);
 } */
-
+/////////////////
+/// channels ///
+/// ///////////
 // .modeConnected-NrO4cP .name-28HaxV,
 // .modeConnected-NrO4cP:hover .name-28HaxV,
 // .modeUnread-3Cxepe .name-28HaxV,
@@ -66,7 +70,7 @@
 /* Chat text */
 .markup-eYLPri {
   color: azure;
-  font-size: calc(var(--font-size-modifier) * 0.8rem);
+  font-size: calc(var(--font-size-modifier) * 1rem);
 }
 /* Embed description, Text in file */
 .embedDescription-1DrJxZ,
@@ -83,12 +87,12 @@
 
 /* Channels name */
 .name-28HaxV {
-  font-size: calc(var(--font-size-modifier) * 0.8rem);
+  font-size: calc(var(--font-size-modifier) * 0.9rem);
   font-weight: 500;
 }
 /* category name */
 .container-q97qHp {
-  font-size: calc(var(--font-size-modifier) * 0.6rem);
+  font-size: calc(var(--font-size-modifier) * 0.8rem);
   font-weight: 100;
 }
 /* members panel bg */
@@ -104,10 +108,9 @@
 }
 /* one mem */
 .member-48YF_l {
-  margin: 5px;
-  /* height: 71px; */
   background-color: var(--trans-grey);
 }
+
 .scrollableContainer-15eg7h {
   border: 1px solid var(--pinky);
   background-color: hsla(268, 100%, 50%, 0);
@@ -119,7 +122,7 @@
 
 .title-338goq {
   color: var(--channels-default);
-  font-size: medium;
+  // font-size: medium;
 }
 
 .closeButton-PCZcma {
@@ -129,6 +132,7 @@
   color: var(--pinky);
   top: 0;
 }
+
 .keybind-13vtq8,
 .wordmarkWindows-2dq6rw,
 .wordmark-2u86JB,
@@ -191,6 +195,7 @@
 .item-2LIpTv {
   max-height: 20px;
 }
+
 .tree-3agP2X {
   justify-content: center;
   align-self: flex-start;
