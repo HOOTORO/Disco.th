@@ -94,6 +94,8 @@
     --brd-clr: #bada55;  /* --window-blur: 20px; */
     --server-bg: #00FFFF20;
     --favorites-icon: initial;
+    --dock-position: flex-start;  
+    --dock-pad-top: 100px;
     --dock-blur: var(--window-blur);
     --dock-border-radius: 0;
   }
