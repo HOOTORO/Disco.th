@@ -149,3 +149,55 @@
 // .container-YkUktl {
 //   height: 48px;
 // }
+
+// //////////////////////
+///// centered dock ////
+/// ///////////////////
+.tutorialContainer-1pL9QS .childWrapper-1j_1ub g rect {
+  fill: none;
+}
+
+.wrapper-1_HaEi {
+  background-color: black !important;
+  justify-content: center;
+}
+
+
+#app-mount .childWrapper-1j_1ub,
+#app-mount .circleIconButton-1VxDrg {
+  background-color: transparent;
+}
+
+.circleIconButton-1VxDrg {
+  color: var(--status-positive);
+}
+
+.guilds-2JjMmN {
+  z-index: 100;
+  -webkit-app-region: drag;
+  background-color: #191925 !important;
+  border-right: 1px outset var(--brd-clr);
+}
+
+.item-2LIpTv {
+  max-height: 20px;
+}
+.tree-3agP2X {
+  justify-content: center;
+  align-self: flex-start;
+  height: fit-content;
+  max-height: calc(100% - 600px);
+  -webkit-app-region: no-drag;
+  width: 60px;
+}
+
+#app-mount .scroller-3X7KbA {
+  contain: unset;
+  border-radius: calc(1.1rem * (1 + var(--dock-border-radius)));
+  box-shadow: var(--box-shadow-m);
+  background-color: var(--server-bg);
+  border-top: var(--background-modifier-accent-border);
+  border-right: var(--background-modifier-accent-border);
+  backdrop-filter: blur(var(--dock-blur-calc));
+  padding-top: 10px !important;
+}
