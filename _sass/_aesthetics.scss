@@ -40,9 +40,14 @@
 .modeUnread-3Cxepe .name-28HaxV {
   color: var(--mryellow);
 }
+.modeSelected-3DmyhH .icon-2W8DHg,
 .modeSelected-3DmyhH .name-28HaxV,
 .modeSelected-3DmyhH:hover .name-28HaxV {
-  color: var(--mrgreen);
+  color: var(--selected-chan);
+}
+
+.containerDefault-YUSmu3.selected-2TbFuo {
+  border-left: 9px ridge var(--selected-chan-a);
 }
 
 /* Username */

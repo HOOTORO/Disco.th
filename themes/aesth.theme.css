@@ -164,19 +164,7 @@
     }
   
   }
-  
-  /* @media (max-width:1800px) {
-  :root {
-  --slide-window-on-hover: 0;
-  --guildicon-size: 40;
-  --topic-opacity: 1;
-  --toolbar-visibility: none;
-  --textarea-buttons-gif: none;
-  --textarea-buttons-sticker: none;
-  }
-  
-  }
-   */
+
   
   /* 5. Horizontal Server List vars */
   :root {
@@ -190,8 +178,12 @@
   }
   
   :root {
+    --font-primary: "Roboto Flex", sans-serif;
+    --font-size-modifier: 1;
     --home-icon: url(https://hootsdev.github.io/Discoteca/assets/shield-cat.svg);
     --ava-parameters: 2px outset #bada55;  
+    --selected-chan: var(--mrgreen);
+    --selected-chan-a: cyan;
     --brd-clr: #bada55;
   }
   
@@ -276,8 +268,6 @@
     /* --text-normal: hsla(255, 100%, 50%, 0.99); */
   
     /* --text-muted: var(--mrgreen); */
-  
-    --font-primary: "Roboto Flex", sans-serif;
-    --font-size-modifier: 1;
+
   }
   
