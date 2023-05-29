@@ -2,6 +2,7 @@
   background-color: var(--background-primary);
 }
 
+.actionIcon-2sw4Sl,  // onchannel buttons create invite, edit settings
 .homeIcon-r0w4ny path,
 .favoriteIcon-2kWmTP path {
   display: none;
@@ -34,15 +35,18 @@
   background-color: var(--interactive-muted);
 } */
 
-.modeConnected-NrO4cP .name-28HaxV,
-.modeConnected-NrO4cP:hover .name-28HaxV,
-.modeUnread-3Cxepe .name-28HaxV,
-.modeUnread-3Cxepe:hover .name-28HaxV,
-.notInteractive-2tFrlE.modeConnected-NrO4cP .name-28HaxV,
-.notInteractive-2tFrlE.modeSelected-3DmyhH .name-28HaxV {
-  color: var(--mred);
-}
+// .modeConnected-NrO4cP .name-28HaxV,
+// .modeConnected-NrO4cP:hover .name-28HaxV,
+// .modeUnread-3Cxepe .name-28HaxV,
+// .modeUnread-3Cxepe:hover .name-28HaxV,
+// .notInteractive-2tFrlE.modeConnected-NrO4cP .name-28HaxV,
+// .notInteractive-2tFrlE.modeSelected-3DmyhH .name-28HaxV {
+//   color: var(--mryellow);
+// }
 
+.modeUnread-3Cxepe .name-28HaxV {
+  color: var(--mryellow);
+}
 .modeSelected-3DmyhH .name-28HaxV,
 .modeSelected-3DmyhH:hover .name-28HaxV {
   color: var(--mrgreen);

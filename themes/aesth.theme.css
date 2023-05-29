@@ -200,7 +200,7 @@
   --trans-grey: hsla(0, 1%, 28%, 0.144);
   --mrwhite: hsl(0, 0%, 100%);
   --mrorange: hsl(30, 100%, 50%);
-  --mryellow: hsl(60, 100%, 50%);
+  --mryellow:hsl(57, 100%, 49%);
   --mred: hsl(0, 100%, 50%);
   --mrgreen: hsl(124, 100%, 50%);
   --mrgrey: hsl(0, 0%, 67%); /* --background-primary: hsl(0, 0%, 0%); */
