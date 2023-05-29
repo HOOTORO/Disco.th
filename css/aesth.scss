@@ -1,11 +1,12 @@
 ---
 ---
 
-@import "vars","aesthetics";
+@import "vars", "aesthetics";
 
 :root {
-    --background-modifier-selected: #{$bg-mod-sel};
-    --background-modifier-hover: #{$mod-select-hov};
-    --background-modifier-accent-border: #{$bg-mod-acc-brd};
-    --dock-blur-calc: #{$dock-blur};
+  --box-shadow-m: #{$box-shd};
+  --background-modifier-selected: #{$bg-mod-sel};
+  --background-modifier-hover: #{$mod-select-hov};
+  --background-modifier-accent-border: #{$bg-mod-acc-brd};
+  --dock-blur-calc: #{$dock-blur};
 }
