@@ -185,8 +185,10 @@
     --mred: hsl(0, 100%, 50%);
     --mrgreen: hsl(124, 100%, 50%);
     --mrgrey: hsl(0, 0%, 67%);
-    --brd-clr: #bada55;
-    --status-positive: var(--pinky);  /* --background-primary: hsl(0, 0%, 0%); */
+    /* --brd-clr:  */
+    --ava-parametes: 3px outset #bada55;
+    --status-positive: var(--pinky);  
+    /* --background-primary: hsl(0, 0%, 0%); */
   
     /* --background-tertiary: var(--trans-black); */
   
