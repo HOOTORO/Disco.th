@@ -1,4 +1,85 @@
 site_name: Discoteca
 theme:
   name: material
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night 
+        name: Switch to dark mode
+      # deep orange + lime
+      primary: orange
+      accent: lime
 
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+        # color pairs:
+        # deep purple + lime/orange/amber
+        # deep orange + lime
+        # black + orange/amber
+        # cyan + amber/deep purple
+        # blue grey + deep purple
+      primary: lime
+      accent: deep purple
+  font:
+      # Good ones fonts: Roboto Flex, Open Sans
+      # text: Open Sans
+      # text: Roboto Flex
+      # text: Google Sans
+      text: Font Awesome
+      code: Google Sans Mono
+      # code: Fira Mono
+  language: ru
+  logo: images/favicon.png
+  favicon: images/favicon.png
+  features: 
+    - header.autohide
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    # - toc.integrate
+    - toc.follow
+    - navigation.top
+    # - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    # - navigation.indexes
+    # - navigation.footer
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+       smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji 
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+
+nav:
+  - Main: /README.md 
