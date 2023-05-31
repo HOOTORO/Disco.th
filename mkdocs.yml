@@ -82,4 +82,5 @@ markdown_extensions:
 
 
 nav:
-  - Main: /README.md 
+  - Main: README.md 
+  - afk.GG: ../afk.GG/
