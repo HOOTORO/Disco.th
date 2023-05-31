@@ -83,4 +83,4 @@ markdown_extensions:
 
 nav:
   - Main: README.md 
-  - afk.GG: ../../afk.GG/
+  - afk.GG: https://hootsdev.github.io/afk.GG/
