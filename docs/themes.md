@@ -1,4 +1,7 @@
-
+---
+permalink: /themes
+title: Discord themes
+---
 # Better Dicord Themes
 
 inspired by many other themes:  
