@@ -1,4 +1,5 @@
 site_name: Discoteca
+site_url: https://hootsdev.github.io/Discoteca/
 theme:
   name: material
   custom_dir: overrides 
@@ -59,6 +60,31 @@ theme:
   plugins: 
       - search
       - extra-sass
+  extra:
+  homepage: https://hootsdev.github.io/Discoteca/
+  consent:
+  title: Cookie consent
+  description:  
+    We use cookies to recognize your repeated visits and preferences, as well
+    as to measure the effectiveness of our documentation and whether users
+    find what they're searching for. With your consent, you're helping us to
+    make our documentation better.
+  actions:
+  - accept
+  - manage
+  copyright: >
+    Copyright &copy; 2023 HOOTSMAN –
+    <a href="#__consent">Change cookie settings</a>
+  # version:
+  #   provider: mike
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discordid.netlify.app/?id=88370628763078656
+      name: HOLYDOOM HOOTSMAN
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/HOLYDOOM
+      name: HOOTSMAN
+
 markdown_extensions:
   - abbr
   - admonition
