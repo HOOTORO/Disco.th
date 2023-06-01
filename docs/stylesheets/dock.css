@@ -14,9 +14,6 @@
   background-color: transparent;
 }
 
-.circleIconButton-1VxDrg {
-  color: var(--status-positive);
-}
 
 .guilds-2JjMmN {
   z-index: 100;
@@ -40,44 +37,31 @@
 
 #app-mount .scroller-3X7KbA {
   contain: unset;
-  border-radius: calc(1.1rem * (1 + var(--dock-border-radius)));
-  box-shadow: var(--box-shadow-m);
-  background-color: var(--server-bg);
-  border-top: var(--background-modifier-accent-border);
-  border-right: var(--background-modifier-accent-border);
-  backdrop-filter: blur(var(--dock-blur-calc));
   padding-top: 10px !important;
 }
 
-.theme-light .guilds-2JjMmN:not(.theme-dark) .scroller-3X7KbA {
-  background-color: var(--background-floating-40a);
-  border-top: var(--background-floating-primary-border-a);
-  border-right: var(--background-floating-primary-border-a);
-}
 
-.listItem-3SmSlK,
+/* .listItem-3SmSlK,
 .wrapper-38slSD {
   width: 60px;
 }
+ */
 
-.expandedFolderBackground-1kSAf6 {
-  left: 6px;
-}
 
-#app-mount .expandedFolderBackground-1kSAf6.collapsed-uGXEbi,
+/* #app-mount .expandedFolderBackground-1kSAf6.collapsed-uGXEbi,
 #app-mount .expandedFolderBackground-1kSAf6.collapsed-uGXEbi.hover-3m7-WT {
   background-color: transparent;
 }
 
 #app-mount .folder-241Joy {
   background-color: transparent;
-}
+} */
 
 .expandedFolderBackground-1kSAf6:not(.collapsed-uGXEbi) {
   background-color: var(--background-modifier-accent);
   box-shadow: 0 0 3px #848688;
 }
-
+/* 
 .theme-light .expandedFolderBackground-1kSAf6:not(.collapsed-uGXEbi) {
   background-color: var(--background-floating-40a);
 }
@@ -104,6 +88,6 @@
 
 .theme-light .guilds-2JjMmN:not(.theme-dark) .iconBadge-32fMme.participating-2Z81oO.base-3IDx3L {
   color: #fff;
-}
+} */
 
 /*# sourceMappingURL=dock.css.map */
