@@ -9,7 +9,6 @@ copyright: >-
 theme:
   name: material
   custom_dir: overrides
-
   extra_css:
     - stylesheets/extra.css
     - stylesheets/aesth.css
@@ -79,7 +78,7 @@ theme:
     - table-reader
     - extra-sass
   
-  extra:
+extra:
     homepage: https://hootsdev.github.io/Discoteca/
     social:
       - icon: fontawesome/brands/discord
