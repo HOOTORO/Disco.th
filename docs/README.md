@@ -1,33 +1,17 @@
+# Welcome to MkDocs
 
-# Better Dicord Themes
+For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-inspired by many other themes:  
-userMacieG#7591(theme: Discord.tv),  
-Xyhlo#9766(th: VSC Cord)  
-and many more  
+## Commands
 
-## How to install
+* `mkdocs new [dir-name]` - Create a new project.
+* `mkdocs serve` - Start the live-reloading docs server.
+* `mkdocs build` - Build the documentation site.
+* `mkdocs -h` - Print help message and exit.
 
-1) Download theme file into your BetterDiscord\themes folder  
-2) Enjoy!  
+## Project layout
 
-### [Aesthetic.th](themes/aesth.theme.css)
-
-Almost no changes to default UI, only colors via default vars  
-
-added plugins via import:
-- Settings Modal
-- Chat Bubbles
-- Radial Status
-- Float
-
-Un/Comment as you wish.
-
-### [Discode.th](themes/discode.theme.css)
-
-Heavily customized version of xhylo theme 'VSCord'
-
-### [TRANSCENDENCE.TH](themes/transcendence.theme.css)
-
-(Broken, need refactor)  
-that's a lot of transparency and sliding sidepanels!  
+    mkdocs.yml    # The configuration file.
+    docs/
+        index.md  # The documentation homepage.
+        ...       # Other markdown pages, images and other files.

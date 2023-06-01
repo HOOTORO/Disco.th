@@ -128,5 +128,5 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Themes: README.md
+  - Themes: themes.md
   # - afk.GG: https://hootsdev.github.io/afk.GG/
