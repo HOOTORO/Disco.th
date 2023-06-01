@@ -2,7 +2,7 @@ site_name: Discoteca
 site_url: https://hootsdev.github.io/Discoteca/
 theme:
   name: material
-  custom_dir: overrides 
+  custom_dir: overrides
   extra_css:
     - stylesheets/extra.css
     - stylesheets/aesth.css
@@ -14,7 +14,7 @@ theme:
     # Palette toggle for light mode
     - scheme: default
       toggle:
-        icon: material/weather-night 
+        icon: material/weather-night
         name: Switch to dark mode
       # deep orange + lime
       primary: indigo
@@ -34,17 +34,17 @@ theme:
       primary: indigo
       accent: lime
   font:
-      # Good ones fonts: Roboto Flex, Open Sans
-      # text: Open Sans
-      # text: Roboto Flex
-      # text: Font Awesome
-      text: Google Sans
-      code: Google Sans Mono
-      # code: Fira Mono
+    # Good ones fonts: Roboto Flex, Open Sans
+    # text: Open Sans
+    # text: Roboto Flex
+    # text: Font Awesome
+    text: Google Sans
+    code: Google Sans Mono
+    # code: Fira Mono
   language: ru
   logo: assets/black-mesa.svg
   favicon: assets/shield-cat.svg
-  features: 
+  features:
     - header.autohide
     - navigation.instant
     - navigation.tracking
@@ -57,21 +57,30 @@ theme:
     # - navigation.expand
     # - navigation.indexes
     # - navigation.footer
-  plugins: 
-      - search
-      - extra-sass
+  plugins:
+    - search:
+        lang: ru
+        separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+    - minify:
+        minify_html: true
+    - glightbox:
+        draggable: false
+        auto_caption: true
+        caption_position: bottom
+    - table-reader
+    - extra-sass
   extra:
   homepage: https://hootsdev.github.io/Discoteca/
   consent:
   title: Cookie consent
-  description:  
+  description:
     We use cookies to recognize your repeated visits and preferences, as well
     as to measure the effectiveness of our documentation and whether users
     find what they're searching for. With your consent, you're helping us to
     make our documentation better.
   actions:
-  - accept
-  - manage
+    - accept
+    - manage
   copyright: >
     Copyright &copy; 2023 HOOTSMAN –
     <a href="#__consent">Change cookie settings</a>
@@ -99,11 +108,11 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
-       smart_enable: all
+      smart_enable: all
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji 
+      emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.highlight
   - pymdownx.inlinehilite
@@ -117,8 +126,8 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
-
 nav:
-  - Home: _index.md
-  - Themes: README.md 
+  - Home: index.md
+  - Themes: README.md
   # - afk.GG: https://hootsdev.github.io/afk.GG/
+лдддkkkkkkkkß
