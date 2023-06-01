@@ -1,7 +1,4 @@
----
----
-
-@import "vars", "aesthetics";
+@import "../_sass/vars", "../_sass/aesthetics";
 
 :root {
   --box-shadow-m: #{$box-shd};

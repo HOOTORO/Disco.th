@@ -1,0 +1,32 @@
+.homeIcon-r0w4ny path,
+.favoriteIcon-2kWmTP path {
+  display: none;
+}
+
+.avatar-2e8lTP {
+  border: var(--ava-parameters);
+}
+
+.homeIcon-r0w4ny,
+.favoriteIcon-2kWmTP {
+  min-width: 100%;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.theme-dark .homeIcon-r0w4ny {
+  background-image: var(--home-icon);
+}
+
+.theme-light .homeIcon-r0w4ny {
+  background-image: var(--home-icon);
+}
+
+.wrapper-3kah-n.selected-1Drb7Z .homeIcon-r0w4ny,
+.wrapper-3kah-n:hover .homeIcon-r0w4ny {
+  background-image: var(--home-icon);
+}
+
+/*# sourceMappingURL=homeicon.css.map */

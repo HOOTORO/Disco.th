@@ -1,6 +1,14 @@
 site_name: Discoteca
 theme:
   name: material
+  custom_dir: overrides 
+  extra_css:
+    - stylesheets/extra.css
+    - stylesheets/aesth.css
+    - stylesheets/dock.css
+    - stylesheets/homeicon.css
+  extra_sass:
+    - scss/aesth.scss
   palette:
     # Palette toggle for light mode
     - scheme: default
@@ -8,7 +16,7 @@ theme:
         icon: material/weather-night 
         name: Switch to dark mode
       # deep orange + lime
-      primary: orange
+      primary: indigo
       accent: lime
 
     # Palette toggle for dark mode
@@ -22,32 +30,35 @@ theme:
         # black + orange/amber
         # cyan + amber/deep purple
         # blue grey + deep purple
-      primary: lime
-      accent: deep purple
+      primary: indigo
+      accent: lime
   font:
       # Good ones fonts: Roboto Flex, Open Sans
       # text: Open Sans
       # text: Roboto Flex
-      # text: Google Sans
-      text: Font Awesome
+      # text: Font Awesome
+      text: Google Sans
       code: Google Sans Mono
       # code: Fira Mono
   language: ru
-  logo: images/favicon.png
-  favicon: images/favicon.png
+  logo: assets/black-mesa.svg
+  favicon: assets/shield-cat.svg
   features: 
     - header.autohide
     - navigation.instant
     - navigation.tracking
     - navigation.tabs
-    # - toc.integrate
+    - toc.integrate
     - toc.follow
     - navigation.top
     # - navigation.tabs.sticky
-    - navigation.sections
-    - navigation.expand
+    # - navigation.sections
+    # - navigation.expand
     # - navigation.indexes
     # - navigation.footer
+  plugins: 
+      - search
+      - extra-sass
 markdown_extensions:
   - abbr
   - admonition
@@ -82,5 +93,6 @@ markdown_extensions:
 
 
 nav:
-  - Main: README.md 
-  - afk.GG: https://hootsdev.github.io/afk.GG/
+  - Home: _index.md
+  - Themes: README.md 
+  # - afk.GG: https://hootsdev.github.io/afk.GG/

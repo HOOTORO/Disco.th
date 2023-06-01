@@ -1,0 +1,1 @@
+pip install mkdocs-extra-sass-plugin

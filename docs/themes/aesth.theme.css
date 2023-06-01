@@ -60,9 +60,9 @@
   /* @import url(https://objectiveslayer.github.io/ComfyGray/addons/floating%20guild%20list.css) (max-width: 540px); */
   
   /* aesthetic */
-  @import url(https://hootsdev.github.io/Discoteca/css/aesth.css);
-  @import url(https://hootsdev.github.io/Discoteca/css/dock.css);
-  @import url(https://hootsdev.github.io/Discoteca/css/homeicon.css);
+  @import url(https://hootsdev.github.io/Discoteca/stylesheets/aesth.css);
+  @import url(https://hootsdev.github.io/Discoteca/stylesheets/dock.css);
+  @import url(https://hootsdev.github.io/Discoteca/stylesheets/homeicon.css);
   
   /* palette */
   :root {

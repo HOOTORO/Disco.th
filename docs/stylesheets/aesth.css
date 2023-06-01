@@ -1,0 +1,189 @@
+#app-mount .layer-86YKbF ~ .layer-86YKbF .accountProfileCard-lbN7n- {
+  max-width: unset !important;
+}
+
+#app-mount .membersWrap-3NUR2t {
+  background-color: var(--background-primary);
+}
+
+.button-2fCJ0o,
+.actionIcon-2sw4Sl {
+  display: none;
+}
+
+.embedFull-1HGV2S {
+  border: 4px ridge var(--background-tertiary);
+  border-top: unset;
+  background: var(--background-secondary);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.imageWrapper-oMkQl4 {
+  border-radius: 10px;
+  border: var(--image-wrap);
+}
+
+/* 
+.textArea-2CLwUE {
+  background-color: var(--interactive-muted);
+} */
+.modeUnread-3Cxepe .name-28HaxV {
+  color: var(--mryellow);
+}
+
+.modeSelected-3DmyhH .icon-2W8DHg,
+.modeSelected-3DmyhH .name-28HaxV,
+.modeSelected-3DmyhH:hover .name-28HaxV {
+  color: var(--selected-chan);
+}
+
+.icon-2W8DHg,
+.modeSelected-3DmyhH:hover .icon-2W8DHg {
+  color: var(--hover-chan-a);
+}
+
+.containerDefault-YUSmu3.selected-2TbFuo {
+  border-left: 3px outset var(--selected-chan-a);
+}
+
+/* Username */
+.username-h_Y3Us {
+  font-size: calc(var(--font-size-modifier) * 1rem);
+  font-weight: 400;
+}
+
+/* Chat text */
+.markup-eYLPri {
+  color: azure;
+  font-size: calc(var(--font-size-modifier) * 1rem);
+}
+
+/* Embed description, Text in file */
+.embedDescription-1DrJxZ,
+.embedFieldValue-3EHtvR,
+.hljs {
+  color: aliceblue;
+}
+
+/* members panel*/
+.name-3Vmqxm {
+  font-size: calc(var(--font-size-modifier) * 0.9rem);
+  font-weight: 400;
+}
+
+/* Channels name */
+.name-28HaxV {
+  font-size: calc(var(--font-size-modifier) * 0.9rem);
+  font-weight: 500;
+}
+
+/* category name */
+.container-q97qHp {
+  font-size: calc(var(--font-size-modifier) * 0.8rem);
+  font-weight: 100;
+}
+
+/* members panel bg */
+.container-2o3qEW {
+  background: var(--background-primary);
+}
+
+.membersWrap-3NUR2t {
+  height: 100%;
+}
+
+.membersGroup-2eiWxl {
+  padding: 0 0 0 20px;
+  height: 15px;
+  margin: 10px;
+}
+
+.member-2gU6Ar {
+  margin: 0;
+}
+
+.layout-1qmrhw {
+  height: 40px;
+}
+
+/* mem block */
+.members-3WRCEx {
+  background-color: transparent;
+}
+
+/* one mem */
+.member-48YF_l {
+  background-color: var(--trans-grey);
+}
+
+.scrollableContainer-15eg7h {
+  border: 1px solid var(--pinky);
+  background-color: hsla(268, 100%, 50%, 0);
+}
+
+.form-3gdLxP {
+  padding-left: 25px;
+}
+
+.base-3bcbY3 {
+  color: hsl(285, 100%, 50%);
+}
+
+.title-338goq {
+  color: var(--channels-default);
+}
+
+.closeButton-PCZcma {
+  position: absolute;
+  visibility: visible;
+  display: flex;
+  color: var(--pinky);
+  top: 0;
+}
+
+.keybind-13vtq8,
+.wordmarkWindows-2dq6rw,
+.wordmark-2u86JB,
+.attachWrapper-3slhXI,
+.buttonContainer-2lnNiN:not(:last-of-type) {
+  display: none;
+}
+
+.emoji.jumboable {
+  width: 3rem;
+  height: 3rem;
+  min-height: 2rem;
+}
+
+.flex-3BkGQD.roles-3vQPxb {
+  justify-content: space-between;
+}
+
+.rolePill-78LFtg {
+  background: transparent;
+}
+
+.mainContent-20q_Hp {
+  flex: 1 0 auto;
+  padding: 3px 0;
+}
+
+.voiceChannelsButton-SRmgo8 {
+  overflow-x: clip;
+}
+
+.text-sm-medium-2-Xzsi {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+:root {
+  --box-shadow-m: 0 0 24px rgba(0, 0, 0, 0.4);
+  --background-modifier-selected: #848688;
+  --background-modifier-hover: rgba(59, 73, 96, 0.56);
+  --background-modifier-accent-border: #0a1c53;
+  --dock-blur-calc: 10px;
+}
+
+/*# sourceMappingURL=aesth.css.map */

@@ -1,3 +1,8 @@
+---
+permalink: main
+template: home.html
+title: Discoteca. Fun stuff about Disocr begins here
+---
 # Welcome to MkDocs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
