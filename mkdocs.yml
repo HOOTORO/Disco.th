@@ -1,5 +1,5 @@
 site_name: Discoteca
-site_url: https://hootsdev.github.io/Discoteca/
+site_url: https://hootsdev.github.io/Disco.th/
 
 
 copyright: >-
@@ -79,7 +79,7 @@ theme:
     - extra-sass
   
 extra:
-    homepage: https://hootsdev.github.io/Discoteca/
+    homepage: https://hootsdev.github.io/Disco.th/
     social:
       - icon: fontawesome/brands/discord
         link: https://discordid.netlify.app/?id=88370628763078656
@@ -138,4 +138,4 @@ nav:
   - Home: index.md
   - Themes: themes.md
   # - afk.GG: https://hootsdev.github.io/afk.GG/
-  - unrelated: _unrelated/notes
+  - Unrelated: _unrelated/notes
