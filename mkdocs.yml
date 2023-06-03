@@ -138,3 +138,4 @@ nav:
   - Home: index.md
   - Themes: themes.md
   # - afk.GG: https://hootsdev.github.io/afk.GG/
+  - unrelated: _unrelated/notes
