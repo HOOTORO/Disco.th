@@ -171,6 +171,20 @@
   border-left: 5px ridge var(--text-link);
 }
 
+.rolePillBorder-3R4Bb5 {
+  border: unset;
+}
+
+.role-2TIOKu:has(.roleIcon-29epUq) .roleCircle-3TFUOr {
+  display: none;
+}
+
+.roleIcon-3-WL_I {
+  object-fit: contain;
+  width: 20px;
+  height: 20px;
+}
+
 .modeUnread-3Cxepe .name-28HaxV {
   color: hsl(57, 100%, 49%);
 }
