@@ -417,3 +417,14 @@
 .theme-light .reaction-3vwAF2.reactionMe-1PwQAc .reactionCount-26U4As {
   color: var(--color-orange);
 }
+
+.wrapper-1ZcZW-,
+.wrapper-1ZcZW-:hover  {
+    background-image: linear-gradient(to left,rgb(51, 255, 0), rgb(255, 230, 0), red, rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0));
+    animation: gradient-border 3s linear infinite;
+    background-size: 400% 100%;
+    color: transparent !important;
+    -webkit-background-clip: text;
+    position: relative;
+    z-index: 1;
+}
