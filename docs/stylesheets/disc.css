@@ -4,7 +4,7 @@
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/ThemeDevBadge.css);
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&family=Sofia+Sans:wght@100;300;400;500&display=swap");
 .panels-3wFtMD > .container-YkUktl {
-  left: 240px;
+  left: 200px;
   position: absolute;
   z-index: 103;
   width: 220px;
@@ -149,6 +149,11 @@
 }
 
 /* Channeltabs */
+.name-28HaxV,
+.name-3BUDLf {
+  font-size: 14px;
+}
+
 .platform-win #channelTabs-container {
   margin-top: 29px;
 }
@@ -241,6 +246,12 @@
 
 .sidebar-1tnWFu {
   resize: unset;
+  max-width: 200px;
+}
+
+.guilds-2JjMmN {
+  margin-left: 0px;
+  width: 72px;
 }
 
 .side-1lrxIh {
