@@ -11,13 +11,14 @@
 .actionIcon-2sw4Sl {  // onchannel buttons create invite, edit settings
   display: none;
 }
+
 // embed brd
 .embedFull-1HGV2S {
   border: 4px ridge var(--background-tertiary);
-  border-top: unset;
+  // border-top: unset;
   background: var(--background-secondary);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .imageWrapper-oMkQl4 {
@@ -25,10 +26,7 @@
   border: var(--image-wrap);
 }
 
-/* 
-.textArea-2CLwUE {
-  background-color: var(--interactive-muted);
-} */
+
 /////////////////
 /// channels ///
 /// ///////////
@@ -168,6 +166,7 @@
 }
 .rolePill-78LFtg {
   background: transparent;
+  border: unset;
 }
 // sidebar floated fix pos
 .mainContent-20q_Hp {
