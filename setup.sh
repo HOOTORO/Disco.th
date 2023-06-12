@@ -1,1 +1,2 @@
-pip install mkdocs-extra-sass-plugin
+# compile themes
+sass ./extra_sass/scss/:./docs/stylesheets/  
