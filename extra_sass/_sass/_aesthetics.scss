@@ -168,6 +168,20 @@
   background: transparent;
   border: unset;
 }
+
+.rolePillBorder-3R4Bb5 {
+  border: unset;
+}
+// remove circle if role has icon 
+.role-2TIOKu:has(.roleIcon-29epUq) .roleCircle-3TFUOr {
+  display:none;
+}
+
+.roleIcon-3-WL_I {
+  object-fit:contain;
+  width:20px;
+  height:20px;
+}
 // sidebar floated fix pos
 .mainContent-20q_Hp {
   flex: 1 0 auto;
