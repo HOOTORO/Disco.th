@@ -1,3 +1,20 @@
 {
-    "svg.preview.background": "transparent"
+    "svg.preview.background": "transparent",
+    "cSpell.words": [
+        "Barbaris",
+        "Brulee",
+        "Chupa",
+        "Graper",
+        "mkdocs",
+        "Pinkman",
+        "rocketman",
+        "Бельгийские",
+        "вафли",
+        "личи"
+    ],
+    "cSpell.language": "en,ru,en-GB,en-US,ru-RU",
+    "cSpell.enableFiletypes": [
+        "!yaml",
+        "!yml"
+    ]
 }

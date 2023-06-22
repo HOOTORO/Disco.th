@@ -1,0 +1,29 @@
+{
+  "name": "disco.th",
+  "version": "1.0.0",
+  "description": "",
+  
+  "main": "index.md",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "SASS:build": "sass --no-source-map ./extra_sass/scss/:./docs/stylesheets/",
+    "serve": "mkdocs serve --watch-theme",
+    "watch:scss": "sass --watch ./extra_sass/scss/:./docs/stylesheets/  ",
+    "serve.th": "sass --watch ./extra_sass/scss/:./docs/stylesheets/ & mkdocs serve --watch-theme"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hootsdev/Disco.th.git"
+  },
+  "keywords": ["Discord", "Unrelated"],
+  "author": {
+    "name": "HOLYDOOM HOOTSMAN"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hootsdev/Disco.th/issues"
+  },
+  "homepage": "https://github.com/Hootsdev/Disco.th#readme"
+}

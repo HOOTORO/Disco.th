@@ -138,4 +138,7 @@ nav:
   - Home: index.md
   - Themes: themes.md
   # - afk.GG: https://hootsdev.github.io/afk.GG/
-  - Unrelated: _unrelated/notes.md
+  - Unrelated: 
+    - _unrelated/index.md
+    - Fear of the Patch: _unrelated/notes.md
+    - Hookah: _unrelated/hookah.md
