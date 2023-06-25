@@ -6,7 +6,9 @@ title: Табаки для кальянов
 
 # Hookah time
 
-!!! example "_GOD_ TIER"
+## The Good
+
+!!! sh-luv "# _GOD_ TIER"
 
     1. **DarkSide**:
         - Polar Cream
@@ -24,19 +26,27 @@ title: Табаки для кальянов
     5. **DailyHookah**
         - Бельгийские вафли
 
-!!! tip "_Feels good_ tier"
+??? tip "# _Feels good_ tier"
 
     1. **Black** **Burn**:
         + Malibu
         + Melon Halls
     2. **DarkSide**:
         + Raf in the jungle
+        + Killer milk
+    3. **Ветер Северный**
+        + Свежая туса
+        + Летняя туса
 
-!!! info "_Sometimes_ tier"
+## The Sour
+
+??? info "# _Sometimes_ tier"
 
     1. **BlackBurn**:
         * Tic-Tav
         * Blackberry lemonade
+        * Медовая дыня/Etalon Melon
+        * Watermelon
     2. **MustHave**:
         * frosty
         * cheesecake
@@ -47,7 +57,26 @@ title: Табаки для кальянов
         * Barbaris
     4. almost all ex
 
-!!! danger "_Sh*t_ tier"
+??? example "# Acid ~~taste~~ tier"
+
+    1. Ветер Севереный
+        - Лютая туса
+    2. BackBurn
+        - overdose
+    3. MustHave
+        - Lemon-lime
+
+## The Bad
+
+??? warning "# _meh_ tier"
+
+    1. MustHave
+        - Grapefruit
+        - Watermelon
+    2. Duft
+        - Dragon Fruit
+
+!!! danger "# _Sh*t_ tier"
 
     1. **MustHave**
         * Holland Pie
@@ -64,7 +93,8 @@ title: Табаки для кальянов
         * Lemon Shock
         * Shock currant chock (кислая черная смородина)
         * Garnet (Терпкий гранат)
-        * Miranda 
+        * Miranda
+        * Juicy Smoothie/Тропический смузи
     4. **DailyHookah**
         * Фейхоа
         * Маракуйя

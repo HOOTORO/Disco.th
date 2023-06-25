@@ -11,7 +11,7 @@ and many more
 
 ## How to install
 
-1) Download theme file into your BetterDiscord\themes folder  
+1) Download theme into -> `BetterDiscord\themes folder`  
 2) Enjoy!  
 
 ### [Aesthetic.th](themes/aesth.theme.css)
@@ -19,6 +19,7 @@ and many more
 Almost no changes to default UI, only colors via default vars  
 
 added plugins via import:
+
 - Settings Modal
 - Chat Bubbles
 - Radial Status
@@ -26,7 +27,7 @@ added plugins via import:
 
 Un/Comment as you wish.
 
-### [Discode.th](themes/discode.theme.css)
+### [Disc0de.th](themes/discode.theme.css)
 
 Heavily customized version of xhylo theme 'VSCord'
 
