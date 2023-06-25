@@ -23,8 +23,6 @@
 site_name: Disc0.th
 site_url: https://hootsdev.github.io/Disco.th/
 site_author: Holydoom Hootsman
-
-
 copyright: Copyright &copy; 2023 HOOTSMAN  - <a href="#__consent">Change cookie settings</a>
 
 extra_css:
@@ -141,7 +139,6 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Themes: themes.md
-  # - afk.GG: https://hootsdev.github.io/afk.GG/
   - Unrelated: 
     - _unrelated/index.md
     - Fear of the Patch: _unrelated/notes.md
