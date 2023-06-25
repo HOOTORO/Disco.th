@@ -48,11 +48,11 @@ title: Табаки для кальянов
         * Медовая дыня/Etalon Melon
         * Watermelon
     2. **MustHave**:
-        * frosty
-        * cheesecake
+        * Caribbean run
+        * Frosty
+        * Cheesecake
         * Paradise
-        * pistachio cake
-        * Maple Pecan
+        * Pistachio cake
     3. **Spectrum**:
         * Barbaris
     4. almost all ex
@@ -71,6 +71,7 @@ title: Табаки для кальянов
 ??? warning "# _meh_ tier"
 
     1. MustHave
+        - Maple Pecan
         - Grapefruit
         - Watermelon
     2. Duft
