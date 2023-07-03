@@ -37,6 +37,8 @@ title: Табаки для кальянов
     3. **Ветер Северный**
         + Свежая туса
         + Летняя туса
+    4. **DUFT**
+       + Wonka's (hazelnut+tiramisu+pistacho cream+sour peach+fried cashew)
 
 ## The Sour
 
