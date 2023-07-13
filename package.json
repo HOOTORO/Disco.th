@@ -8,6 +8,7 @@
     "doc": "docs"
   },
   "scripts": {
+    "install:Disco.plug": "cp docs/plugins/disco.plugin.js ~/Library/ApplicationSupport/BetterDiscord/plugins",
     "SASS:build": "sass --no-source-map ./extra_sass/scss/:./docs/stylesheets/",
     "serve": "mkdocs serve --watch-theme",
     "watch:scss": "sass --watch ./extra_sass/scss/:./docs/stylesheets/  ",

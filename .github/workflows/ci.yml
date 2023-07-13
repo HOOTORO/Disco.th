@@ -1,8 +1,8 @@
-name: ci 
+name: ci
 on:
   push:
     branches:
-      - master 
+      - master
       - main
 permissions:
   contents: write
@@ -17,29 +17,32 @@ jobs:
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.5.1
         with:
-          source: | 
+          source: |
             extra_sass/scss/aesth.scss
             extra_sass/scss/disc.scss
             extra_sass/scss/dock.scss
             extra_sass/scss/homeicon.scss
-          destination: | 
+          destination: |
             docs/stylesheets/aesth.css
             docs/stylesheets/disc.css
             docs/stylesheets/dock.css
             docs/stylesheets/homeicon.css
       # - run: sass ./extra_sass/scss/:./docs/stylesheets/
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
       - uses: actions/cache@v3
         with:
           key: mkdocs-material-${{ env.cache_id }}
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material 
+      - run: pip install mkdocs-material
       - run: pip install mkdocs-extra-sass-plugin
       - run: pip install mkdocs-minify-plugin
       - run: pip install mkdocs-glightbox
       - run: pip install mkdocs-redirects
       - run: pip install mkdocs-table-reader-plugin
       - run: pip install openpyxl
+      - run: pip install requests
+      - run: pip install pyarrow
+      - run: pip install pillow cairosvg
       - run: mkdocs gh-deploy --force
