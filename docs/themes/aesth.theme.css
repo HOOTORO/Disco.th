@@ -65,6 +65,7 @@
   --font-primary: "Google Sans", sans-serif;
   --font-size-modifier: 1;
   --home-icon: url(https://hootsdev.github.io/Disco.th/assets/shield-cat.svg);
+  --fav-icon: url(https://hootsdev.github.io/Disco.th/assets/flood.svg);
   --image-wrap: 2px outset hsla(0, 0%, 50%, 0.45);
   --ava-parameters: var(
     --image-wrap
