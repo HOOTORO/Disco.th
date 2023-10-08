@@ -16,17 +16,16 @@
   background-repeat: no-repeat;
 }
 
-.theme-dark .homeIcon-r0w4ny {
-  background-image: var(--home-icon);
-}
-
-.theme-light .homeIcon-r0w4ny {
-  background-image: var(--home-icon);
-}
-
+.theme-dark .homeIcon-r0w4ny,
+.theme-light .homeIcon-r0w4ny,
 .wrapper-3kah-n.selected-1Drb7Z .homeIcon-r0w4ny,
 .wrapper-3kah-n:hover .homeIcon-r0w4ny {
   background-image: var(--home-icon);
 }
 
-/*# sourceMappingURL=homeicon.css.map */
+.theme-dark .favoriteIcon-2kWmTP,
+.theme-light .favoriteIcon-2kWmTP,
+.wrapper-3kah-n.selected-1Drb7Z .favoriteIcon-2kWmTP,
+.wrapper-3kah-n:hover .favoriteIcon-2kWmTP {
+  background-image: var(--fav-icon);
+}

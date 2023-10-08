@@ -11,9 +11,9 @@ body.powercord .header-QKLPzZ {
   display: none;
 }
 
-/* #######################*/
-/* ##### TOP LAYER #######*/
-/* #######################*/
+/* !#######################! */
+/* !##### TOP LAYER #######! */
+/* !#######################! */
 
 /* Base layers bgs */
 #app-mount,
@@ -112,10 +112,10 @@ body.powercord .header-QKLPzZ {
 
 
 
-  /* ##################### */
-  /* ##### POPOUTS ####### */
-  /* ## pinned ## inbox ## */
-  /* ######## etc ######## */
+  /* !##################### */
+  /* !###### POPOUTS ###### */
+  /* !## pinned ## inbox ## */
+  /* !######## etc ######## */
 
 /* PO root layer, border around app */
 .layerContainer-2v_Sit:not(main > div.layerContainer-2v_Sit) {
@@ -140,9 +140,9 @@ body.powercord .header-QKLPzZ {
   margin: 0 7px 0 0;
 }
 
-  /* ############################# */
-  /* ######### TOP PANEL ######### */
-  /* ############################# */
+  /* !#############################! */
+  /* !######### TOP PANEL #########! */
+  /* !#############################! */
 
 /* DM => Top pill */
 .container-ZMc96U.themed-Hp1KC_ {
@@ -213,9 +213,9 @@ html .mention.wrapper-1ZcZW-.mention.interactive {
     background-position: 130% 0;
   }
 }
-/* ################################ */
-/* ####### NEW MESSAGES BAR ####### */
-/* ################################ */
+/* !################################! */
+/* !####### NEW MESSAGES BAR #######! */
+/* !################################! */
 
 /* animate dis sh */
 .barBase-3xxDXu {
@@ -255,9 +255,9 @@ html .mention.wrapper-1ZcZW-.mention.interactive {
   box-shadow: 0 0 6px 0 hsla(0, 0%, 100%, 0.3);
 }
 
-/* ############# */
-/* (NEW) DIVIDER */
-/* ############# */
+/* !#############! */
+/* !(NEW) DIVIDER! */
+/* !#############! */
 
 .unreadPill-3nEWYM {
   background-color: var(--trans-blackest);
@@ -274,9 +274,9 @@ html .mention.wrapper-1ZcZW-.mention.interactive {
 }
 
 
-/* ##################################### */
-/* ########## CHAT MAIN AREA ########### */
-/* ##################################### */
+/* !#####################################! */
+/* !########## CHAT MAIN AREA ###########! */
+/* !#####################################! */
 
 .username-i5-wv-, /*sidepanel*/
 .username-h_Y3Us {
@@ -412,9 +412,9 @@ html .mention.wrapper-1ZcZW-.mention.interactive {
 }
 
 
-/* ################################ */
-/* ####### DM customs ############# */
-/* ################################ */
+/* !################################! */
+/* !####### DM customs #############! */
+/* !################################! */
 
 /* right panel */
 .profilePanel-2PWEok {
@@ -498,9 +498,9 @@ html .mention.wrapper-1ZcZW-.mention.interactive {
 }
 
 
-/* ################################ */
-/* GUILDS - MEMBERS side bar(right) */
-/* ################################ */
+/* !################################! */
+/* !GUILDS - MEMBERS side bar(right)! */
+/* !################################! */
 
 /* MEMBERS HIDE AND POP */
 
@@ -536,9 +536,9 @@ html .mention.wrapper-1ZcZW-.mention.interactive {
 .member-48YF_l:hover {
   opacity: 0.9;
 }
-/* ###################### */
-/* GUILDS - left side bar */
-/* ###################### */
+/* !#########################! */
+/* !# GUILDS - left sidebar #! */
+/* !#########################! */
 
 /* Guild channels, Fiends chats popUP */
 
@@ -654,7 +654,7 @@ ul[id*="folder-items"] {
   color: var(--color-brand);
 }
 
-/* ########## GUILDS end ##############*/
+/* !########## GUILDS end ##############! */
 
 /* @message in hovered user */
 .textarea-_59yqs,
@@ -730,12 +730,12 @@ div[aria-label="Explore Public Servers"] {
 /* end remoed */
 
 
-/* ############################# SETTINGS ###################### */
+/* !############### SETTINGS ######################! */
 
 
-/* ####################### */
-/* #### BetterDiscord #### */
-/* ####################### */
+/* !#######################! */
+/* !#### BetterDiscord ####! */
+/* !#######################! */
 
 /* BetterDiscord: Settings: Buttons and switches */
 .bd-addon-views .bd-view-button.selected,
@@ -843,9 +843,9 @@ div[aria-label="Explore Public Servers"] {
 
 
 
-/* ########################### */
-/*  Discord: Settings: Sidebar */
-/* ########################### */
+/* !##############################! */
+/* !# Discord: Settings: Sidebar #! */
+/* !##############################! */
 
 .side-2ur1Qk .header-2Kx1US:first-child {
   padding-top: 20px;
@@ -979,7 +979,7 @@ div[aria-label="Explore Public Servers"] {
   background-color: var(--color-brand-darker);
   border-color: var(--color-brand-darker);
 }
-/* #####  DISCO SETTINGS END  ########## */
+/* !#####  DISCO SETTINGS END  #####! */
 
 
 /* Discord: Home: Friends - Top pills */

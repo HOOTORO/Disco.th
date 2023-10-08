@@ -24,7 +24,7 @@
 }
 
 .modeUnread-3Cxepe .name-28HaxV {
-  color: var(--mryellow);
+  color: var(--MrYellow);
 }
 
 .modeSelected-3DmyhH .icon-2W8DHg,
@@ -195,5 +195,3 @@
   --background-modifier-accent-border: #0a1c53;
   --dock-blur-calc: 10px;
 }
-
-/*# sourceMappingURL=aesth.css.map */

@@ -1,29 +1,31 @@
 // settings modal fix
-#app-mount .layer-86YKbF ~ .layer-86YKbF .accountProfileCard-lbN7n- {
-  max-width: unset !important;
+#app-mount .layer-86YKbF~.layer-86YKbF .accountProfileCard-lbN7n- {
+    max-width: unset !important;
 }
 
 #app-mount .membersWrap-3NUR2t {
-  background-color: var(--background-primary);
+    background-color: var(--background-primary);
 }
 
-.button-2fCJ0o, // nitro button
-.actionIcon-2sw4Sl {  // onchannel buttons create invite, edit settings
-  display: none;
+.button-2fCJ0o,
+// nitro button
+.actionIcon-2sw4Sl {
+    // on channel buttons create invite, edit settings
+    display: none;
 }
 
 // embed brd
 .embedFull-1HGV2S {
-  border: 4px ridge var(--background-tertiary);
-  // border-top: unset;
-  background: var(--background-secondary);
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+    border: 4px ridge var(--background-tertiary);
+    // border-top: unset;
+    background: var(--background-secondary);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .imageWrapper-oMkQl4 {
-  border-radius: 10px;
-  border: var(--image-wrap);
+    border-radius: 10px;
+    border: var(--image-wrap);
 }
 
 
@@ -36,16 +38,17 @@
 // .modeUnread-3Cxepe:hover .name-28HaxV,
 // .notInteractive-2tFrlE.modeConnected-NrO4cP .name-28HaxV,
 // .notInteractive-2tFrlE.modeSelected-3DmyhH .name-28HaxV {
-//   color: var(--mryellow);
+//   color: var(--MrYellow);
 // }
 
 .modeUnread-3Cxepe .name-28HaxV {
-  color: var(--mryellow);
+    color: var(--MrYellow);
 }
+
 .modeSelected-3DmyhH .icon-2W8DHg,
 .modeSelected-3DmyhH .name-28HaxV,
 .modeSelected-3DmyhH:hover .name-28HaxV {
-  color: var(--selected-chan);
+    color: var(--selected-chan);
 }
 
 .icon-2W8DHg,
@@ -54,94 +57,102 @@
 }
 
 .containerDefault-YUSmu3.selected-2TbFuo {
-  border-left: 3px outset var(--selected-chan-a);
+    border-left: 3px outset var(--selected-chan-a);
 }
 
 /* Username */
 .username-h_Y3Us {
-  font-size: calc(var(--font-size-modifier) * 1rem);
-  font-weight: 400;
+    font-size: calc(var(--font-size-modifier) * 1rem);
+    font-weight: 400;
 }
 
 /* Chat text */
 .markup-eYLPri {
-  color: azure;
-  font-size: calc(var(--font-size-modifier) * 1rem);
+    color: azure;
+    font-size: calc(var(--font-size-modifier) * 1rem);
 }
+
 /* Embed description, Text in file */
 .embedDescription-1DrJxZ,
 .embedFieldValue-3EHtvR,
 .hljs {
-  color: aliceblue;
+    color: aliceblue;
 }
 
 /* members panel*/
 .name-3Vmqxm {
-  font-size: calc(var(--font-size-modifier) * 0.9rem);
-  font-weight: 400;
+    font-size: calc(var(--font-size-modifier) * 0.9rem);
+    font-weight: 400;
 }
 
 /* Channels name */
 .name-28HaxV {
-  font-size: calc(var(--font-size-modifier) * 0.9rem);
-  font-weight: 500;
+    font-size: calc(var(--font-size-modifier) * 0.9rem);
+    font-weight: 500;
 }
+
 /* category name */
 .container-q97qHp {
-  font-size: calc(var(--font-size-modifier) * 0.8rem);
-  font-weight: 100;
+    font-size: calc(var(--font-size-modifier) * 0.8rem);
+    font-weight: 100;
 }
+
 /* members panel bg */
 .container-2o3qEW {
-  background: var(--background-primary);
+    background: var(--background-primary);
 }
+
 .membersWrap-3NUR2t {
-  height: 100%;
+    height: 100%;
 }
+
 .membersGroup-2eiWxl {
-  padding: 0 0 0 20px;
-  height: 15px;
-  margin: 10px;
+    padding: 0 0 0 20px;
+    height: 15px;
+    margin: 10px;
 }
+
 .member-2gU6Ar {
-  margin: 0;
+    margin: 0;
 }
 
 .layout-1qmrhw {
-  height: 40px;
+    height: 40px;
 }
+
 /* mem block */
 .members-3WRCEx {
-  background-color: transparent;
+    background-color: transparent;
 }
+
 /* one mem */
 .member-48YF_l {
-  background-color: var(--trans-grey);
+    background-color: var(--trans-grey);
 }
 
 .scrollableContainer-15eg7h {
-  border: 1px solid var(--pinky);
-  background-color: hsla(268, 100%, 50%, 0);
+    border: 1px solid var(--pinky);
+    background-color: hsla(268, 100%, 50%, 0);
 }
 
 .form-3gdLxP {
-  padding-left: 25px;
+    padding-left: 25px;
 }
 
 .base-3bcbY3 {
-  color: hsl(285, 100%, 50%);
+    color: hsl(285, 100%, 50%);
 }
 
 .title-338goq {
-  color: var(--channels-default);
+    color: var(--channels-default);
 }
 
 .closeButton-PCZcma {
-  position: absolute;
-  visibility: visible;
-  display: flex;
-  color: var(--pinky);
-  top: 0;
+    position: absolute;
+    visibility: visible;
+    display: flex;
+    color: var(--pinky);
+    top: 0;
 }
 
 .keybind-13vtq8,
@@ -149,50 +160,53 @@
 .wordmark-2u86JB,
 .attachWrapper-3slhXI,
 .buttonContainer-2lnNiN:not(:last-of-type) {
-  display: none;
+    display: none;
 }
 
 .emoji.jumboable {
-  width: 3rem;
-  height: 3rem;
-  min-height: 2rem;
+    width: 3rem;
+    height: 3rem;
+    min-height: 2rem;
 }
 
 // ////////////////
 // spaced roles //
 // //////////////
 .flex-3BkGQD.roles-3vQPxb {
-  justify-content: space-between;
+    justify-content: space-between;
 }
+
 .rolePill-78LFtg {
-  background: transparent;
-  border: unset;
+    background: transparent;
+    border: unset;
 }
 
 .rolePillBorder-3R4Bb5 {
-  border: unset;
+    border: unset;
 }
+
 // remove circle if role has icon 
 .role-2TIOKu:has(.roleIcon-29epUq) .roleCircle-3TFUOr {
-  display:none;
+    display: none;
 }
 
 .roleIcon-3-WL_I {
-  object-fit:contain;
-  width:20px;
-  height:20px;
+    object-fit: contain;
+    width: 20px;
+    height: 20px;
 }
+
 // sidebar floated fix pos
 .mainContent-20q_Hp {
-  flex: 1 0 auto;
-  padding: 3px 0;
+    flex: 1 0 auto;
+    padding: 3px 0;
 }
 
 .voiceChannelsButton-SRmgo8 {
-  overflow-x: clip;
+    overflow-x: clip;
 }
 
 .text-sm-medium-2-Xzsi {
-  display: flex;
-  flex: 1 0 auto;
+    display: flex;
+    flex: 1 0 auto;
 }

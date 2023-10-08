@@ -9,7 +9,8 @@
   padding-top: var(--dock-pad-top);
 }
 
-#app-mount .childWrapper-1j_1ub, #app-mount .circleIconButton-1VxDrg {
+#app-mount .childWrapper-1j_1ub,
+#app-mount .circleIconButton-1VxDrg {
   background-color: transparent;
 }
 
@@ -33,7 +34,7 @@
   height: fit-content;
   max-height: calc(100% - 180px);
   -webkit-app-region: no-drag;
-  width: 60px;
+  width: 50px;
 }
 
 #app-mount .scroller-3X7KbA {
@@ -54,16 +55,17 @@
 
 .listItem-3SmSlK,
 .wrapper-38slSD {
-  width: 60px;
+  width: 50px;
 }
 
 .expandedFolderBackground-1kSAf6 {
-  left: 10px !important;
+  left: 5px !important;
   bottom: 10px;
-  width: 40px !important;
+  width: 30px !important;
 }
 
-#app-mount .expandedFolderBackground-1kSAf6.collapsed-uGXEbi, #app-mount .expandedFolderBackground-1kSAf6.collapsed-uGXEbi.hover-3m7-WT {
+#app-mount .expandedFolderBackground-1kSAf6.collapsed-uGXEbi,
+#app-mount .expandedFolderBackground-1kSAf6.collapsed-uGXEbi.hover-3m7-WT {
   background-color: transparent;
 }
 
@@ -118,10 +120,13 @@
   padding: 0px 10px;
 }
 
-body #app-mount .panels-3wFtMD .container-YkUktl > .flex-2S1XBF > :first-child.button-12Fmur[aria-checked], body #app-mount .panels-3wFtMD .container-YkUktl > .flex-2S1XBF > :first-child.button-12Fmur[aria-checked] + .button-12Fmur[aria-checked], body #app-mount .panels-3wFtMD .container-YkUktl > .flex-2S1XBF > :first-child.button-12Fmur[aria-checked] + .button-12Fmur[aria-checked] + .button-12Fmur {
-  /*     margin-bottom: 15px !important; */
+/* 
+body #app-mount .panels-3wFtMD .container-YkUktl>.flex-2S1XBF> :first-child.button-12Fmur[aria-checked],
+body #app-mount .panels-3wFtMD .container-YkUktl>.flex-2S1XBF> :first-child.button-12Fmur[aria-checked]+.button-12Fmur[aria-checked],
+body #app-mount .panels-3wFtMD .container-YkUktl>.flex-2S1XBF> :first-child.button-12Fmur[aria-checked]+.button-12Fmur[aria-checked]+.button-12Fmur {
+        margin-bottom: 15px !important; 
 }
-
+*/
 .container-YkUktl:last-child .flex-2S1XBF > button:last-child {
   margin-top: 5px;
   padding: 25px !important;
@@ -139,4 +144,7 @@ body #app-mount .panels-3wFtMD .container-YkUktl > .flex-2S1XBF > :first-child.b
   transition: ease 0.3s;
 }
 
-/*# sourceMappingURL=dock.css.map */
+.icon-3AqZ2e {
+  width: var(--icon-size);
+  height: var(--icon-size);
+}
