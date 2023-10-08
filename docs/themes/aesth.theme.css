@@ -74,7 +74,7 @@
     --hover-chan-a: var(--MrOrange);
     --brd-clr: #bada55;
     --server-bg: #00FFFF20;
-    --dock-position: flex-start;
+    --dock-position: center;
     --dock-pad-top: 40px;
     --dock-border-radius: 10;
     --icon-size: 40px;

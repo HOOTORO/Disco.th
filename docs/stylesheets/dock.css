@@ -22,6 +22,7 @@
   -webkit-app-region: drag;
   background-color: #191925 !important;
   border-right: 1px outset var(--brd-clr);
+  width: 70px;
 }
 
 .item-2LIpTv {
@@ -61,7 +62,6 @@
 .expandedFolderBackground-1kSAf6 {
   left: 5px !important;
   bottom: 10px;
-  width: 30px !important;
 }
 
 #app-mount .expandedFolderBackground-1kSAf6.collapsed-uGXEbi,
