@@ -1,0 +1,274 @@
+/**
+* @name aesthetic.th
+* @author Hootsman#0149
+  * @version 0.4
+  * @description adapted for float theme. Customisation vars here. Comment/Remove unnecessary imports 
+  * @authorId #0149
+  * @authorLink https://hootoro.github.io/Disco.th
+  * @source https://github.com/Hootsdev/Disco.th
+  * @website https://hootoro.github.io/Disco.th/
+  * @invite 
+  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&family=Google+Sans:wght@100;300;400;500&display=swap");
+
+/* *** 1. Settings Modal *** */
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
+
+/* *** 2. Chat bubbles *** */
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/ChatBubbles.css);
+
+/* *** 3. Radial Status *** */
+@import url(https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css);
+
+/* *** 4. Float addon - optimize small window *** */
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/bdAddonMini.css);
+
+/* Source */
+@import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Float/Float.css) (max-width: 1000px);
+/* *********************************************************************************** */
+
+/* User Controls Area.. Looks super cool. doesn't work last patch*/
+/* @import url(https://objectiveslayer.github.io/ComfyGray/addons/user-controls.css); */
+
+/* Custom icon set */
+@import url(https://objectiveslayer.github.io/ComfyGray/addons/icon-replace.css);
+
+/* aesthetic */
+
+/* @import url(https://hootoro.github.io/Discoteca/stylesheets/base.css); */
+@import url(https://hootoro.github.io/Disco.th/stylesheets/aesth.css);
+@import url(https://hootoro.github.io/Disco.th/stylesheets/dock.css);
+@import url(https://hootoro.github.io/Disco.th/stylesheets/homeicon.css);
+
+/* palette */
+:root {
+    --eb-aa: #eba1aa;
+    --eb-lo: #eba100;
+    --eb-bo: #eb0b05;
+    --eb-os: #ebac0c;
+    --eb-ka: #ebacca;
+    --eb-l: #eb01aa;
+    --bad-s: #bada55;
+    --bad-fo: #400bad;
+    --bad-so: #500bad;
+    --bad-too: #700bad;
+    --me-no: #075051;
+    --me-eb: #5051eba1;
+    --fear: #3acca1;
+    --cho: #ebafff;
+
+
+    /* !# AETH vars #! */
+
+    /* --font-primary: "Roboto Flex", sans-serif; */
+    --font-primary: "Victor Mono Nerd Font", sans-serif;
+    --font-size-modifier: 1;
+    --home-icon: url(https://hootoro.github.io/Disco.th/assets/shield-cat.svg);
+    --fav-icon: url(https://hootoro.github.io/Disco.th/assets/hash-16.svg);
+    --image-wrap: 2px outset hsla(0, 0%, 50%, 0.45);
+    --ava-parameters: var(--image-wrap);
+    /* --ava-parameters: 2px outset #00ddd4; */
+    --selected-chan: var(--MrGreen);
+    --selected-chan-a: cyan;
+    --hover-chan-a: var(--MrOrange);
+    --brd-clr: #bada55;
+    --server-bg: #00FFFF20;
+    --dock-position: center;
+    --dock-pad-top: 40px;
+    --dock-border-radius: 10;
+    --icon-size: 40px;
+
+
+    /* !# 1. Settings modal vars #! */
+
+    --settingsmodalbackground: transparent;
+    /* default: transparent)  */
+    --settingsmodalwidth: 90vw;
+    /* default:  960px (px/vw)   */
+    --settingsmodalheight: 80vh;
+    /* default:  80vh  (hpx/vh)  */
+    --settingsicons: 1;
+
+    /* !# 2. Chat Bubbles vars #! */
+    --chat-bubble: 1;
+    --chat-bubble-border-color: var(--background-secondary-alt);
+    --chat-bubble-background-color: hsla(180, 100%, 50%, 0.15);
+    --chat-bubble-code-background-color: #eb01aa44;
+    --chat-bubble-box-shadow-h-offset: 2px;
+    --chat-bubble-box-shadow-v-offset: 2px;
+    --chat-bubble-box-shadow-blur: 10px;
+    --chat-bubble-box-shadow-color-h: 180;
+    --chat-bubble-box-shadow-color-s: 50%;
+    --chat-bubble-box-shadow-color-l: 40%;
+    --chat-bubble-box-shadow-color-a: 0.7;
+
+
+    /* !# 3. Radial Status #! */
+    --rs-small-spacing: 1px;
+    /* for members list/dms  | Xpx */
+    --rs-medium-spacing: 1px;
+    /* for User popout       | Xpx */
+    --rs-large-spacing: 1px;
+    /* for User profiles     | Xpx */
+    --rs-small-width: 2px;
+    /* for members list/dms | Xpx */
+    --rs-medium-width: 2px;
+    /* for User popout      | Xpx */
+    --rs-large-width: 2px;
+    /* for User profile     | Xpx */
+    --rs-avatar-shape: 50%;
+    /* 50% for round - 0% for square */
+    --rs-online-color: #43b581;
+    --rs-idle-color: #faa61a;
+    --rs-dnd-color: #f04747;
+    --rs-offline-color: #636b75;
+    --rs-streaming-color: #643da7;
+    --rs-invisible-color: #747f8d;
+    /* Note: only show own invisibility */
+    --rs-phone-color: var(--rs-online-color);
+    /* phone icon  */
+    --rs-phone-visible: none;
+    /* on|off phone icon | block = visible | none = hidden */
+
+
+    /* !# 4. Float #! */
+
+    /* Guildlist */
+    --guildicon-size: 30;
+    --enable-if-using-favorites-experiment: 1;
+    /* boolean */
+    --guildlist-collapse: 0;
+    /* boolean */
+
+    /* Channel sidebar */
+    --slide-window-on-hover: 1;
+    /* boolean */
+    --float-sidebar-width: 64;
+    --sidebar-hover-width: 240px;
+    --sidebar-hover-delay: 0.2s;
+    --sidebar-transition-duration: 0.3s;
+    --sidebar-window-gap: 10px;
+    /* --sidebar-border-radius: 10px; */
+    --sidebar-usersettings-width: 60px;
+    /* Memberlist */
+    --float-members-width: 50px;
+    --members-hover-width: 240px;
+    --members-hover-delay: 0.2s;
+    --members-transition-duration: 0.3s;
+    /* Channelheader */
+    --topic-opacity: 0;
+    --toolbar-visibility: none;
+    /* [flex][none] */
+
+    /* Textarea buttons */
+    /* [flex][none] */
+    --textarea-buttons-gif: none;
+    --textarea-buttons-sticker: none;
+    --textarea-buttons-gift: none;
+    /* Theme compatibility */
+    --float-guildlist-width-correction: 1;
+
+    --accent: 160, 10, 40;
+    /* User Controls Area.. Looks super cool. */
+    --server-spacing: 10px;
+    --radius-primary: 10px;
+
+
+    --trans-black: hsla(0, 0%, 0%, 0.349);
+    --pinky: hsl(305, 100%, 50%);
+    --trans-green: hsla(113, 100%, 50%, 0.139);
+    --trans-grey: hsla(0, 1%, 28%, 0.144);
+    --MrWhite: hsl(0, 0%, 100%);
+    --MrOrange: hsl(30, 100%, 50%);
+    --MrYellow: hsl(60, 100%, 50%);
+    --MRed: hsl(0, 100%, 50%);
+    --MrGreen: hsl(124, 100%, 50%);
+    --MrGrey: hsl(0, 0%, 67%);
+    --status-positive: var(--pinky);
+    --background-secondary-alt: hsla(268, 100%, 50%, 0.63);
+    --brand-experiment: var(--eb-l);
+    --background-mentioned: hsla(40, 100%, 50%, 0.2);
+    /* --background-primary: hsl(0, 0%, 0%); */
+
+    /* --background-tertiary: var(--trans-black); */
+
+    /* --background-secondary: hsla(256, 99%, 38%, 0.901); */
+
+    /* --header-bar-background: hsla(185, 100%, 50%, 0.9); */
+
+    /* Header
+    prim -> server, server pill, channel names and ALL WHITE in general
+    sec -> replied msg */
+
+    /* --header-primary: var(--MrYellow); */
+
+    /* statuses */
+
+    /* --header-secondary: var(--MrGrey); */
+
+    /* --channels-default: rgb(255, 255, 255); */
+
+    /* --channel-icon: 0; */
+
+    /* --chat-background: hsla(261, 100%, 49%, 0.966); */
+
+    /* ??? */
+
+    /* --chat-border: gray; */
+
+    /* --chat-input-container-background: rgba(255, 255, 0, 0.671); */
+
+    /* bg bot not only */
+
+    /* --bg-overlay-chat: hsla(273, 53%, 17%, 0.058); */
+
+    /* --bg-overlay-3: hsla(252, 100%, 26%, 0.784); */
+
+    /* --bg-overlay-4: hsla(257, 21%, 13%, 0.179) ; */
+
+    /* --bg-overlay-selected:hsl(65, 89%, 48%); */
+
+    /* --background-modifier-selected: hsl(60, 100%, 50%); */
+
+    /* --channel-text-area-placeholder: hsl(0, 0%, 48%); */
+
+    /* input field bg */
+
+    /* --channeltextarea-background: var(--MrYellow); */
+
+    /* Forum header */
+
+    /* --home-background: var(--header-bar-background); */
+
+    /* changing this option often causes discord crashes */
+
+    /* --background-accent: hsla(59, 94%, 50%, 0.774); */
+
+    /* chosen chanel text, all active elements */
+
+    /* --interactive-active: var(--pinky); */
+
+    /* --interactive-normal: hsl(280, 100%, 50%); */
+
+    /* --interactive-hover: hsl(180, 100%, 50%); */
+
+    /* --interactive-muted: rgba(45, 3, 100, 0.579); */
+
+    /* --text-normal: hsla(255, 100%, 50%, 0.99); */
+
+    /* --text-muted: var(--MrGreen); */
+}
+
+/* The variables are used when the window is at the set sizes, each media query can be edited/deleted */
+
+@media (max-width:700px) {
+    :root {
+        --guildicon-size: 30;
+        --topic-opacity: 1;
+        --toolbar-visibility: none;
+        --textarea-buttons-gif: none;
+        --textarea-buttons-sticker: none;
+    }
+
+}
