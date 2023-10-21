@@ -1,4 +1,4 @@
-//META{ "name": "RoleManager", "website": "https://hootsdev.github.io/Disco.th" }*//
+//META{ "name": "RoleManager", "website": "https://hootoro.github.io/Disco.th" }*//
 global.RoleManager = function () {
     var listener;
   

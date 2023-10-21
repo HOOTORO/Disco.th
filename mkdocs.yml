@@ -21,7 +21,7 @@
 #   link: https://t.me/HOLYDOOM
 #   name: HOOTSMAN
 site_name: Disc0.th
-site_url: https://hootsdev.github.io/Disco.th/
+site_url: https://hootoro.github.io/Disco.th/
 site_author: Holydoom Hootsman
 copyright: Copyright &copy; 2023 HOOTSMAN  - <a href="#__consent">Change cookie settings</a>
 
@@ -84,7 +84,7 @@ plugins:
   # - extra-sass
 
 extra:
-  homepage: https://hootsdev.github.io/Disco.th/
+  homepage: https://hootoro.github.io/Disco.th/
   social:
     - icon: fontawesome/brands/discord
       link: https://discordid.netlify.app/?id=88370628763078656

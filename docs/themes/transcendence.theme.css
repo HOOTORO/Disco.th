@@ -4,13 +4,13 @@
   * @version 0.7
   * @description inspired by various discord themes (see README.MD)
   * @authorId 666
-  * @authorLink https://hootsdev.github.com
+  * @authorLink https://hootoro.github.com
   * @source https://raw.githubusercontent.com/Hootsdev/hoot/master/hoot.theme.css
-  * @website https://hootsdev.github.com
+  * @website https://hootoro.github.com
   * @invite gg
 */
 
-@import url("https://hootsdev.github.io/Transcendence/css/base.css");
+@import url("https://hootoro.github.io/Transcendence/css/base.css");
 
 
 
@@ -25,7 +25,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700;800&display=swap);
 
 
-@import url(https://hootsdev.github.io/Discoteca/css/trans.css);
+@import url(https://hootoro.github.io/Discoteca/css/trans.css);
 /* TRANSCENDENCE */
 :root {
   --black-hole: url(https://images.all-free-download.com/images/graphicthumb/starry_night_192398.jpg);

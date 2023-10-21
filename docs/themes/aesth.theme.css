@@ -4,9 +4,9 @@
   * @version 0.4
   * @description adapted for float theme. Customisation vars here. Comment/Remove unnecessary imports 
   * @authorId #0149
-  * @authorLink https://hootsdev.github.io/Disco.th
+  * @authorLink https://hootoro.github.io/Disco.th
   * @source https://github.com/Hootsdev/Disco.th
-  * @website https://hootsdev.github.io/Disco.th/
+  * @website https://hootoro.github.io/Disco.th/
   * @invite 
   */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&family=Google+Sans:wght@100;300;400;500&display=swap");
@@ -28,18 +28,18 @@
 @import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Float/Float.css) (max-width: 1000px);
 /* *********************************************************************************** */
 
-/* User Controls Area.. Looks super cool. */
-@import url(https://objectiveslayer.github.io/ComfyGray/addons/user-controls.css);
+/* User Controls Area.. Looks super cool. doesn't work last patch*/
+/* @import url(https://objectiveslayer.github.io/ComfyGray/addons/user-controls.css); */
 
 /* Custom icon set */
 @import url(https://objectiveslayer.github.io/ComfyGray/addons/icon-replace.css);
 
 /* aesthetic */
 
-/* @import url(https://hootsdev.github.io/Discoteca/stylesheets/base.css); */
-@import url(https://hootsdev.github.io/Disco.th/stylesheets/aesth.css);
-@import url(https://hootsdev.github.io/Disco.th/stylesheets/dock.css);
-@import url(https://hootsdev.github.io/Disco.th/stylesheets/homeicon.css);
+/* @import url(https://hootoro.github.io/Discoteca/stylesheets/base.css); */
+@import url(https://hootoro.github.io/Disco.th/stylesheets/aesth.css);
+@import url(https://hootoro.github.io/Disco.th/stylesheets/dock.css);
+@import url(https://hootoro.github.io/Disco.th/stylesheets/homeicon.css);
 
 /* palette */
 :root {
@@ -62,10 +62,10 @@
     /* !# AETH vars #! */
 
     /* --font-primary: "Roboto Flex", sans-serif; */
-    --font-primary: "D2Coding", sans-serif;
+    --font-primary: "Victor Mono Nerd Font", sans-serif;
     --font-size-modifier: 1;
-    --home-icon: url(https://hootsdev.github.io/Disco.th/assets/shield-cat.svg);
-    --fav-icon: url(https://hootsdev.github.io/Disco.th/assets/hash-16.svg);
+    --home-icon: url(https://hootoro.github.io/Disco.th/assets/shield-cat.svg);
+    --fav-icon: url(https://hootoro.github.io/Disco.th/assets/hash-16.svg);
     --image-wrap: 2px outset hsla(0, 0%, 50%, 0.45);
     --ava-parameters: var(--image-wrap);
     /* --ava-parameters: 2px outset #00ddd4; */
@@ -186,7 +186,7 @@
     --MrGreen: hsl(124, 100%, 50%);
     --MrGrey: hsl(0, 0%, 67%);
     --status-positive: var(--pinky);
-    --background-secondary-alt: hsla(177, 100%, 50%, 0.4);
+    --background-secondary-alt: hsla(268, 100%, 50%, 0.63);
     --brand-experiment: var(--eb-l);
     --background-mentioned: hsla(40, 100%, 50%, 0.2);
     /* --background-primary: hsl(0, 0%, 0%); */

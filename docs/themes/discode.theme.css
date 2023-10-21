@@ -4,7 +4,7 @@
   * @version 0.2
   * @description custom modification of xhylo theme 
   * @source https://github.com/Hootsdev/Discoteca
-  * @website https://hootsdev.github.io/Discoteca/
+  * @website https://hootoro.github.io/Discoteca/
   * @invite gg
   */
 
@@ -36,9 +36,9 @@
 /* @import url(https://discordstyles.github.io/Addons/bottomhsl.css); */
 
 /* important to load last */
-@import url(https://hootsdev.github.io/Discoteca/css/disc.css);
-@import url(https://hootsdev.github.io/Discoteca/css/dock.css);
-@import url(https://hootsdev.github.io/Discoteca/css/homeicon.css);
+@import url(https://hootoro.github.io/Discoteca/css/disc.css);
+@import url(https://hootoro.github.io/Discoteca/css/dock.css);
+@import url(https://hootoro.github.io/Discoteca/css/homeicon.css);
 
 
 
@@ -105,7 +105,7 @@
 }
 /* dock options */
 :root {
-  --home-icon: url(https://hootsdev.github.io/Discoteca/assets/shield-cat.svg);
+  --home-icon: url(https://hootoro.github.io/Discoteca/assets/shield-cat.svg);
   --favorites-icon: initial;
   --dock-blur: var(--window-blur);
   --dock-border-radius: 0;

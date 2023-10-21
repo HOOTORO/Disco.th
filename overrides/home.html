@@ -47,9 +47,7 @@
 </style>
 {% endblock %}
 <!-- Content -->
-{% block content %}
-{{ content }}
-{% endblock %}
+{% block content %} {{ content }} {% endblock %}
 
 <!-- Application footer -->
 {% block footer %}
@@ -60,27 +58,27 @@
             <h1>Communication beyond.</h1>
             <div class="mdx-hero__content">
                 <div class="cont">
-                    <p>
-                        Imagination opens any door
-                    </p>
-                    <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}"
-                    class="md-button md-button--primary">
-                    Get A theme
-                </a>
+                    <p>Imagination opens any door</p>
+                    <a
+                        href="{{ page.next_page.url | url }}"
+                        title="{{ page.next_page.title | e }}"
+                        class="md-button md-button--primary"
+                    >
+                        Get A theme
+                    </a>
+                </div>
+                <div class="cont">
+                    <p>or if you're looking for Idle Gacha game...</p>
+                    <a
+                        href="{{ 'https://hootoro.github.io/afk.GG/' | url }}"
+                        title="Looking for BetterDiscord Themes?"
+                        class="md-button"
+                    >
+                        Check this out!
+                    </a>
+                </div>
             </div>
-            <div class="cont">
-                
-                <p>
-                    or if you're looking for Idle Gacha game...
-                </p>
-                <a href="{{ 'https://hootsdev.github.io/afk.GG/' | url }}"
-                title="Looking for BetterDiscord Themes?" class="md-button">
-                Check this out!
-            </a>
-            
         </div>
     </div>
-</div>
-</div>
 </section>
 {% endblock %}
